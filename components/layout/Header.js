@@ -13,9 +13,9 @@ const Header = () => {
             <div tw="py-2 px-4 bg-gray-900 text-white">AM</div>
             <nav>
                 <ul tw="flex items-center">
-                    <li tw="font-semibold mr-3">Home</li>
-                    <li tw="font-semibold mr-3">About</li>
-                    <li tw="font-semibold mr-3">Portfolio</li>
+                    <li tw="font-semibold mr-4 lg:mr-5">Home</li>
+                    <li tw="font-semibold mr-4 lg:mr-5">About</li>
+                    <li tw="font-semibold mr-4 lg:mr-5">Portfolio</li>
                     <li tw="font-semibold">Contact</li>
                 </ul>
             </nav>
