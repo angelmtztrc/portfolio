@@ -5,10 +5,11 @@ import tw, { styled } from 'twin.macro';
 
 // Components
 import Header from './Header';
+import Footer from './Footer';
 
 // Styled Components
 const Content = styled.div(() => [
-    tw`max-h-screen py-8 lg:py-12 xl:py-16`,
+    tw`min-h-screen py-8 lg:py-12 xl:py-16`,
     `height: 100vh;`,
 ]);
 
@@ -24,6 +25,7 @@ const Layout = ({ children }) => {
             <Content>
                 <Header />
                 {children}
+                <Footer />
             </Content>
         </Fragment>
     );
