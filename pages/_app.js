@@ -1,3 +1,4 @@
+import 'tailwindcss/dist/base.min.css';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
