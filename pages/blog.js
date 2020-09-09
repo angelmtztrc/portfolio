@@ -16,6 +16,7 @@ const Blog = () => {
                         or technologies that I have written.
                     </p>
                 </div>
+                // TODO : Card Desing for a Blog Post
             </Content>
         </Layout>
     );
