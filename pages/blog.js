@@ -4,6 +4,7 @@ import 'twin.macro';
 import Layout from '../components/layout/Layout';
 import Content from '../components/ui/Content';
 import Heading from '../components/ui/Heading';
+import BlogCard from '../components/blog/BlogCard';
 
 const Blog = () => {
     return (
@@ -16,7 +17,9 @@ const Blog = () => {
                         or technologies that I have written.
                     </p>
                 </div>
-                {/* TODO : Card Desing for a Blog Post */}
+                <div tw="mt-10 px-16 grid grid-cols-1 gap-8 md:(px-0 grid-cols-2 gap-10) lg:(grid-cols-3 gap-10)">
+                    <BlogCard />
+                </div>
             </Content>
         </Layout>
     );
