@@ -4,6 +4,7 @@ import { mdiDevTo, mdiGithub, mdiTwitter, mdiEmail } from '@mdi/js';
 
 // Components
 import Layout from '../components/Layout/Layout';
+import Heading from '../components/ui/Heading';
 
 // Styled Components
 const MainContent = styled.main(() => [
@@ -20,9 +21,7 @@ export default function Home() {
             <MainContent>
                 <div tw="grid grid-cols-1 gap-24 lg:(grid-cols-2 gap-16)">
                     <div tw="flex flex-col justify-center">
-                        <p tw="text-4xl font-medium mb-2">
-                            I'm Angel Martinez.
-                        </p>
+                        <Heading>I'm Angel Martinez.</Heading>
                         <p tw="text-lg mb-2">
                             Also known as angel_codes, I am a developer with
                             more than 3 years of experience mainly working in
