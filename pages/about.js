@@ -13,7 +13,7 @@ const About = () => {
             <Content>
                 <div>
                     <Heading>About Me</Heading>
-                    // TODO: Short description of me.
+                    {/* TODO: Short description of me. */}
                     <p tw="text-base mb-5">Short description of me.</p>
                 </div>
                 <div>
