@@ -1,6 +1,7 @@
 import tw, { styled } from 'twin.macro';
 import Link from 'next/link';
 
+// Styled Components
 const HeaderContainer = styled.header(() => [
     tw`w-full block`,
     tw`container mx-auto`,
