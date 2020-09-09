@@ -22,7 +22,7 @@ const About = () => {
                         documentation and online courses that I have taken.
                         These are some of the main technologies that I use.
                     </p>
-                    <div tw="w-full grid grid-cols-1 gap-8 md:grid-cols-2 lg:(grid-cols-4 gap-12)">
+                    <div tw="w-full grid grid-cols-2 gap-8 lg:(grid-cols-4 gap-12)">
                         <ul tw="text-lg text-center md:text-left">
                             <li tw="flex items-center leading-tight">
                                 <Icon path={mdiMenuRight} tw="mr-2" size={1} />
