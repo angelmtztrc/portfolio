@@ -1,5 +1,7 @@
 import tw, { styled } from 'twin.macro';
 import Link from 'next/link';
+import Icon from '@mdi/react';
+import { mdiMenu } from '@mdi/js';
 
 // Styled Components
 const HeaderContainer = styled.header(() => [
@@ -18,7 +20,9 @@ const Header = () => {
                 <Link href="/">AM</Link>
             </div>
             <nav>
-                <ul tw="flex items-center">
+                {/* TODO: Make a function for open the navigation */}
+                <Icon path={mdiMenu} size={1} tw="block md:hidden" />
+                <ul tw="items-center hidden md:flex">
                     <NavLink>
                         <Link href="/">Home</Link>
                     </NavLink>
