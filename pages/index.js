@@ -24,10 +24,10 @@ export default function Home() {
                             I'm Angel Martinez.
                         </p>
                         <p tw="text-lg mb-2">
-                            Also known as angel_codes I am a developer with more
-                            than 3 years of experience, mainly working in both
-                            Front-end and Back-end JavaScript environments. I
-                            currently live in Coah, Mexico.
+                            Also known as angel_codes, I am a developer with
+                            more than 3 years of experience mainly working in
+                            both Front-end and Back-end JavaScript environments.
+                            I currently live in Coah, Mexico.
                         </p>
                         <ul tw="flex items-center">
                             <li tw="text-lg mr-2">
