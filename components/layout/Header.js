@@ -32,7 +32,7 @@ const NavLink = styled.li(() => [
 ]);
 
 const Header = () => {
-    const [navopen, setNavOpen] = useState(true);
+    const [navopen, setNavOpen] = useState(false);
 
     const handleClick = e => {
         setNavOpen(!navopen);
