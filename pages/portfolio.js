@@ -4,6 +4,7 @@ import 'twin.macro';
 import Layout from '../components/layout/Layout';
 import Content from '../components/ui/Content';
 import Heading from '../components/ui/Heading';
+import ProjectCard from '../components/portfolio/ProjectCard';
 
 const Portfolio = () => {
     return (
@@ -17,7 +18,9 @@ const Portfolio = () => {
                         have developed so that you can see much more of my work.
                     </p>
                 </div>
-                {/* TODO : Card Desing for a Project */}
+                <div tw="mt-10 px-16 grid grid-cols-1 gap-8 md:(px-0 grid-cols-2 gap-10) lg:(grid-cols-3 gap-10)">
+                    <ProjectCard />
+                </div>
             </Content>
         </Layout>
     );

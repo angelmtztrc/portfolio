@@ -23,7 +23,7 @@ const NavContainer = styled.nav(({ isOpen }) => [
 ]);
 
 const NavLink = styled.li(() => [
-    tw`font-semibold text-gray-900`,
+    tw`font-semibold text-gray-900 text-lg`,
     tw`transition-all ease-in duration-300`,
     tw`mr-4 mb-2`,
     tw`block px-2 py-2 hover:(bg-gray-900 rounded text-white)`,
