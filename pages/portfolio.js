@@ -18,7 +18,7 @@ const Portfolio = () => {
                         have developed so that you can see much more of my work.
                     </p>
                 </div>
-                <div tw="mt-10 px-16 grid grid-cols-1 gap-8 md:(px-0 grid-cols-2 gap-10) lg:(grid-cols-3 gap-10)">
+                <div tw="mt-10 px-4 sm:px-8 grid grid-cols-1 gap-8 md:(px-0 grid-cols-2 gap-10) lg:(grid-cols-3 gap-10)">
                     <ProjectCard />
                 </div>
             </Content>
