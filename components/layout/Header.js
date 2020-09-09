@@ -4,7 +4,7 @@ import Link from 'next/link';
 // Styled Components
 const HeaderContainer = styled.header(() => [
     tw`w-full block`,
-    tw`container mx-auto`,
+    tw`container mx-auto px-6 md:px-10 lg:px-0`,
     tw`flex justify-between items-center`,
     `height: 10%;`,
 ]);

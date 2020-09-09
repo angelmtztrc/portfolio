@@ -8,7 +8,7 @@ import Heading from '../components/ui/Heading';
 
 // Styled Components
 const MainContent = styled.main(() => [
-    tw`container mx-auto`,
+    tw`container mx-auto px-6 md:px-10 lg:px-0`,
     tw`flex flex-col justify-center items-center`,
     `min-height: 76%;`,
     `margin-top: 2%;`,
