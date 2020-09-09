@@ -18,7 +18,7 @@
 
 body {
     color: #1a202c;
-    font-family: 'JetBrains Mono';
+    font-family: 'JetBrains Mono', sans-serif;
 }
 
 h1,
