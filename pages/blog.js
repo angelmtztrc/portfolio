@@ -1,7 +1,7 @@
 import 'twin.macro';
 
 // Components
-import Layout from '../components/Layout/Layout';
+import Layout from '../components/layout/Layout';
 import Content from '../components/ui/Content';
 import Heading from '../components/ui/Heading';
 

@@ -3,7 +3,7 @@ import { Icon } from '@mdi/react';
 import { mdiDevTo, mdiGithub, mdiTwitter, mdiEmail } from '@mdi/js';
 
 // Components
-import Layout from '../components/Layout/Layout';
+import Layout from '../components/layout/Layout';
 import Heading from '../components/ui/Heading';
 
 // Styled Components
