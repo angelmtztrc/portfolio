@@ -23,10 +23,10 @@ const ProjectCard = () => {
                     </p>
                 </div>
                 <div tw="flex items-center justify-between">
-                    <div tw="px-3 py-2 bg-gray-800 hover:bg-gray-900 transition-all ease-in duration-300 text-white">
+                    <div tw="px-3 py-2 bg-gray-900 hover:bg-gray-800 transition-all ease-in duration-300 text-white">
                         Live Preview
                     </div>
-                    <div tw="px-3 py-2 bg-gray-800 hover:bg-gray-900 transition-all ease-in duration-300 text-white">
+                    <div tw="px-3 py-2 bg-gray-900 hover:bg-gray-800 transition-all ease-in duration-300 text-white">
                         Code
                     </div>
                 </div>
