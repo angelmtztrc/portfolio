@@ -1,11 +1,12 @@
 import React from 'react';
+import WelcomeIcon from '../svg/home.inline.svg';
 
 // Containers
 import Layout from '../containers/Layout';
 
 const IndexPage = () => (
   <Layout>
-    <div className="py-6 lg:py-24 flex justify-center items-center">
+    <div className="py-6 flex justify-center items-center">
       <div class="grid grid-cols-2 gap-12 lg:gap-10">
         <div class="col-span-2 lg:col-span-1 flex flex-col justify-center text-dark">
           <h1 class="text-3xl lg:text-4xl font-bold mb-4">
@@ -19,10 +20,7 @@ const IndexPage = () => (
           <div></div>
         </div>
         <div class="col-span-2 lg:col-span-1">
-          {/* <img
-                class="w-full object-cover"
-                src="assets/images/home-image.svg"
-              /> */}
+          <WelcomeIcon className="w-full object-cover" />
         </div>
       </div>
     </div>
