@@ -1,32 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
+import Icon from '@mdi/react';
+import { mdiMenu, mdiClose } from '@mdi/js';
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
+  // Open and close mobile nav
+  const handleOpen = e => {
+    open ? setOpen(false) : setOpen(true);
+  };
+
   return (
     <header className="w-full bg-white">
       <div className="container mx-auto px-6 lg:px-0 py-4 lg:py-6 flex flex-wrap justify-between items-center">
         <Link to="/" className="p-4 bg-dark flex items-center">
           <span className="text-white font-display leading-none">AM</span>
         </Link>
-        <button className="lg:hidden">
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
+        <button onClick={handleOpen} className="lg:hidden focus:outline-none">
+          {open ? (
+            <Icon path={mdiClose} size={1.2} color={'#1f1f1f'} />
+          ) : (
+            <Icon path={mdiMenu} size={1.2} color={'#1f1f1f'} />
+          )}
         </button>
         <nav
           id="navigation"
-          className="mt-5 lg:mt-0 hidden lg:block lg:w-auto lg:flex-grow-0 text-dark"
+          className={`${
+            open ? 'w-full flex flex-col flex-grow' : 'hidden'
+          } mt-5 lg:mt-0 lg:block lg:w-auto lg:flex-grow-0 text-dark`}
         >
           <Link
             to="/"
