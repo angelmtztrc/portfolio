@@ -8,7 +8,7 @@ const IndexPage = () => (
   <Layout>
     <main className="container mx-auto my-auto px-8 lg:px-0">
       <div className="py-6 flex justify-center items-center">
-        <div className="grid grid-cols-2 gap-0 lg:gap-10">
+        <div className="grid grid-cols-2 gap-12 lg:gap-10">
           <div className="col-span-2 lg:col-span-1 flex flex-col justify-center text-dark">
             <h1 className="text-3xl lg:text-4xl font-bold mb-4">
               Hi, I'm Angel Martinez!
@@ -21,7 +21,7 @@ const IndexPage = () => (
             <div></div>
           </div>
           <div className="col-span-2 lg:col-span-1">
-            <WelcomeIcon className="w-full object-cover" />
+            <WelcomeIcon className="w-full h-64 lg:h-full  object-cover" />
           </div>
         </div>
       </div>
