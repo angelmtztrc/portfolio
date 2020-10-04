@@ -32,36 +32,36 @@ const Navbar = () => {
         >
           <Link
             to="/"
-            className="mb-3 lg:mb-0 text-gray-900 font-bold border-b-2 border-transparent hover:border-dark transition-colors ease-in-out duration-300"
-            activeClassName="border-b-2 border-dark"
+            className="px-3 lg:px-0 py-2 lg:py-0 mb-3 lg:mb-0 font-bold hover:bg-dark hover:text-white lg:hover:bg-transparent lg:hover:text-dark lg:border-b-2 lg:border-transparent lg:hover:border-dark transition-colors ease-in-out duration-300"
+            activeClassName="bg-dark text-white lg:bg-transparent lg:text-dark lg:border-b-2 lg:border-dark"
           >
             Home
           </Link>
           <Link
             to="/about"
-            className="mb-3 lg:mb-0 text-gray-900 font-bold border-b-2 border-transparent hover:border-dark transition-colors ease-in-out duration-300"
-            activeClassName="border-b-2 border-dark"
+            className="px-3 lg:px-0 py-2 lg:py-0 mb-3 lg:mb-0 font-bold hover:bg-dark hover:text-white lg:hover:bg-transparent lg:hover:text-dark lg:border-b-2 lg:border-transparent lg:hover:border-dark transition-colors ease-in-out duration-300"
+            activeClassName="bg-dark text-white lg:bg-transparent lg:text-dark lg:border-b-2 lg:border-dark"
           >
             About
           </Link>
           <Link
             to="/blog"
-            className="mb-3 lg:mb-0 text-gray-900 font-bold border-b-2 border-transparent hover:border-dark transition-colors ease-in-out duration-300"
-            activeClassName="border-b-2 border-dark"
+            className="px-3 lg:px-0 py-2 lg:py-0 mb-3 lg:mb-0 font-bold hover:bg-dark hover:text-white lg:hover:bg-transparent lg:hover:text-dark lg:border-b-2 lg:border-transparent lg:hover:border-dark transition-colors ease-in-out duration-300"
+            activeClassName="bg-dark text-white lg:bg-transparent lg:text-dark lg:border-b-2 lg:border-dark"
           >
             Blog
           </Link>
           <Link
             to="/portfolio"
-            className="mb-3 lg:mb-0 text-gray-900 font-bold border-b-2 border-transparent hover:border-dark transition-colors ease-in-out duration-300"
-            activeClassName="border-b-2 border-dark"
+            className="px-3 lg:px-0 py-2 lg:py-0 mb-3 lg:mb-0 font-bold hover:bg-dark hover:text-white lg:hover:bg-transparent lg:hover:text-dark lg:border-b-2 lg:border-transparent lg:hover:border-dark transition-colors ease-in-out duration-300"
+            activeClassName="bg-dark text-white lg:bg-transparent lg:text-dark lg:border-b-2 lg:border-dark"
           >
             Portfolio
           </Link>
           <Link
             to="/contact"
-            className="mb-3 lg:mb-0 text-gray-900 font-bold border-b-2 border-transparent hover:border-dark transition-colors ease-in-out duration-300"
-            activeClassName="border-b-2 border-dark"
+            className="px-3 lg:px-0 py-2 lg:py-0 mb-3 lg:mb-0 font-bold hover:bg-dark hover:text-white lg:hover:bg-transparent lg:hover:text-dark lg:border-b-2 lg:border-transparent lg:hover:border-dark transition-colors ease-in-out duration-300"
+            activeClassName="bg-dark text-white lg:bg-transparent lg:text-dark lg:border-b-2 lg:border-dark"
           >
             Contact
           </Link>
