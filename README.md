@@ -1,4 +1,5 @@
 # Angel Martinez Portfolio - Gatsby
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fc44d268-2b93-4aa4-9aff-027cb341775a/deploy-status)](https://app.netlify.com/sites/angel-codes/deploys)
 
 This is my own website made with Gatsby.
 
