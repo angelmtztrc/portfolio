@@ -7,7 +7,7 @@ const BlogPage = () => {
   return (
     <Layout>
       <main className="container mx-auto mb-auto py-6 lg:py-10 px-8 lg:px-0">
-        <section className="mb-10">
+        <section className="mb-16">
           <h1 className="text-4xl font-semibold">Blog</h1>
           <p className="mt-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
