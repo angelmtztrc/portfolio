@@ -22,6 +22,10 @@ module.exports = {
       }
     }
   },
+  experimental: {
+    darkModeVariant: true
+  },
+  dark: 'class',
   variants: {},
   plugins: []
 };
