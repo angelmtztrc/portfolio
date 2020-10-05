@@ -7,9 +7,8 @@ import Navbar from '../components/Navbar';
 
 const Layout = props => {
   // State for change dark/light theme
-  const [theme, setTheme] = useState(
-    localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light'
-  );
+  const initialValue = localStorage.getItem('theme') || 'light';
+  const [theme, setTheme] = useState(initialValue);
 
   return (
     <div className={theme}>
