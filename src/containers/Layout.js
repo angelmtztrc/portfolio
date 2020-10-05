@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/main.css';
 
 // Components
@@ -7,8 +7,11 @@ import Navbar from '../components/Navbar';
 
 const Layout = props => {
   // State for change dark/light theme
-  const initialValue = localStorage.getItem('theme') || 'light';
-  const [theme, setTheme] = useState(initialValue);
+  const [theme, setTheme] = useState('');
+
+  useEffect(() => {
+    setTheme(localStorage.getItem('theme') || 'light');
+  }, []);
 
   return (
     <div className={theme}>
