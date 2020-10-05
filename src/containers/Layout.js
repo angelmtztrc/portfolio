@@ -7,7 +7,7 @@ import Navbar from '../components/Navbar';
 
 const Layout = props => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-light-100">
       <Navbar />
       {props.children}
       <Footer />
