@@ -38,7 +38,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "build-css:develop": "tailwindcss build index.css -o src/styles/main.css"
+    "build-css:develop": "tailwindcss build index.css -o src/styles/main.css",
+    "build-css:production": "cross-env NODE_ENV=production tailwindcss build index.css -o src/styles/main.css"
   },
   "repository": {
     "type": "git",
