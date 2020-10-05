@@ -13,7 +13,7 @@ module.exports = {
         },
         light: {
           100: '#f7fafc',
-          200: '#cbd5e0'
+          200: '#F1FAFF'
         }
       },
       fontFamily: {
