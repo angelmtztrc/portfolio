@@ -8,12 +8,12 @@ module.exports = {
     extend: {
       colors: {
         dark: {
-          100: '#1f1f1f',
-          200: '#121212'
+          primary: '#242526',
+          secondary: '#18191A'
         },
         light: {
-          100: '#f7fafc',
-          200: '#F1FAFF'
+          primary: '#FFFFFF',
+          secondary: '#F5F6F7'
         }
       },
       fontFamily: {
