@@ -53,12 +53,12 @@ h5 {
 
 @media (min-width: 1024px) {
   .dark #navigation a {
-    @apply text-light-200;
+    @apply text-light-primary;
   }
   .dark #navigation a:hover {
-    @apply border-light-200;
+    @apply border-light-primary;
   }
   .dark .active-border {
-    @apply border-light-200;
+    @apply border-light-primary;
   }
 }

@@ -6,7 +6,7 @@ import Layout from '../containers/Layout';
 const AboutPage = () => {
   return (
     <Layout>
-      <main className="container mx-auto mb-auto py-6 lg:py-10 px-8 lg:px-0 text-dark-100 dark:text-light-200">
+      <main className="py-6 lg:py-10 px-8 lg:px-0 container mx-auto mb-auto text-dark-primary dark:text-light-primary">
         <section className="mb-10">
           <h1 className="text-4xl font-semibold">About Me</h1>
           <p className="mt-2">
