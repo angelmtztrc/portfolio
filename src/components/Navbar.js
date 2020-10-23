@@ -35,35 +35,35 @@ const Navbar = () => {
         >
           <Link
             to="/"
-            className="lg:hover:text-dark-primary lg:hover:bg-transparent mb-3 px-3 py-2 hover:text-light-primary font-bold hover:bg-dark-primary transition-colors duration-300 ease-in-out lg:mb-0 lg:px-0 lg:py-0 lg:border-b-2 lg:border-transparent"
+            className="lg:hover:text-dark-primary lg:hover:bg-transparent lg:hover:border-dark-primary mb-3 px-3 py-2 hover:text-light-primary font-bold hover:bg-dark-primary transition-colors duration-300 ease-in-out lg:mb-0 lg:px-0 lg:py-0 lg:border-b-2 lg:border-transparent"
             activeClassName="text-light-primary lg:text-dark-primary bg-dark-primary lg:bg-transparent lg:border-b-2 lg:border-dark-primary active-border"
           >
             Home
           </Link>
           <Link
             to="/about"
-            className="lg:hover:text-dark-primary lg:hover:bg-transparent mb-3 px-3 py-2 hover:text-light-primary font-bold hover:bg-dark-primary transition-colors duration-300 ease-in-out lg:mb-0 lg:px-0 lg:py-0 lg:border-b-2 lg:border-transparent"
+            className="lg:hover:text-dark-primary lg:hover:bg-transparent lg:hover:border-dark-primary mb-3 px-3 py-2 hover:text-light-primary font-bold hover:bg-dark-primary transition-colors duration-300 ease-in-out lg:mb-0 lg:px-0 lg:py-0 lg:border-b-2 lg:border-transparent"
             activeClassName="text-light-primary lg:text-dark-primary bg-dark-primary lg:bg-transparent lg:border-b-2 lg:border-dark-primary active-border"
           >
             About
           </Link>
           <Link
             to="/blog"
-            className="lg:hover:text-dark-primary lg:hover:bg-transparent mb-3 px-3 py-2 hover:text-light-primary font-bold hover:bg-dark-primary transition-colors duration-300 ease-in-out lg:mb-0 lg:px-0 lg:py-0 lg:border-b-2 lg:border-transparent"
+            className="lg:hover:text-dark-primary lg:hover:bg-transparent lg:hover:border-dark-primary mb-3 px-3 py-2 hover:text-light-primary font-bold hover:bg-dark-primary transition-colors duration-300 ease-in-out lg:mb-0 lg:px-0 lg:py-0 lg:border-b-2 lg:border-transparent"
             activeClassName="text-light-primary lg:text-dark-primary bg-dark-primary lg:bg-transparent lg:border-b-2 lg:border-dark-primary active-border"
           >
             Blog
           </Link>
           <Link
             to="/portfolio"
-            className="lg:hover:text-dark-primary lg:hover:bg-transparent mb-3 px-3 py-2 hover:text-light-primary font-bold hover:bg-dark-primary transition-colors duration-300 ease-in-out lg:mb-0 lg:px-0 lg:py-0 lg:border-b-2 lg:border-transparent"
+            className="lg:hover:text-dark-primary lg:hover:bg-transparent lg:hover:border-dark-primary mb-3 px-3 py-2 hover:text-light-primary font-bold hover:bg-dark-primary transition-colors duration-300 ease-in-out lg:mb-0 lg:px-0 lg:py-0 lg:border-b-2 lg:border-transparent"
             activeClassName="text-light-primary lg:text-dark-primary bg-dark-primary lg:bg-transparent lg:border-b-2 lg:border-dark-primary active-border"
           >
             Portfolio
           </Link>
           <Link
             to="/contact"
-            className="lg:hover:text-dark-primary lg:hover:bg-transparent mb-3 px-3 py-2 hover:text-light-primary font-bold hover:bg-dark-primary transition-colors duration-300 ease-in-out lg:mb-0 lg:px-0 lg:py-0 lg:border-b-2 lg:border-transparent"
+            className="lg:hover:text-dark-primary lg:hover:bg-transparent lg:hover:border-dark-primary mb-3 px-3 py-2 hover:text-light-primary font-bold hover:bg-dark-primary transition-colors duration-300 ease-in-out lg:mb-0 lg:px-0 lg:py-0 lg:border-b-2 lg:border-transparent"
             activeClassName="text-light-primary lg:text-dark-primary bg-dark-primary lg:bg-transparent lg:border-b-2 lg:border-dark-primary active-border"
           >
             Contact
