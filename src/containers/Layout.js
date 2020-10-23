@@ -15,7 +15,7 @@ const Layout = props => {
 
   return (
     <div className={theme}>
-      <div className="min-h-screen flex flex-col bg-light-secondary dark:bg-dark-secondary">
+      <div className="flex flex-col min-h-screen dark:bg-dark-secondary bg-light-secondary">
         <Navbar theme={theme} setTheme={setTheme} />
         {props.children}
         <Footer />

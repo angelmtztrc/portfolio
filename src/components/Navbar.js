@@ -31,16 +31,16 @@ const Navbar = ({ theme, setTheme }) => {
 
   return (
     <header className="w-full">
-      <div className="px-6 lg:px-0 py-4 lg:py-6 container mx-auto flex flex-wrap justify-between items-center">
+      <div className="container flex flex-wrap items-center justify-between mx-auto px-6 py-4 lg:px-0 lg:py-6">
         <Link
           to="/"
-          className="px-3 py-2 flex items-center bg-dark-primary dark:bg-light-primary shadow-md"
+          className="flex items-center px-3 py-2 bg-dark-primary dark:bg-light-primary shadow-md"
         >
-          <span className="text-light-primary dark:text-dark-primary font-bold font-display leading-none">
+          <span className="dark:text-dark-primary text-light-primary font-display font-bold leading-none">
             AM
           </span>
         </Link>
-        <button onClick={handleOpen} className="lg:hidden focus:outline-none">
+        <button onClick={handleOpen} className="focus:outline-none lg:hidden">
           {open ? (
             <Icon
               path={mdiClose}
@@ -63,41 +63,41 @@ const Navbar = ({ theme, setTheme }) => {
         >
           <Link
             to="/"
-            className="px-3 lg:px-0 py-2 lg:py-0 mb-3 lg:mb-0 font-bold hover:text-light-primary lg:hover:text-dark-primary hover:bg-dark-primary lg:hover:bg-transparent lg:border-b-2 lg:border-transparent transition-colors ease-in-out duration-300"
+            className="lg:hover:text-dark-primary lg:hover:bg-transparent mb-3 px-3 py-2 hover:text-light-primary font-bold hover:bg-dark-primary transition-colors duration-300 ease-in-out lg:mb-0 lg:px-0 lg:py-0 lg:border-b-2 lg:border-transparent"
             activeClassName="text-light-primary lg:text-dark-primary bg-dark-primary lg:bg-transparent lg:border-b-2 lg:border-dark-primary active-border"
           >
             Home
           </Link>
           <Link
             to="/about"
-            className="px-3 lg:px-0 py-2 lg:py-0 mb-3 lg:mb-0 font-bold hover:text-light-primary lg:hover:text-dark-primary hover:bg-dark-primary lg:hover:bg-transparent lg:border-b-2 lg:border-transparent transition-colors ease-in-out duration-300"
+            className="lg:hover:text-dark-primary lg:hover:bg-transparent mb-3 px-3 py-2 hover:text-light-primary font-bold hover:bg-dark-primary transition-colors duration-300 ease-in-out lg:mb-0 lg:px-0 lg:py-0 lg:border-b-2 lg:border-transparent"
             activeClassName="text-light-primary lg:text-dark-primary bg-dark-primary lg:bg-transparent lg:border-b-2 lg:border-dark-primary active-border"
           >
             About
           </Link>
           <Link
             to="/blog"
-            className="px-3 lg:px-0 py-2 lg:py-0 mb-3 lg:mb-0 font-bold hover:text-light-primary lg:hover:text-dark-primary hover:bg-dark-primary lg:hover:bg-transparent lg:border-b-2 lg:border-transparent transition-colors ease-in-out duration-300"
+            className="lg:hover:text-dark-primary lg:hover:bg-transparent mb-3 px-3 py-2 hover:text-light-primary font-bold hover:bg-dark-primary transition-colors duration-300 ease-in-out lg:mb-0 lg:px-0 lg:py-0 lg:border-b-2 lg:border-transparent"
             activeClassName="text-light-primary lg:text-dark-primary bg-dark-primary lg:bg-transparent lg:border-b-2 lg:border-dark-primary active-border"
           >
             Blog
           </Link>
           <Link
             to="/portfolio"
-            className="px-3 lg:px-0 py-2 lg:py-0 mb-3 lg:mb-0 font-bold hover:text-light-primary lg:hover:text-dark-primary hover:bg-dark-primary lg:hover:bg-transparent lg:border-b-2 lg:border-transparent transition-colors ease-in-out duration-300"
+            className="lg:hover:text-dark-primary lg:hover:bg-transparent mb-3 px-3 py-2 hover:text-light-primary font-bold hover:bg-dark-primary transition-colors duration-300 ease-in-out lg:mb-0 lg:px-0 lg:py-0 lg:border-b-2 lg:border-transparent"
             activeClassName="text-light-primary lg:text-dark-primary bg-dark-primary lg:bg-transparent lg:border-b-2 lg:border-dark-primary active-border"
           >
             Portfolio
           </Link>
           <Link
             to="/contact"
-            className="px-3 lg:px-0 py-2 lg:py-0 mb-3 lg:mb-0 font-bold hover:text-light-primary lg:hover:text-dark-primary hover:bg-dark-primary lg:hover:bg-transparent lg:border-b-2 lg:border-transparent transition-colors ease-in-out duration-300"
+            className="lg:hover:text-dark-primary lg:hover:bg-transparent mb-3 px-3 py-2 hover:text-light-primary font-bold hover:bg-dark-primary transition-colors duration-300 ease-in-out lg:mb-0 lg:px-0 lg:py-0 lg:border-b-2 lg:border-transparent"
             activeClassName="text-light-primary lg:text-dark-primary bg-dark-primary lg:bg-transparent lg:border-b-2 lg:border-dark-primary active-border"
           >
             Contact
           </Link>
           <button
-            className="px-3 lg:px-0 py-2 lg:py-0 focus:outline-none"
+            className="px-3 py-2 focus:outline-none lg:px-0 lg:py-0"
             onClick={handleTheme}
           >
             {theme === 'light' ? (
@@ -105,7 +105,7 @@ const Navbar = ({ theme, setTheme }) => {
                 <Icon
                   path={mdiWeatherNight}
                   size={1}
-                  className="text-dark-primary inline-block"
+                  className="inline-block text-dark-primary"
                 />
                 <p className="ml-2 lg:hidden">Dark Mode</p>
               </div>
@@ -114,7 +114,7 @@ const Navbar = ({ theme, setTheme }) => {
                 <Icon
                   path={mdiWhiteBalanceSunny}
                   size={1}
-                  className="text-light-primary inline-block"
+                  className="inline-block text-light-primary"
                 />
                 <p className="ml-2 lg:hidden">Light Mode</p>
               </div>
