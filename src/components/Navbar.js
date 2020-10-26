@@ -8,7 +8,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   // open and close mobile nav
-  const handleOpen = e => {
+  const handleOpen = () => {
     open ? setOpen(false) : setOpen(true);
   };
 
