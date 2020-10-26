@@ -47,7 +47,6 @@ h5 {
 }
 ::-webkit-scrollbar-thumb {
   @apply bg-gray-800;
-  @apply rounded-full;
 }
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-gray-900;
