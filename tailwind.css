@@ -59,7 +59,7 @@ h5 {
 }
 
 #navigation > :not(:last-child) {
-  @apply mr-6;
+  @apply mr-2;
 }
 
 @media (max-width: 1024px) {
