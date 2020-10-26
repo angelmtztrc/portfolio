@@ -6,11 +6,11 @@ import Layout from '../containers/Layout';
 
 const IndexPage = () => (
   <Layout>
-    <main className="px-8 lg:px-0 container mx-auto my-auto">
-      <div className="py-6 flex justify-center items-center">
-        <div className="grid grid-cols-2 gap-12 lg:gap-10">
-          <div className="col-span-2 lg:col-span-1 flex flex-col justify-center text-dark-primary dark:text-light-primary">
-            <h1 className="text-3xl lg:text-4xl font-bold mb-4">
+    <main className="container mx-auto my-auto px-8 lg:px-0">
+      <div className="flex items-center justify-center py-6">
+        <div className="grid gap-12 grid-cols-2 lg:gap-10">
+          <div className="flex flex-col col-span-2 justify-center text-dark-primary lg:col-span-1">
+            <h1 className="mb-4 text-3xl font-bold lg:text-4xl">
               Hi, I'm Angel Martinez!
             </h1>
             <p className="text-base lg:text-lg">
@@ -18,10 +18,10 @@ const IndexPage = () => (
               of experience mainly working in both Front-end and Back-end
               JavaScript environments. I currently live in Coah, Mexico.
             </p>
-            <div></div>
+            <div>{/* TODO: add icons */}</div>
           </div>
           <div className="col-span-2 lg:col-span-1">
-            <WelcomeIcon className="w-full h-64 lg:h-full  object-cover" />
+            <WelcomeIcon className="w-full h-64 object-cover lg:h-full" />
           </div>
         </div>
       </div>

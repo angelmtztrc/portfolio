@@ -25,6 +25,7 @@
   font-display: swap;
 }
 
+/* Globals */
 body {
   @apply font-body;
 }
@@ -37,6 +38,22 @@ h5 {
   @apply font-display;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-light-primary;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-800;
+  @apply rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-900;
+}
+
+/* Navigation */
 #navigation a {
   @apply font-display;
 }
