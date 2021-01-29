@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
+
+html {
+  font-family: 'Roboto Slab', serif;
+}
+
 @tailwind utilities;
