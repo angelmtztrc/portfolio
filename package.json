@@ -1,6 +1,10 @@
 {
-  "name": "with-typescript",
+  "name": "portfolio",
   "version": "1.0.0",
+  "author": {
+    "name": "Angel Martinez",
+    "email": "angel.martineztrc@gmail.com"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",
