@@ -2660,6 +2660,11 @@ neo-async@^2.5.0, neo-async@^2.6.1, neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
+next-themes@^0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/next-themes/-/next-themes-0.0.10.tgz#86fe5f8a4654416f5d9157993217180174e582b8"
+  integrity sha512-YapL2GVJDooOuGYCYyCywYXRMpulBngG5Qay/HkMK9RyL9xOZ6C3vEgac2dzLWpo3uDVlk+0Qc9XgwGfLHwq/w==
+
 next-tick@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
@@ -2718,6 +2723,13 @@ next@latest:
     webpack-sources "1.4.3"
   optionalDependencies:
     sharp "0.26.3"
+
+nightwind@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/nightwind/-/nightwind-1.1.4.tgz#3e23faedb68d4c86d515972cb8e01f54cf7a1378"
+  integrity sha512-O0bRVgYuBKk8kl49pb/zxl9DiKD6dIrlESvEDMmTSrSAaKwiDPtaFUPst8iE+tmXY+Sd0ecbRaRg/xsI9uq23w==
+  dependencies:
+    tailwindcss "^2.0.0"
 
 node-abi@^2.7.0:
   version "2.19.3"
@@ -4043,7 +4055,7 @@ tailwindcss@^1.8.13:
     reduce-css-calc "^2.1.6"
     resolve "^1.14.2"
 
-tailwindcss@^2.0.2:
+tailwindcss@^2.0.0, tailwindcss@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-2.0.2.tgz#28e1573d29dd4547b26782facb05bcfaa92be366"
   integrity sha512-nO9JRE1pO7SF9RnYAl6g7uzeHdrmKAFqNjT9NtZUfxqimJZAOOLOEyIEUiMq12+xIc7mC2Ey3Vf90XjHpWKfbw==
