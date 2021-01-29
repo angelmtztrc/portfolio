@@ -1,21 +1,41 @@
-# Angel Martinez Portfolio - Gatsby
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fc44d268-2b93-4aa4-9aff-027cb341775a/deploy-status)](https://app.netlify.com/sites/angel-codes/deploys)
+# TypeScript Next.js example
 
-This is my own website made with Gatsby.
+This is a really simple project that shows the usage of Next.js with TypeScript.
 
-## Setting up
+## Deploy your own
 
-This section is for the steps to use or run the project or application.
+Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
 
-## This project use
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript&project-name=with-typescript&repository-name=with-typescript)
 
-All the important library's that the project use.
+## How to use it?
 
-- Gatsby
-- Tailwind CSS
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
 
-## Contributing
+```bash
+npx create-next-app --example with-typescript with-typescript-app
+# or
+yarn create next-app --example with-typescript with-typescript-app
+```
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate.
+Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
 
-[MIT LICENSE](LICENSE) - Angel Martinez
+## Notes
+
+This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
+
+```
+npm install --save-dev typescript
+```
+
+To enable TypeScript's features, we install the type declarations for React and Node.
+
+```
+npm install --save-dev @types/react @types/react-dom @types/node
+```
+
+When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
+
+Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
+
+A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
