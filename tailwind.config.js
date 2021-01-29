@@ -3,6 +3,15 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
+      container: {
+        padding: {
+          DEFAULT: '1rem',
+          sm: '2rem',
+          md: '4rem',
+          lg: '8rem',
+          xl: '10rem'
+        }
+      },
       colors: {
         primary: {
           300: '#ffffff',
