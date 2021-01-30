@@ -3,6 +3,7 @@ import Head from 'next/head';
 
 // components
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 type Props = {
   children?: ReactNode;
@@ -19,6 +20,7 @@ const Layout = ({ children, title = 'Portfolio' }: Props) => {
       </Head>
       <Header />
       {children}
+      <Footer />
     </div>
   );
 };

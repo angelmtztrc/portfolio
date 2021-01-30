@@ -1,9 +1,12 @@
 // containers
 import Layout from '../containers/Layout';
 
+// components
+import Welcome from '../components/home/Welcome';
+
 const IndexPage = () => (
   <Layout title={'Home'}>
-    <h1>Hello World!</h1>
+    <Welcome />
   </Layout>
 );
 
