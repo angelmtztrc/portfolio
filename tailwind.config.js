@@ -27,6 +27,10 @@ module.exports = {
           400: '#005274',
           500: '#003050'
         }
+      },
+      fontFamily: {
+        sans: ['Open Sans', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace']
       }
     }
   },
