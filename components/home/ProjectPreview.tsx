@@ -13,7 +13,7 @@ const ProjectPreview = () => {
         <div className="p-6 w-full h-full bg-gray-100 border border-blue-200 shadow-lg">
           <div className="flex items-center">
             <p className="text-gray-900 font-sans text-xl font-bold">
-              MERNTask Project
+              Recipes Network
             </p>
             <div className="flex items-center ml-4 space-x-2">
               <a href="#">

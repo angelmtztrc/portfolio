@@ -1,4 +1,4 @@
-import ProjectPreview from '../ProjectPreview';
+import ProjectPreview from './ProjectPreview';
 import SubHeading from '../SubHeading';
 
 const Projects = () => {
