@@ -15,8 +15,6 @@
     "@tabler/icons": "^1.39.1",
     "autoprefixer": "^10.2.4",
     "next": "latest",
-    "next-themes": "^0.0.10",
-    "nightwind": "^1.1.4",
     "postcss": "^8.2.4",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
