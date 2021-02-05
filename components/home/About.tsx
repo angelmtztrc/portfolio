@@ -1,4 +1,14 @@
 import Image from 'next/image';
+import Icon from '@mdi/react';
+import {
+  mdiEmail,
+  mdiGithub,
+  mdiLanguageJavascript,
+  mdiLanguageTypescript,
+  mdiNodejs,
+  mdiReact,
+  mdiTwitter
+} from '@mdi/js';
 
 // components
 import SubHeading from '../SubHeading';
@@ -23,7 +33,32 @@ const About = () => {
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Voluptatum, iste!
             </p>
-            {/* TODO: Icons here */}
+            <ul className="flex items-center mt-6 space-x-4">
+              <li>
+                <a href="#">
+                  <Icon
+                    className="w-8 h-8 text-blue-500 hover:text-blue-600"
+                    path={mdiTwitter}
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <Icon
+                    className="w-8 h-8 text-blue-500 hover:text-blue-600"
+                    path={mdiGithub}
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <Icon
+                    className="w-8 h-8 text-blue-500 hover:text-blue-600"
+                    path={mdiEmail}
+                  />
+                </a>
+              </li>
+            </ul>
           </div>
           <div className="col-span-1 px-20">
             <Image
@@ -35,7 +70,28 @@ const About = () => {
           </div>
         </div>
         <ul className="flex items-center justify-around mt-28">
-          {/* TODO: SOME ICONS HERE */}
+          <li className="text-center">
+            <Icon
+              className="w-28 h-28 text-gray-600"
+              path={mdiLanguageJavascript}
+            />
+            <p className="text-gray-700 font-mono text-base">JavaScript</p>
+          </li>
+          <li className="text-center">
+            <Icon className="w-28 h-28 text-gray-600" path={mdiReact} />
+            <p className="text-gray-700 font-mono text-base">React.js</p>
+          </li>
+          <li className="text-center">
+            <Icon
+              className="w-28 h-28 text-gray-600"
+              path={mdiLanguageTypescript}
+            />
+            <p className="text-gray-700 font-mono text-base">TypeScript</p>
+          </li>
+          <li className="text-center">
+            <Icon className="w-28 h-28 text-gray-600" path={mdiNodejs} />
+            <p className="text-gray-700 font-mono text-base">Node.js</p>
+          </li>
         </ul>
       </div>
     </section>

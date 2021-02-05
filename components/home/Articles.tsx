@@ -1,4 +1,3 @@
-import { IconFileText } from '@tabler/icons';
 import ArticlePreview from '../ArticlePreview';
 
 const Articles = () => {
@@ -7,11 +6,6 @@ const Articles = () => {
       <div className="container mx-auto">
         <div>
           <h2 className="flex items-center space-x-4">
-            <IconFileText
-              className="text-primary-600 w-12 h-12"
-              stroke={1.5}
-              strokeLinejoin={'round'}
-            />
             <span className="text-primary-600 text-4xl font-medium">
               Articles
             </span>
