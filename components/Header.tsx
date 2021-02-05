@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Header = () => {
   return (
-    <header className="absolute top-0 py-4 w-full bg-primary-500">
+    <header className="absolute top-0 py-4 w-full">
       <div className="container flex items-center justify-between mx-auto">
         <div className="text-primary-100">
           <span className="font-sans font-bold">LOGO</span>

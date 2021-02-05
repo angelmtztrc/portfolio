@@ -1,63 +1,25 @@
-import Image from 'next/image';
-import { IconBrandTwitter, IconBrandGithub, IconSend } from '@tabler/icons';
-
 const Welcome = () => {
   return (
-    <section className="mt-28">
-      <div className="container mx-auto pb-24 pt-8">
-        <div className="grid gap-10 grid-cols-2">
-          <div className="flex col-span-2 items-center lg:col-span-1">
-            <div className="-mt-10">
-              <h1 className="text-primary-600 leading-relaxed">
-                <span className="text-2xl font-medium">Hello, I'm</span>
-                <br />
-                <span className="text-5xl font-bold">Angel Martinez</span>
-              </h1>
-              <p className="mt-4 text-gray-500 lg:w-4/5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatem eveniet placeat itaque non porro dolore quaerat
-                repellendus. Earum, optio fugiat?
-              </p>
-              <ul className="flex items-center mt-4 space-x-4">
-                <li>
-                  <a href="https://twitter.com/angelmtztrc" target="_blank">
-                    <IconBrandTwitter
-                      className="text-primary-600 w-5 h-5"
-                      stroke={1.5}
-                      strokeLinejoin={'round'}
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/angelmtztrc" target="_blank">
-                    <IconBrandGithub
-                      className="text-primary-600 w-5 h-5"
-                      stroke={1.5}
-                      strokeLinejoin={'round'}
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:angel.martineztrc@gmail.com">
-                    <IconSend
-                      className="text-primary-600 w-5 h-5"
-                      stroke={1.5}
-                      strokeLinejoin={'round'}
-                    />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="col-span-2 lg:col-span-1">
-            <Image
-              src="/welcome.svg"
-              layout="responsive"
-              width="auto"
-              height="auto"
-            />
-          </div>
-        </div>
+    <section className="flex items-center justify-center min-h-screen">
+      <div className="container mx-auto">
+        <h1 className="font-sans">
+          <span className="text-primary-100 block text-xl">Hello, I'm</span>
+          <span className="text-primary-100 block text-6xl font-extrabold">
+            Angel Martinez
+          </span>
+          <span className="block mt-2 text-primary-300 text-6xl font-extrabold">
+            I'm a JavaScript Developer
+          </span>
+        </h1>
+        <p className="mt-4 w-2/5 text-primary-300">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus
+          odio eos quis nobis ratione delectus esse at magnam numquam
+          perspiciatis.
+        </p>
+        {/* TODO: Create a custom class for buttons */}
+        <a className="text-secondary-100 hover:bg-secondary-100 border-secondary-100 inline-block mt-4 px-4 py-2 hover:text-primary-500 font-sans border">
+          Get in touch
+        </a>
       </div>
     </section>
   );
