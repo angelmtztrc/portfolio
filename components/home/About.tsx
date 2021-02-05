@@ -25,7 +25,7 @@ const About = () => {
             </p>
             {/* TODO: Icons here */}
           </div>
-          <div className="col-span-1 px-24">
+          <div className="col-span-1 px-20">
             <Image
               src="/about-illustration.svg"
               layout="responsive"
