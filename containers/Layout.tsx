@@ -17,6 +17,7 @@ const Layout = ({ children, title = 'Portfolio' }: Props) => {
         <title>{`Angel Martinez | ${title}`}</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
       {children}
