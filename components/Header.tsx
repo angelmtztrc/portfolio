@@ -1,34 +1,43 @@
 import Link from 'next/link';
-import ToggleDark from './ToggleDark';
 
 const Header = () => {
   return (
-    <header>
-      <div className="container flex items-center justify-between mx-auto py-4">
-        <Link href="/">
-          <div className="bg-primary-600 inline-block p-2 cursor-pointer">
-            <span className="text-primary-300 text-lg font-bold uppercase">
-              am
-            </span>
-          </div>
-        </Link>
-        <nav className="flex items-center space-x-6">
-          <Link href="/about">
-            <a className="text-primary-600 hover:border-primary-600 main__transition text-base font-medium border-b-2 border-transparent">
-              About
+    <header className="absolute top-0 py-4 w-full bg-primary-500">
+      <div className="container flex items-center justify-between mx-auto">
+        <div className="text-primary-100">
+          <span className="font-sans font-bold">LOGO</span>
+        </div>
+        <nav className="text-sm space-x-4">
+          <Link href="/">
+            <a className="font-mono">
+              <span className="text-secondary-100">01.</span>
+              <span className="text-primary-100">About</span>
             </a>
           </Link>
-          <Link href="/blog">
-            <a className="text-primary-600 hover:border-primary-600 main__transition text-base font-medium border-b-2 border-transparent">
-              Blog
+          <Link href="/">
+            <a className="font-mono">
+              <span className="text-secondary-100">02.</span>
+              <span className="text-primary-100">Experience</span>
             </a>
           </Link>
-          <Link href="/contact">
-            <a className="text-primary-600 hover:border-primary-600 main__transition text-base font-medium border-b-2 border-transparent">
-              Contact
+          <Link href="/">
+            <a className="font-mono">
+              <span className="text-secondary-100">03.</span>
+              <span className="text-primary-100">Projects</span>
             </a>
           </Link>
-          <ToggleDark />
+          <Link href="/">
+            <a className="font-mono">
+              <span className="text-secondary-100">04.</span>
+              <span className="text-primary-100">Blog</span>
+            </a>
+          </Link>
+          <Link href="/">
+            <a className="font-mono">
+              <span className="text-secondary-100">05.</span>
+              <span className="text-primary-100">Contact</span>
+            </a>
+          </Link>
         </nav>
       </div>
     </header>
