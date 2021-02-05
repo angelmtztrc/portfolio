@@ -11,15 +11,15 @@ const About = () => {
         <div className="grid gap-10 grid-cols-2">
           <div className="col-span-1 mt-2 space-y-2">
             {/* TODO: Little bio here */}
-            <p className="text-primary-100 text-base">
+            <p className="text-gray-900 text-base">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem modi
             </p>
-            <p className="text-primary-100 text-base">
+            <p className="text-gray-900 text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               et at nisi magnam fuga aliquid tempore veritatis explicabo labore
               reprehenderit.
             </p>
-            <p className="text-primary-100 text-base">
+            <p className="text-gray-900 text-base">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Voluptatum, iste!
             </p>
