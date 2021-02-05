@@ -14,18 +14,24 @@ module.exports = {
       },
       colors: {
         primary: {
-          300: '#ffffff',
-          400: '#f5f6f7',
-          500: '#18191a',
-          600: '#242529'
+          100: '#C0C8DB',
+          200: '#8C94A5',
+          300: '#5B6373',
+          400: '#121017',
+          500: '#0D0B12'
+        },
+        secondary: {
+          100: '#0CC5EC',
+          200: '#009DC3',
+          300: '#00779B',
+          400: '#005274',
+          500: '#003050'
         }
       }
     }
   },
   variants: {
-    extend: {
-      scale: ['focus-within']
-    }
+    extend: {}
   },
-  plugins: [require('nightwind')]
+  plugins: []
 };
