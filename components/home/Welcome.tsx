@@ -17,9 +17,7 @@ const Welcome = () => {
           perspiciatis.
         </p>
         {/* TODO: Create a custom class for buttons */}
-        <a className="inline-block mt-4 px-4 py-2 hover:text-primary-100 text-secondary-100 font-sans hover:bg-secondary-100 border border-secondary-100">
-          Get in touch
-        </a>
+        <a className="button button--primary mt-4">Get in touch</a>
       </div>
     </section>
   );
