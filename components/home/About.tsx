@@ -21,15 +21,15 @@ const About = () => {
         <div className="grid gap-10 grid-cols-2">
           <div className="col-span-1 mt-2 space-y-2">
             {/* TODO: Little bio here */}
-            <p className="text-gray-900 text-base">
+            <p className="text-primary-100 text-base">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem modi
             </p>
-            <p className="text-gray-900 text-base">
+            <p className="text-primary-100 text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               et at nisi magnam fuga aliquid tempore veritatis explicabo labore
               reprehenderit.
             </p>
-            <p className="text-gray-900 text-base">
+            <p className="text-primary-100 text-base">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Voluptatum, iste!
             </p>
@@ -37,7 +37,7 @@ const About = () => {
               <li>
                 <a href="#">
                   <Icon
-                    className="w-8 h-8 text-blue-500 hover:text-blue-600"
+                    className="w-8 h-8 text-secondary-100 hover:text-secondary-200"
                     path={mdiTwitter}
                   />
                 </a>
@@ -45,7 +45,7 @@ const About = () => {
               <li>
                 <a href="#">
                   <Icon
-                    className="w-8 h-8 text-blue-500 hover:text-blue-600"
+                    className="w-8 h-8 text-secondary-100 hover:text-secondary-200"
                     path={mdiGithub}
                   />
                 </a>
@@ -53,7 +53,7 @@ const About = () => {
               <li>
                 <a href="#">
                   <Icon
-                    className="w-8 h-8 text-blue-500 hover:text-blue-600"
+                    className="w-8 h-8 text-secondary-100 hover:text-secondary-200"
                     path={mdiEmail}
                   />
                 </a>
@@ -72,25 +72,25 @@ const About = () => {
         <ul className="flex items-center justify-around mt-28">
           <li className="text-center">
             <Icon
-              className="w-28 h-28 text-gray-600"
+              className="w-28 h-28 text-primary-200"
               path={mdiLanguageJavascript}
             />
-            <p className="text-gray-700 font-mono text-base">JavaScript</p>
+            <p className="text-primary-300 font-mono text-base">JavaScript</p>
           </li>
           <li className="text-center">
-            <Icon className="w-28 h-28 text-gray-600" path={mdiReact} />
-            <p className="text-gray-700 font-mono text-base">React.js</p>
+            <Icon className="w-28 h-28 text-primary-200" path={mdiReact} />
+            <p className="text-primary-300 font-mono text-base">React.js</p>
           </li>
           <li className="text-center">
             <Icon
-              className="w-28 h-28 text-gray-600"
+              className="w-28 h-28 text-primary-200"
               path={mdiLanguageTypescript}
             />
-            <p className="text-gray-700 font-mono text-base">TypeScript</p>
+            <p className="text-primary-300 font-mono text-base">TypeScript</p>
           </li>
           <li className="text-center">
-            <Icon className="w-28 h-28 text-gray-600" path={mdiNodejs} />
-            <p className="text-gray-700 font-mono text-base">Node.js</p>
+            <Icon className="w-28 h-28 text-primary-200" path={mdiNodejs} />
+            <p className="text-primary-300 font-mono text-base">Node.js</p>
           </li>
         </ul>
       </div>

@@ -10,32 +10,32 @@ const Header = () => {
         <nav className="text-sm space-x-4">
           <Link href="/">
             <a className="font-mono">
-              <span className="text-blue-500">01.</span>
-              <span className="text-gray-700">About</span>
+              <span className="text-secondary-100">01.</span>
+              <span className="text-primary-100">About</span>
             </a>
           </Link>
           <Link href="/">
             <a className="font-mono">
-              <span className="text-blue-500">02.</span>
-              <span className="text-gray-700">Experience</span>
+              <span className="text-secondary-100">02.</span>
+              <span className="text-primary-100">Experience</span>
             </a>
           </Link>
           <Link href="/">
             <a className="font-mono">
-              <span className="text-blue-500">03.</span>
-              <span className="text-gray-700">Projects</span>
+              <span className="text-secondary-100">03.</span>
+              <span className="text-primary-100">Projects</span>
             </a>
           </Link>
           <Link href="/">
             <a className="font-mono">
-              <span className="text-blue-500">04.</span>
-              <span className="text-gray-700">Blog</span>
+              <span className="text-secondary-100">04.</span>
+              <span className="text-primary-100">Blog</span>
             </a>
           </Link>
           <Link href="/">
             <a className="font-mono">
-              <span className="text-blue-500">05.</span>
-              <span className="text-gray-700">Contact</span>
+              <span className="text-secondary-100">05.</span>
+              <span className="text-primary-100">Contact</span>
             </a>
           </Link>
         </nav>

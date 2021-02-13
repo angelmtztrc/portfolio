@@ -12,7 +12,7 @@ type Props = {
 
 const Layout = ({ children, title = 'Portfolio' }: Props) => {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-primary-500">
       <Head>
         <title>{`Angel Martinez | ${title}`}</title>
         <meta charSet="UTF-8" />

@@ -15,19 +15,19 @@ const Experience = () => {
             <li className="flex mb-1 space-x-6">
               <div className="flex flex-col items-center justify-center">
                 <Icon
-                  className="w-10 h-10 text-blue-500"
+                  className="w-10 h-10 text-secondary-100"
                   path={mdiSchoolOutline}
                 />
-                <div className="flex-grow mt-1 w-0.5 h-auto bg-blue-500"></div>
+                <div className="flex-grow mt-1 w-0.5 h-auto bg-secondary-100"></div>
               </div>
               <div className="pb-4">
-                <p className="text-gray-600 font-sans text-sm">
+                <p className="text-primary-300 font-sans text-sm">
                   2018 - Present
                 </p>
-                <p className="text-gray-900 text-2xl font-bold">
+                <p className="text-primary-100 text-2xl font-bold">
                   Higher Secondary
                 </p>
-                <p className="mt-2 text-gray-700">
+                <p className="mt-2 text-primary-200">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
                   sapiente hic vel deserunt sed asperiores!
                 </p>
@@ -38,19 +38,19 @@ const Experience = () => {
             <li className="flex mb-1 space-x-6">
               <div className="flex flex-col items-center justify-center">
                 <Icon
-                  className="w-10 h-10 text-blue-500"
+                  className="w-10 h-10 text-secondary-100"
                   path={mdiBriefcaseOutline}
                 />
-                <div className="h-aut0 flex-grow mt-1 w-0.5 bg-blue-500"></div>
+                <div className="h-aut0 flex-grow mt-1 w-0.5 bg-secondary-100"></div>
               </div>
               <div className="pb-4">
-                <p className="text-gray-600 font-sans text-sm">
+                <p className="text-primary-300 font-sans text-sm">
                   2019 - Present
                 </p>
-                <p className="text-gray-900 text-2xl font-bold">
+                <p className="text-primary-100 text-2xl font-bold">
                   Web Developer
                 </p>
-                <p className="mt-2 text-gray-700">
+                <p className="mt-2 text-primary-200">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
                   sapiente hic vel deserunt sed asperiores!
                 </p>

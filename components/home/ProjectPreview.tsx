@@ -10,27 +10,30 @@ const ProjectPreview = () => {
         />
       </div>
       <div className="col-span-1 -ml-16 pr-16 py-6">
-        <div className="p-6 w-full h-full bg-gray-100 border border-blue-200 shadow-lg">
+        <div className="p-6 w-full h-full bg-primary-400 shadow-lg">
           <div className="flex items-center">
-            <p className="text-gray-900 font-sans text-xl font-bold">
+            <p className="text-primary-100 font-sans text-xl font-bold">
               Recipes Network
             </p>
             <div className="flex items-center ml-4 space-x-2">
               <a href="#">
-                <Icon className="w-5 h-5" path={mdiGithub} />
+                <Icon className="w-5 h-5 text-primary-300" path={mdiGithub} />
               </a>
               <a href="#">
-                <Icon className="w-5 h-5" path={mdiOpenInNew} />
+                <Icon
+                  className="w-5 h-5 text-primary-300"
+                  path={mdiOpenInNew}
+                />
               </a>
             </div>
           </div>
-          <p className="mt-4 text-gray-600">
+          <p className="mt-4 text-primary-300">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
             quo culpa magni molestias molestiae architecto quaerat provident
             explicabo perferendis rerum labore laudantium atque, fugiat autem
             consectetur. In atque expedita quos?
           </p>
-          <ul className="flex items-center mt-3 text-blue-500 text-sm space-x-4">
+          <ul className="flex items-center mt-3 text-secondary-100 text-sm space-x-4">
             <li>JavaScript</li>
             <li>NodeJS</li>
           </ul>
