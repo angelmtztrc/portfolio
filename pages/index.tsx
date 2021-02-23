@@ -2,19 +2,39 @@
 import Layout from '../containers/Layout';
 
 // components
-import Welcome from '../components/home/Welcome';
-import About from '../components/home/About';
-import Experience from '../components/home/Experience';
-import Projects from '../components/home/Projects';
-import Articles from '../components/home/Articles';
 
 const IndexPage = () => (
   <Layout title={'Home'}>
-    <Welcome />
-    <About />
-    <Experience />
-    <Projects />
-    <Articles />
+    <section className="flex items-center justify-center min-h-screen">
+      <div className="container grid gap-12 grid-cols-2 mx-auto">
+        <div className="flex flex-col justify-center">
+          <h1 className="font-sans">
+            <span className="block text-gray-900 text-xl">Hello, I'm</span>
+            <span className="block text-red-600 text-6xl font-extrabold">
+              Angel Martinez
+            </span>
+            <span className="block mt-2 text-gray-900 text-3xl font-extrabold">
+              I'm a JavaScript Developer
+            </span>
+          </h1>
+          <p className="mt-4 text-gray-600">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus
+            odio eos quis nobis ratione delectus esse at magnam numquam
+            perspiciatis.
+          </p>
+          <button className="btn btn--primary self-start mt-5">
+            Get in touch
+          </button>
+        </div>
+        <div>
+          <img
+            className="px-10 w-full object-cover"
+            src="/welcome-illustration.svg"
+            alt="Welcome Illustration"
+          />
+        </div>
+      </div>
+    </section>
   </Layout>
 );
 

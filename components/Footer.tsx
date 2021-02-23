@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto py-6">
         <div className="flex flex-wrap-reverse items-center justify-between lg:flex-nowrap lg:space-y-0">
           <div className="flex flex-col items-center justify-center w-full space-y-4 lg:flex-row lg:justify-start lg:w-auto lg:space-x-4 lg:space-y-0">
-            <p className="flex items-center text-primary-100 text-base">
+            <p className="flex items-center text-gray-900 text-base">
               Made with ❤ by Angel Martinez &copy; 2021
             </p>
             <span className="hidden text-primary-200 lg:block">-</span>
