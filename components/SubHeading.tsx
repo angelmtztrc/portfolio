@@ -1,15 +1,15 @@
-export type SubHeading = {
-  number: string;
+export type SubHeadingProps = {
   text: string;
 };
-const SubHeading = ({ number, text }: SubHeading) => {
+const SubHeading = ({ text }: SubHeadingProps) => {
+  const [leftText, rightText]: string[] = text.split(' ');
   return (
-    <h2 className="mb-10 font-mono space-x-1">
-      <span className="text-secondary-100">{number}.</span>
-      <span className="text-primary-100 font-sans text-2xl font-extrabold">
-        {text}
-      </span>
-    </h2>
+    <div className="flex flex-col space-y-2">
+      <h2 className="text-center text-gray-900 text-3xl">
+        {leftText} <span className="font-bold">{rightText}</span>
+      </h2>
+      <div className="self-center w-24 h-1 bg-red-500"></div>
+    </div>
   );
 };
 
