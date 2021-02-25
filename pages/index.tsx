@@ -1,8 +1,9 @@
 // containers
-import SubHeading from '../components/SubHeading';
 import Layout from '../containers/Layout';
 
 // components
+import SubHeading from '../components/SubHeading';
+import Projects from '../components/Projects';
 
 const IndexPage = () => (
   <Layout title={'Home'}>
@@ -36,6 +37,7 @@ const IndexPage = () => (
     <section>
       <div className="container mx-auto">
         <SubHeading text={'Featured Portfolio'} />
+        <Projects />
       </div>
     </section>
   </Layout>
