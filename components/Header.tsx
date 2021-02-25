@@ -7,28 +7,25 @@ const Header = () => {
         <div className="text-gray-900">
           <span className="font-sans font-bold">LOGO</span>
         </div>
-        <nav className="text-sm space-x-4">
+        {/* NAVBAR FOR MOBILE SIZES */}
+        <nav className="hidden text-sm space-x-4 lg:block">
           <Link href="/">
             <a className="font-mono space-x-1">
-              <span className="text-red-600">01.</span>
               <span className="text-gray-900">About</span>
             </a>
           </Link>
           <Link href="/">
             <a className="font-mono space-x-1">
-              <span className="text-red-600">02.</span>
               <span className="text-gray-900">Projects</span>
             </a>
           </Link>
           <Link href="/">
             <a className="font-mono space-x-1">
-              <span className="text-red-600">03.</span>
               <span className="text-gray-900">Blog</span>
             </a>
           </Link>
           <Link href="/">
             <a className="font-mono space-x-1">
-              <span className="text-red-600">04.</span>
               <span className="text-gray-900">Contact</span>
             </a>
           </Link>

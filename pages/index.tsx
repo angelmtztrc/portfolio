@@ -9,7 +9,7 @@ const IndexPage = () => (
   <Layout title={'Home'}>
     <section className="flex items-center justify-center min-h-screen">
       <div className="container grid gap-12 grid-cols-2 mx-auto">
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col col-span-2 justify-center lg:col-span-1">
           <h1 className="font-sans">
             <span className="block text-gray-900 text-xl">Hello, I'm</span>
             <span className="block text-red-500 text-6xl font-extrabold">
@@ -25,7 +25,7 @@ const IndexPage = () => (
             perspiciatis.
           </p>
         </div>
-        <div>
+        <div className="col-span-2 lg:col-span-1">
           <img
             className="px-10 w-full object-cover"
             src="/welcome-illustration.svg"
