@@ -5,6 +5,7 @@ import Layout from '../containers/Layout';
 import SubHeading from '../components/SubHeading';
 import Projects from '../components/Projects';
 import Experience from '../components/Experience';
+import AboutMe from '../components/AboutMe';
 
 const IndexPage = () => (
   <Layout title={'Home'}>
@@ -45,6 +46,17 @@ const IndexPage = () => (
       <div className="container mx-auto">
         <SubHeading text={'My Experience'} />
         <Experience />
+        <AboutMe />
+      </div>
+    </section>
+    <section className="mt-24">
+      <div className="container mx-auto">
+        <SubHeading text={'Latest Articles'} />
+      </div>
+    </section>
+    <section className="mt-24">
+      <div className="container mx-auto">
+        <SubHeading text={'Contact Me'} />
       </div>
     </section>
   </Layout>
