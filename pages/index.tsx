@@ -10,7 +10,7 @@ const IndexPage = () => (
         <div className="flex flex-col justify-center">
           <h1 className="font-sans">
             <span className="block text-gray-900 text-xl">Hello, I'm</span>
-            <span className="block text-red-600 text-6xl font-extrabold">
+            <span className="block text-red-500 text-6xl font-extrabold">
               Angel Martinez
             </span>
             <span className="block mt-2 text-gray-900 text-3xl font-extrabold">
