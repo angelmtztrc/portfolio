@@ -34,4 +34,13 @@
   @apply border-red-500;
 }
 
+.btn.btn--secondary {
+  @apply border border-gray-900;
+  @apply transition-colors duration-500 ease-in-out;
+}
+
+.btn.btn--secondary:hover {
+  @apply text-gray-50 bg-gray-900;
+}
+
 @tailwind utilities;

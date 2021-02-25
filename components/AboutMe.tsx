@@ -12,7 +12,7 @@ const AboutMe = () => {
       </div>
       <div className="font-sans">
         <h3 className="text-gray-900 text-xl">
-          About <span className="font-bold">Me</span>
+          About <span className="text-red-500 font-bold">Me</span>
         </h3>
         <p className="mt-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
@@ -20,9 +20,9 @@ const AboutMe = () => {
           eligendi ducimus explicabo minima velit facilis veritatis ratione id
           mollitia odit. Minus, alias.
         </p>
-        <div>
-          <button>Hire</button>
-          <button>Download CV</button>
+        <div className="flex items-center mt-4 space-x-6">
+          <button className="btn btn--primary">Hire Me</button>
+          <button className="btn btn--secondary">Download CV</button>
         </div>
       </div>
     </div>
