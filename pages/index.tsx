@@ -4,6 +4,7 @@ import Layout from '../containers/Layout';
 // components
 import SubHeading from '../components/SubHeading';
 import Projects from '../components/Projects';
+import Experience from '../components/Experience';
 
 const IndexPage = () => (
   <Layout title={'Home'}>
@@ -38,6 +39,12 @@ const IndexPage = () => (
       <div className="container mx-auto">
         <SubHeading text={'Featured Portfolio'} />
         <Projects />
+      </div>
+    </section>
+    <section className="mt-24">
+      <div className="container mx-auto">
+        <SubHeading text={'My Experience'} />
+        <Experience />
       </div>
     </section>
   </Layout>
