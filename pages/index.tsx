@@ -23,9 +23,6 @@ const IndexPage = () => (
             odio eos quis nobis ratione delectus esse at magnam numquam
             perspiciatis.
           </p>
-          <button className="btn btn--primary self-start mt-5">
-            Get in touch
-          </button>
         </div>
         <div>
           <img
