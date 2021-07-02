@@ -1,3 +1,3 @@
 # Angel Martinez's Portfolio
 
-This is the repository of my own website built with NextJS and TypeScript.
+[WORK IN PROGRESS] My own website built with Next.js and Tailwind CSS.
