@@ -1,46 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700;800&display=swap');
-
-@tailwind base;
-@tailwind components;
-
-.btn {
-  @apply inline-block;
-  @apply text-gray-900 bg-transparent;
-  @apply px-4 py-2;
-  @apply font-sans;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-.btn.btn--primary {
-  @apply border border-gray-900;
-  @apply relative;
-  @apply transition-colors duration-300 ease-in-out;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.btn.btn.btn--primary:hover {
-  @apply text-gray-50 bg-red-500 border-red-500;
+* {
+  box-sizing: border-box;
 }
-
-.btn.btn--primary::after {
-  content: '';
-  @apply w-full h-full box-content;
-  @apply absolute left-0 top-0;
-  @apply border border-gray-900;
-  @apply transition-transform duration-300 ease-in-out;
-  @apply transform -translate-y-1.5 translate-x-1;
-}
-
-.btn.btn--primary:hover:after {
-  @apply transform translate-x-0 translate-y-0;
-  @apply border-red-500;
-}
-
-.btn.btn--secondary {
-  @apply border border-gray-900;
-  @apply transition-colors duration-500 ease-in-out;
-}
-
-.btn.btn--secondary:hover {
-  @apply text-gray-50 bg-gray-900;
-}
-
-@tailwind utilities;
