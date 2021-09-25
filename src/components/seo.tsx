@@ -1,13 +1,18 @@
-import { NextSeo } from 'next-seo';
+import { DefaultSeo } from 'next-seo';
 
 export const SEO = ({}: SEOProps) => {
   return (
-    <NextSeo
+    <DefaultSeo
       title="Angel M. - Portfolio"
       description="Full-Stack Web Developer. #TypeScript"
       openGraph={{
         title: 'Angel M. - Portfolio',
         description: 'Full-Stack Web Developer. #TypeScript',
+        images: [
+          {
+            url: '/images/site.png'
+          }
+        ],
         type: 'website'
       }}
       twitter={{
