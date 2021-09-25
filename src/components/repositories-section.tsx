@@ -9,7 +9,7 @@ export const RepositoriesSection = ({}: RepositoriesSectionProps) => {
         <article className="col-span-2 lg:col-span-1">
           <div className="p-6 bg-raisin-black bg-opacity-50 rounded">
             <img
-              className="mb-6 w-full h-48 rounded object-cover object-center"
+              className="mb-6 w-full h-48 object-cover object-center"
               src="https://dummyimage.com/720x400"
               alt="content"
             />
@@ -17,7 +17,7 @@ export const RepositoriesSection = ({}: RepositoriesSectionProps) => {
               TypeScript
             </h3>
             <h2 className="font-display mb-4 text-white text-lg font-medium">
-              Passgen CLI
+              Recipes Network
             </h2>
             <p className="text-cadet-grey font-body text-base font-light leading-relaxed">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -37,7 +37,7 @@ export const RepositoriesSection = ({}: RepositoriesSectionProps) => {
               TypeScript
             </h3>
             <h2 className="font-display mb-4 text-white text-lg font-medium">
-              Passgen CLI
+              Simple Blog - Next.js
             </h2>
             <p className="text-cadet-grey font-body text-base font-light leading-relaxed">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -57,7 +57,7 @@ export const RepositoriesSection = ({}: RepositoriesSectionProps) => {
               TypeScript
             </h3>
             <h2 className="font-display mb-4 text-white text-lg font-medium">
-              Passgen CLI
+              Sigram Project
             </h2>
             <p className="text-cadet-grey font-body text-base font-light leading-relaxed">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
