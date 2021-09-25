@@ -1,7 +1,7 @@
 export const Footer = ({}: FooterProps) => {
   return (
-    <footer className="container">
-      <div className="flex justify-center py-4">
+    <footer className="container mt-8">
+      <div className="flex justify-center py-6">
         <p className="text-cadet-grey font-body">
           Made with ❤ by{' '}
           <a
