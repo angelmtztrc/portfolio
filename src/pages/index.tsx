@@ -1,6 +1,12 @@
 import { Fragment } from 'react';
-import type { NextPage } from 'next';
+import type { GetStaticProps, NextPage } from 'next';
 import { Tab } from '@headlessui/react';
+
+// graphql queries
+import { HOME_QUERY } from 'graphql/queries';
+
+// libs
+import { request } from 'libs/request';
 
 // components
 import { Header } from 'components/header';
@@ -11,6 +17,7 @@ import { BlogSection } from 'components/blog-section';
 import { EducationSection } from 'components/education-section';
 import { ContactSection } from 'components/contact-section';
 import { Footer } from 'components/footer';
+import { HomePageQueryResponse } from 'interfaces/home-page-query.interface';
 
 const HomePage: NextPage = () => {
   return (
@@ -31,6 +38,17 @@ const HomePage: NextPage = () => {
       <Footer />
     </Fragment>
   );
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+  const { me, allRepositories } = await request<HomePageQueryResponse>({
+    query: HOME_QUERY
+  });
+
+  console.log(me);
+  return {
+    props: {}
+  };
 };
 
 export default HomePage;

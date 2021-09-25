@@ -6,11 +6,11 @@ import { Variables } from 'graphql-request/dist/types';
  * @param {{query: string, variables?: Variables, preview?: boolean}} RequestProps - Object to construct the request
  * @returns Promise<unknown>
  */
-export const request = ({
+export const request = <R extends unknown>({
   query,
   variables,
   preview
-}: RequestProps): Promise<unknown> => {
+}: RequestProps): Promise<R> => {
   const endpoint = preview
     ? `https://graphql.datocms.com/preview`
     : `https://graphql.datocms.com/`;
