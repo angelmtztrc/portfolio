@@ -24,7 +24,6 @@ import { ContactSection } from 'components/contact-section';
 import { Footer } from 'components/footer';
 
 const HomePage: NextPage<HomePageProps> = ({ me }) => {
-  console.log(me);
   return (
     <Fragment>
       <Header me={me} />

@@ -1,4 +1,3 @@
-import { ResponsiveImage } from './responsive-image.interface';
 import { Education } from './education.interface';
 import { Certificate } from './certificate.interface';
 import { Experience } from './experience.interface';
@@ -14,7 +13,10 @@ export interface Me {
   experience: Experience[];
   education: Education[];
   certificates: Certificate[];
+  cover: {
+    url: string;
+  };
   picture: {
-    responsiveImage: ResponsiveImage;
+    url: string;
   };
 }

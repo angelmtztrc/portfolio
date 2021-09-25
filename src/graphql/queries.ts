@@ -10,21 +10,11 @@ export const HOME_QUERY = gql`
       github
       twitter
       linkedin
+      cover {
+        url
+      }
       picture {
-        responsiveImage(
-          imgixParams: { fit: crop, w: 500, h: 500, auto: format }
-        ) {
-          srcSet
-          webpSrcSet
-          sizes
-          src
-          width
-          height
-          aspectRatio
-          alt
-          title
-          base64
-        }
+        url
       }
       experience {
         id
