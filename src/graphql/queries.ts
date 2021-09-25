@@ -4,14 +4,26 @@ export const HOME_QUERY = gql`
   query HomePage {
     me {
       name
+      username
       biography
       email
       github
       twitter
       linkedin
       picture {
-        responsiveImage {
+        responsiveImage(
+          imgixParams: { fit: crop, w: 500, h: 500, auto: format }
+        ) {
+          srcSet
+          webpSrcSet
+          sizes
           src
+          width
+          height
+          aspectRatio
+          alt
+          title
+          base64
         }
       }
       experience {

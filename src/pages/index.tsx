@@ -8,6 +8,11 @@ import { HOME_QUERY } from 'graphql/queries';
 // libs
 import { request } from 'libs/request';
 
+// interfaces
+import { Me } from 'interfaces/me.interface';
+import { Repository } from 'interfaces/repository.interface';
+import { HomePageQueryResponse } from 'interfaces/home-page-query.interface';
+
 // components
 import { Header } from 'components/header';
 import { Menu } from 'components/menu';
@@ -17,12 +22,12 @@ import { BlogSection } from 'components/blog-section';
 import { EducationSection } from 'components/education-section';
 import { ContactSection } from 'components/contact-section';
 import { Footer } from 'components/footer';
-import { HomePageQueryResponse } from 'interfaces/home-page-query.interface';
 
-const HomePage: NextPage = () => {
+const HomePage: NextPage<HomePageProps> = ({ me }) => {
+  console.log(me);
   return (
     <Fragment>
-      <Header />
+      <Header me={me} />
       <Tab.Group>
         <Menu />
         <div className="mt-10">
@@ -40,14 +45,21 @@ const HomePage: NextPage = () => {
   );
 };
 
+type HomePageProps = {
+  me: Me;
+  repositories: Repository[];
+};
+
 export const getStaticProps: GetStaticProps = async () => {
   const { me, allRepositories } = await request<HomePageQueryResponse>({
     query: HOME_QUERY
   });
 
-  console.log(me);
   return {
-    props: {}
+    props: {
+      me,
+      repositories: allRepositories
+    }
   };
 };
 

@@ -1,9 +1,16 @@
+/* eslint-disable jsx-a11y/alt-text */
+import { Image } from 'react-datocms';
 import { GitHub, Twitter, Linkedin } from 'react-feather';
+
+// interfaces
+import { Me } from 'interfaces/me.interface';
 
 // components
 import { Button } from './button';
 
-export const Header = () => {
+export const Header = ({
+  me: { name, username, biography, github, twitter, linkedin, picture }
+}: HeaderProps) => {
   return (
     <header>
       <div
@@ -16,13 +23,9 @@ export const Header = () => {
       <div className="container">
         <div className="flex justify-between w-full">
           <div className="w-1/2">
-            <div
-              style={{
-                backgroundImage:
-                  'url("https://pbs.twimg.com/profile_images/1327018550360375296/z98YV32J_400x400.jpg")'
-              }}
-              className="-mt-24 w-48 h-48 bg-cover bg-center border border-white rounded-full"
-            />
+            <div className="-mt-24 w-48 h-48 bg-cover bg-center border border-white rounded-full overflow-hidden">
+              <Image data={picture.responsiveImage} />
+            </div>
           </div>
           <div className="flex justify-end w-1/2">
             <div className="mt-4">
@@ -31,44 +34,27 @@ export const Header = () => {
           </div>
         </div>
         <section className="mt-6">
-          <h1 className="font-display text-white text-4xl">
-            Angel Martinez
+          <h1 className="text-white font-display text-4xl">
+            {name}
             <span className="block text-cadet-grey font-body text-base font-light">
-              @angelmtztrc
+              @{username}
             </span>
           </h1>
           <div className="mt-4 w-4/5">
-            {/* better bio here */}
-            <p className="text-white font-body font-light">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              eius excepturi nihil tempora fugit libero maxime numquam impedit.
-              Nisi, beatae?
-            </p>
+            <p className="text-white font-body font-light">{biography}</p>
             <ul className="flex mt-4 space-x-4">
               <li className="flex p-2 hover:bg-raisin-black rounded-full cursor-pointer">
-                <a
-                  href="https://github.com/angelmtztrc"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href={github} target="_blank" rel="noreferrer">
                   <GitHub className="w-6 h-6 text-white" />
                 </a>
               </li>
               <li className="flex p-2 hover:bg-raisin-black rounded-full cursor-pointer">
-                <a
-                  href="https://twitter.com/angelmtztrc"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href={twitter} target="_blank" rel="noreferrer">
                   <Twitter className="w-6 h-6 text-white" />
                 </a>
               </li>
               <li className="flex p-2 hover:bg-raisin-black rounded-full cursor-pointer">
-                <a
-                  href="https://www.linkedin.com/in/angelmtztrc/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href={linkedin} target="_blank" rel="noreferrer">
                   <Linkedin className="w-6 h-6 text-white" />
                 </a>
               </li>
@@ -78,4 +64,8 @@ export const Header = () => {
       </div>
     </header>
   );
+};
+
+type HeaderProps = {
+  me: Me;
 };
