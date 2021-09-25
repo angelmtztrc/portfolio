@@ -3,12 +3,26 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '1rem',
+          sm: '4rem',
+          lg: '6rem',
+          xl: '8rem',
+          '2xl': '10rem'
+        }
+      },
       colors: {
         black: '#010101',
         white: '#fffffe',
         'eerie-black': '#16161a',
         'raisin-black': '#242629',
-        'star-command-blue': '#0077B6'
+        'medium-state-blue': '#7f5af0',
+        'cadet-grey': '#94a1b2',
+        'raisin-black': '#242629',
+        'sonic-silver': '#72757e',
+        'medium-sea-green': '#2cb67d'
       },
       fontFamily: {
         body: ['JetBrains Mono', 'monospace']
