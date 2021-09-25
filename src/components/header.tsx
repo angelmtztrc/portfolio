@@ -1,3 +1,6 @@
+import { GitHub, Twitter, Linkedin } from 'react-feather';
+
+// components
 import { Button } from './button';
 
 export const Header = () => {
@@ -18,7 +21,7 @@ export const Header = () => {
                 backgroundImage:
                   'url("https://pbs.twimg.com/profile_images/1327018550360375296/z98YV32J_400x400.jpg")'
               }}
-              className="-mt-28 w-48 h-48 bg-cover bg-center border border-white rounded-full"
+              className="-mt-24 w-48 h-48 bg-cover bg-center border border-white rounded-full"
             />
           </div>
           <div className="flex justify-end w-1/2">
@@ -28,7 +31,6 @@ export const Header = () => {
           </div>
         </div>
         <section className="mt-6">
-          {/* TODO: select good font-families */}
           <h1 className="font-display text-white text-4xl">
             Angel Martinez
             <span className="block text-cadet-grey font-body text-base font-light">
@@ -42,7 +44,35 @@ export const Header = () => {
               eius excepturi nihil tempora fugit libero maxime numquam impedit.
               Nisi, beatae?
             </p>
-            {/* social media links here */}
+            <ul className="flex mt-4 space-x-4">
+              <li className="flex p-2 hover:bg-raisin-black rounded-full cursor-pointer">
+                <a
+                  href="https://github.com/angelmtztrc"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <GitHub className="w-6 h-6 text-white" />
+                </a>
+              </li>
+              <li className="flex p-2 hover:bg-raisin-black rounded-full cursor-pointer">
+                <a
+                  href="https://twitter.com/angelmtztrc"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Twitter className="w-6 h-6 text-white" />
+                </a>
+              </li>
+              <li className="flex p-2 hover:bg-raisin-black rounded-full cursor-pointer">
+                <a
+                  href="https://www.linkedin.com/in/angelmtztrc/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Linkedin className="w-6 h-6 text-white" />
+                </a>
+              </li>
+            </ul>
           </div>
         </section>
       </div>
