@@ -10,6 +10,7 @@ import { ExperienceSection } from 'components/experience-section';
 import { BlogSection } from 'components/blog-section';
 import { EducationSection } from 'components/education-section';
 import { ContactSection } from 'components/contact-section';
+import { Footer } from 'components/footer';
 
 const HomePage: NextPage = () => {
   return (
@@ -27,6 +28,7 @@ const HomePage: NextPage = () => {
           </Tab.Panels>
         </div>
       </Tab.Group>
+      <Footer />
     </Fragment>
   );
 };
