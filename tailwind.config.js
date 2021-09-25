@@ -29,7 +29,8 @@ module.exports = {
         'medium-sea-green': '#2cb67d'
       },
       fontFamily: {
-        body: ['JetBrains Mono', 'monospace']
+        display: ['Fira Code', 'monospace'],
+        body: ['Merriweather Sans', 'sans-serif']
       }
     }
   },

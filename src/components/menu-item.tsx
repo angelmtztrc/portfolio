@@ -11,7 +11,7 @@ export const MenuItem = ({ title }: MenuItemProps) => {
         <Fragment>
           <span
             className={`
-            ${selected ? 'text-white' : 'text-cadet-grey'} font-medium
+            ${selected ? 'text-white' : 'text-cadet-grey'} font-medium font-body
           `}
           >
             {title}

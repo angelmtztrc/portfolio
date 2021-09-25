@@ -29,15 +29,15 @@ export const Header = () => {
         </div>
         <section className="mt-6">
           {/* TODO: select good font-families */}
-          <h1 className="text-white text-4xl">
+          <h1 className="font-display text-white text-4xl">
             Angel Martinez
-            <span className="text-cadet-grey block text-base">
+            <span className="block text-cadet-grey font-body text-base font-light">
               @angelmtztrc
             </span>
           </h1>
           <div className="mt-4 w-4/5">
             {/* better bio here */}
-            <p className="text-white">
+            <p className="text-white font-body font-light">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
               eius excepturi nihil tempora fugit libero maxime numquam impedit.
               Nisi, beatae?
