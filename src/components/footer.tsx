@@ -6,7 +6,7 @@ export const Footer = ({}: FooterProps) => {
           Made with ❤ by{' '}
           <a
             className="text-medium-state-blue hover:underline"
-            href="https://github.com/angel-codes"
+            href="https://github.com/angelmtztrc"
           >
             Angel Martinez
           </a>{' '}
