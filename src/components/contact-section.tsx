@@ -1,9 +1,21 @@
 import { Tab } from '@headlessui/react';
 
+// components
+import { Button } from './button';
+
 export const ContactSection = ({}: ContactSectionProps) => {
   return (
-    <Tab.Panel as="section">
-      <p className="text-white">Contact section</p>
+    <Tab.Panel as="section" className="w-full h-full">
+      <div className="flex flex-col items-center justify-center py-12">
+        <h2 className="text-white text-3xl font-bold capitalize">
+          Get In Touch
+        </h2>
+        <p className="mt-10 w-1/2 text-center text-cadet-grey">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id vitae
+          quasi fuga possimus ab voluptas illo odit totam eaque sint!
+        </p>
+        <Button className="mt-4">Say Hello</Button>
+      </div>
     </Tab.Panel>
   );
 };
