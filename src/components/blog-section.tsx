@@ -6,8 +6,8 @@ export const BlogSection = ({}: BlogSectionProps) => {
     <Tab.Panel as="section">
       {/* Title and description here */}
 
-      <div className="grid gap-6 grid-cols-3">
-        <article className="col-span-1 p-4">
+      <div className="grid gap-6 grid-cols-4 xl:grid-cols-3">
+        <article className="col-span-4 p-4 md:col-span-2 xl:col-span-1">
           <div className="border-2 border-raisin-black rounded overflow-hidden">
             <img
               className="w-full object-cover object-center md:h-36 lg:h-48"
@@ -18,7 +18,7 @@ export const BlogSection = ({}: BlogSectionProps) => {
               <h3 className="text-sonic-silver font-body text-xs font-semibold tracking-widest uppercase">
                 TypeScript
               </h3>
-              <h2 className="font-display mb-3 text-white text-lg font-medium truncate">
+              <h2 className="mb-3 text-white font-display text-lg font-medium truncate">
                 Nest.js - Introduction (Part 1)
               </h2>
               <p className="text-cadet-grey font-body text-base font-light leading-relaxed">
