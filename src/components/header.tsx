@@ -28,6 +28,7 @@ export const Header = ({
             <div className="relative -mt-24 w-48 h-48 bg-cover bg-center border border-white rounded-full overflow-hidden">
               <Image
                 src={picture.url}
+                className="transition-all duration-300 ease-in"
                 placeholder="blur"
                 blurDataURL={picture.url}
                 layout="fill"

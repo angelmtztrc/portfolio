@@ -7,7 +7,7 @@ export const BlogSection = ({}: BlogSectionProps) => {
       {/* Title and description here */}
 
       <div className="grid gap-6 grid-cols-4 xl:grid-cols-3">
-        <article className="col-span-4 p-4 md:col-span-2 xl:col-span-1">
+        <article className="col-span-4 md:col-span-2 xl:col-span-1">
           <div className="border-2 border-raisin-black rounded overflow-hidden">
             <img
               className="w-full object-cover object-center md:h-36 lg:h-48"
