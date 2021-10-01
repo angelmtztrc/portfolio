@@ -25,7 +25,7 @@ export const Header = ({
       <div className="container">
         <div className="flex justify-between w-full">
           <div className="w-1/2">
-            <div className="relative -mt-24 w-48 h-48 bg-cover bg-center border border-white rounded-full overflow-hidden">
+            <div className="relative -mt-24 w-48 h-48 bg-cover bg-center border-2 border-white rounded-full overflow-hidden">
               <Image
                 src={picture.url}
                 className="transition-all duration-300 ease-in"
