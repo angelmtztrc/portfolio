@@ -21,8 +21,8 @@ export const RepositoriesSection = ({
             description
           }) => (
             <article key={id} className="col-span-2 lg:col-span-1">
-              <div className="p-6 bg-raisin-black bg-opacity-50 rounded">
-                <div className="relative mb-6 w-full h-48">
+              <div className="border-2 border-raisin-black rounded overflow-hidden">
+                <div className="relative w-full h-56">
                   <Image
                     src={url}
                     placeholder="blur"
@@ -33,15 +33,17 @@ export const RepositoriesSection = ({
                     className="object-cover object-center"
                   />
                 </div>
-                <h3 className="text-medium-state-blue font-body text-xs font-semibold tracking-widest uppercase">
-                  {name}
-                </h3>
-                <h2 className="mb-4 text-white font-display text-lg font-medium">
-                  {title}
-                </h2>
-                <p className="text-cadet-grey font-body text-base font-light leading-relaxed">
-                  {description}
-                </p>
+                <div className="p-6">
+                  <h3 className="text-medium-state-blue font-body text-xs font-semibold tracking-widest uppercase">
+                    {name}
+                  </h3>
+                  <h2 className="mb-4 text-white font-display text-lg font-medium">
+                    {title}
+                  </h2>
+                  <p className="text-cadet-grey font-body text-base font-light leading-relaxed">
+                    {description}
+                  </p>
+                </div>
               </div>
             </article>
           )
