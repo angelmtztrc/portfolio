@@ -1,13 +1,13 @@
 import { Tab } from '@headlessui/react';
 
 // components
-import { Button } from './button';
+import { Button } from '../button';
 
 export const ContactSection = ({}: ContactSectionProps) => {
   return (
     <Tab.Panel as="section" className="w-full h-full">
       <div className="flex flex-col items-center justify-center py-16">
-        <h2 className="font-display text-white text-3xl font-bold capitalize">
+        <h2 className="text-white font-display text-3xl font-bold capitalize">
           Get In Touch
         </h2>
         <p className="mt-10 w-1/2 text-center text-cadet-grey font-body font-light">
