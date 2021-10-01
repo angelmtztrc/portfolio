@@ -27,7 +27,7 @@ export const BlogSection = ({}: BlogSectionProps) => {
                 Corporis numquam natus deserunt.
               </p>
               <div className="flex flex-wrap items-center mt-2">
-                <a className="inline-flex items-center text-medium-state-blue hover:underline md:mb-2 lg:mb-0">
+                <a className="inline-flex items-center text-medium-state-blue hover:underline cursor-pointer md:mb-2 lg:mb-0">
                   Learn More
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </a>

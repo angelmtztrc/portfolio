@@ -1,74 +1,56 @@
+import Image from 'next/image';
 import { Tab } from '@headlessui/react';
 
-export const RepositoriesSection = ({}: RepositoriesSectionProps) => {
+// interfaces
+import { Repository } from 'interfaces/repository.interface';
+
+export const RepositoriesSection = ({
+  repositories = []
+}: RepositoriesSectionProps) => {
   return (
     <Tab.Panel as="section">
       {/* Title and description here */}
 
       <div className="grid gap-6 grid-cols-2">
-        <article className="col-span-2 lg:col-span-1">
-          <div className="p-6 bg-raisin-black bg-opacity-50 rounded">
-            <img
-              className="mb-6 w-full h-48 object-cover object-center"
-              src="https://dummyimage.com/720x400"
-              alt="content"
-            />
-            <h3 className="text-medium-state-blue font-body text-xs font-semibold tracking-widest uppercase">
-              TypeScript
-            </h3>
-            <h2 className="font-display mb-4 text-white text-lg font-medium">
-              Recipes Network
-            </h2>
-            <p className="text-cadet-grey font-body text-base font-light leading-relaxed">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perferendis sequi voluptate est voluptates nisi natus beatae.
-              Corporis numquam natus deserunt.
-            </p>
-          </div>
-        </article>
-        <article className="col-span-2 lg:col-span-1">
-          <div className="p-6 bg-raisin-black bg-opacity-50 rounded">
-            <img
-              className="mb-6 w-full h-48 rounded object-cover object-center"
-              src="https://dummyimage.com/720x400"
-              alt="content"
-            />
-            <h3 className="text-medium-state-blue font-body text-xs font-semibold tracking-widest uppercase">
-              TypeScript
-            </h3>
-            <h2 className="font-display mb-4 text-white text-lg font-medium">
-              Simple Blog - Next.js
-            </h2>
-            <p className="text-cadet-grey font-body text-base font-light leading-relaxed">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perferendis sequi voluptate est voluptates nisi natus beatae.
-              Corporis numquam natus deserunt.
-            </p>
-          </div>
-        </article>
-        <article className="col-span-2 lg:col-span-1">
-          <div className="p-6 bg-raisin-black bg-opacity-50 rounded">
-            <img
-              className="mb-6 w-full h-48 rounded object-cover object-center"
-              src="https://dummyimage.com/720x400"
-              alt="content"
-            />
-            <h3 className="text-medium-state-blue font-body text-xs font-semibold tracking-widest uppercase">
-              TypeScript
-            </h3>
-            <h2 className="font-display mb-4 text-white text-lg font-medium">
-              Sigram Project
-            </h2>
-            <p className="text-cadet-grey font-body text-base font-light leading-relaxed">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perferendis sequi voluptate est voluptates nisi natus beatae.
-              Corporis numquam natus deserunt.
-            </p>
-          </div>
-        </article>
+        {repositories.map(
+          ({
+            id,
+            picture: { url, alt },
+            category: { name },
+            title,
+            description
+          }) => (
+            <article key={id} className="col-span-2 lg:col-span-1">
+              <div className="p-6 bg-raisin-black bg-opacity-50 rounded">
+                <div className="relative mb-6 w-full h-48">
+                  <Image
+                    src={url}
+                    placeholder="blur"
+                    blurDataURL={url}
+                    layout="fill"
+                    objectFit="cover"
+                    alt={alt}
+                    className="object-cover object-center"
+                  />
+                </div>
+                <h3 className="text-medium-state-blue font-body text-xs font-semibold tracking-widest uppercase">
+                  {name}
+                </h3>
+                <h2 className="mb-4 text-white font-display text-lg font-medium">
+                  {title}
+                </h2>
+                <p className="text-cadet-grey font-body text-base font-light leading-relaxed">
+                  {description}
+                </p>
+              </div>
+            </article>
+          )
+        )}
       </div>
     </Tab.Panel>
   );
 };
 
-type RepositoriesSectionProps = {};
+type RepositoriesSectionProps = {
+  repositories: Repository[];
+};

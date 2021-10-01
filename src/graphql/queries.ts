@@ -28,9 +28,8 @@ export const HOME_QUERY = gql`
         name
       }
       picture {
-        responsiveImage {
-          src
-        }
+        url
+        alt
       }
       description
       github

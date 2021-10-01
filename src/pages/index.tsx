@@ -23,7 +23,7 @@ import { EducationSection } from 'components/education-section';
 import { ContactSection } from 'components/contact-section';
 import { Footer } from 'components/footer';
 
-const HomePage: NextPage<HomePageProps> = ({ me }) => {
+const HomePage: NextPage<HomePageProps> = ({ me, repositories }) => {
   return (
     <Fragment>
       <Header me={me} />
@@ -31,7 +31,7 @@ const HomePage: NextPage<HomePageProps> = ({ me }) => {
         <Menu />
         <div className="mt-10">
           <Tab.Panels className="container mt-10">
-            <RepositoriesSection />
+            <RepositoriesSection repositories={repositories} />
             <BlogSection />
             <ExperienceSection />
             <EducationSection />
