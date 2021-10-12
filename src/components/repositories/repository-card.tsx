@@ -1,16 +1,15 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 // interfaces
-import { Repository } from "interfaces/repository.interface";
+import { Repository } from 'interfaces/repository.interface';
 
 export const RepositoryCard = ({
   repository: {
-    id,
     picture: { url, alt },
     category: { name },
     title,
-    description,
-  },
+    description
+  }
 }: RepositoryCardProps) => {
   return (
     <article className="col-span-2 select-none lg:col-span-1">
