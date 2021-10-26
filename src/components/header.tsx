@@ -50,7 +50,7 @@ export const Header = ({
               @{username}
             </span>
           </h1>
-          <div className="mt-4 w-4/5">
+          <div className="mt-4 w-full lg:w-4/5">
             <p className="text-white font-body font-light">{biography}</p>
             <ul className="flex mt-4 space-x-4">
               <li className="flex p-2 hover:bg-raisin-black rounded-full cursor-pointer">
