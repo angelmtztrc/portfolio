@@ -34,5 +34,18 @@ export const HOME_QUERY = gql`
       description
       github
     }
+    allArticles {
+      id
+      title
+      description
+      link
+      category {
+        name
+      }
+      picture {
+        url
+        alt
+      }
+    }
   }
 `;
