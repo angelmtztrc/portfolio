@@ -11,6 +11,7 @@ import { request } from 'libs/request';
 // interfaces
 import { Me } from 'interfaces/me.interface';
 import { Repository } from 'interfaces/repository.interface';
+import { Article } from 'interfaces/article.interface';
 import { HomePageQueryResponse } from 'interfaces/home-page-query.interface';
 
 // components
@@ -22,7 +23,6 @@ import { BlogSection } from 'components/blog/blog-section';
 import { EducationSection } from 'components/education/education-section';
 import { ContactSection } from 'components/contact/contact-section';
 import { Footer } from 'components/footer';
-import { Article } from 'interfaces/article.interface';
 
 const HomePage: NextPage<HomePageProps> = ({ me, repositories, articles }) => {
   return (
