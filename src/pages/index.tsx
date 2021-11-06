@@ -9,7 +9,7 @@ import { HOME_QUERY } from 'graphql/queries';
 import { request } from 'libs/request';
 
 // interfaces
-import { Me } from 'interfaces/me.interface';
+import { Profile } from 'interfaces/profile.interface';
 import { Repository } from 'interfaces/repository.interface';
 import { Article } from 'interfaces/article.interface';
 import { HomePageQueryResponse } from 'interfaces/home-page-query.interface';
@@ -24,10 +24,14 @@ import { EducationSection } from 'components/education/education-section';
 import { ContactSection } from 'components/contact/contact-section';
 import { Footer } from 'components/footer';
 
-const HomePage: NextPage<HomePageProps> = ({ me, repositories, articles }) => {
+const HomePage: NextPage<HomePageProps> = ({
+  profile,
+  repositories,
+  articles
+}) => {
   return (
     <Fragment>
-      <Header me={me} />
+      <Header profile={profile} />
       <Tab.Group>
         <Menu />
         <div className="mt-10">
@@ -46,20 +50,20 @@ const HomePage: NextPage<HomePageProps> = ({ me, repositories, articles }) => {
 };
 
 type HomePageProps = {
-  me: Me;
+  profile: Profile;
   repositories: Repository[];
   articles: Article[];
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { me, allRepositories, allArticles } =
+  const { profile, allRepositories, allArticles } =
     await request<HomePageQueryResponse>({
       query: HOME_QUERY
     });
 
   return {
     props: {
-      me,
+      profile,
       repositories: allRepositories,
       articles: allArticles
     }

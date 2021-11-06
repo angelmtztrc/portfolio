@@ -1,9 +1,9 @@
 import { Article } from './article.interface';
-import { Me } from './me.interface';
+import { Profile } from './profile.interface';
 import { Repository } from './repository.interface';
 
 export interface HomePageQueryResponse {
-  me: Me;
+  profile: Profile;
   allRepositories: Repository[];
   allArticles: Article[];
 }

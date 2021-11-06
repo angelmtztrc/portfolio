@@ -7,13 +7,22 @@ import {
 } from 'react-feather';
 
 // interfaces
-import { Me } from 'interfaces/me.interface';
+import { Profile } from 'interfaces/profile.interface';
 
 // components
 import { Button } from './button';
 
 export const Header = ({
-  me: { name, username, biography, github, twitter, linkedin, picture, cover }
+  profile: {
+    name,
+    username,
+    biography,
+    github,
+    twitter,
+    linkedin,
+    picture,
+    cover
+  }
 }: HeaderProps) => {
   return (
     <header>
@@ -88,5 +97,5 @@ export const Header = ({
 };
 
 type HeaderProps = {
-  me: Me;
+  profile: Profile;
 };

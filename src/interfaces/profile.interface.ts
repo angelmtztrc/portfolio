@@ -2,7 +2,7 @@ import { Education } from './education.interface';
 import { Certificate } from './certificate.interface';
 import { Experience } from './experience.interface';
 
-export interface Me {
+export interface Profile {
   name: string;
   username: string;
   biography: string;

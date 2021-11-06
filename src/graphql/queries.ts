@@ -2,7 +2,7 @@ import { gql } from 'graphql-request';
 
 export const HOME_QUERY = gql`
   query HomePage {
-    me {
+    profile {
       name
       username
       biography
