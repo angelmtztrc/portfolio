@@ -41,7 +41,7 @@ export const ArticleCard = ({
           <div className="flex flex-wrap items-center mt-2">
             <Link href={link}>
               <a className="inline-flex items-center text-medium-state-blue hover:underline cursor-pointer md:mb-2 lg:mb-0">
-                Learn More
+                Read More
                 <ArrowRight className="ml-2 w-4 h-4" />
               </a>
             </Link>

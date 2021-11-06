@@ -7,7 +7,7 @@ export const ExperienceSection = ({}: ExperienceSectionProps) => {
         <h2 className="text-white font-display text-3xl font-bold capitalize">
           Work In Progress
         </h2>
-        <p className="mt-10 w-1/2 text-center text-cadet-grey font-body font-light">
+        <p className="mt-10 w-full text-center text-cadet-grey font-body font-light md:w-1/2">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id vitae
           quasi fuga possimus ab voluptas illo odit totam eaque sint!
         </p>
