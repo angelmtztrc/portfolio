@@ -1,5 +1,10 @@
 import Image from 'next/image';
-import { GitHub, Twitter, Linkedin } from 'react-feather';
+import Link from 'next/link';
+import {
+  GitHub as GitHubIcon,
+  Twitter as TwitterIcon,
+  Linkedin as LinkedinIcon
+} from 'react-feather';
 
 // interfaces
 import { Me } from 'interfaces/me.interface';
@@ -54,19 +59,25 @@ export const Header = ({
             <p className="text-white font-body font-light">{biography}</p>
             <ul className="flex mt-4 space-x-4">
               <li className="flex p-2 hover:bg-raisin-black rounded-full cursor-pointer">
-                <a href={github} target="_blank" rel="noreferrer">
-                  <GitHub className="w-6 h-6 text-white" />
-                </a>
+                <Link href={github}>
+                  <a target="_blank" rel="noreferrer">
+                    <GitHubIcon className="w-6 h-6 text-white" />
+                  </a>
+                </Link>
               </li>
               <li className="flex p-2 hover:bg-raisin-black rounded-full cursor-pointer">
-                <a href={twitter} target="_blank" rel="noreferrer">
-                  <Twitter className="w-6 h-6 text-white" />
-                </a>
+                <Link href={twitter}>
+                  <a target="_blank" rel="noreferrer">
+                    <TwitterIcon className="w-6 h-6 text-white" />
+                  </a>
+                </Link>
               </li>
               <li className="flex p-2 hover:bg-raisin-black rounded-full cursor-pointer">
-                <a href={linkedin} target="_blank" rel="noreferrer">
-                  <Linkedin className="w-6 h-6 text-white" />
-                </a>
+                <Link href={linkedin}>
+                  <a target="_blank" rel="noreferrer">
+                    <LinkedinIcon className="w-6 h-6 text-white" />
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>
