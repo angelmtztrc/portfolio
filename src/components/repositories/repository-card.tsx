@@ -1,20 +1,43 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import { GitHub as GitHubIcon, Eye as EyeIcon } from 'react-feather';
 
 // interfaces
 import { Repository } from 'interfaces/repository.interface';
+
+// components
+import { Button } from 'components/button';
 
 export const RepositoryCard = ({
   repository: {
     picture: { url, alt },
     category: { name },
     title,
-    description
+    description,
+    github,
+    preview
   }
 }: RepositoryCardProps) => {
   return (
     <article className="col-span-2 select-none lg:col-span-1">
       <div className="border-2 border-raisin-black rounded overflow-hidden">
-        <div className="relative w-full h-56">
+        <div className="overlay relative w-full h-56">
+          <div className="absolute flex items-center justify-center w-full h-full space-x-2 transition-opacity duration-500 ease-in">
+            <Link href={github}>
+              <a>
+                <Button className="flex items-center space-x-2">
+                  <GitHubIcon className="w-4 h-4" />
+                  <span>GitHub</span>
+                </Button>
+              </a>
+            </Link>
+            {preview && (
+              <Button className="flex items-center space-x-2">
+                <EyeIcon className="w-4 h-4" />
+                <span>Live</span>
+              </Button>
+            )}
+          </div>
           <Image
             src={url}
             placeholder="blur"
@@ -22,7 +45,7 @@ export const RepositoryCard = ({
             layout="fill"
             objectFit="cover"
             alt={alt}
-            className="object-cover object-center"
+            className="object-cover object-center transition-opacity duration-300 ease-in-out"
           />
         </div>
         <div className="p-6">

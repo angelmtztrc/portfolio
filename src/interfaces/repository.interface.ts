@@ -10,4 +10,5 @@ export interface Repository {
   };
   description: string;
   github: string;
+  preview: string;
 }

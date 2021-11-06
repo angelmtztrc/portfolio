@@ -33,6 +33,7 @@ export const HOME_QUERY = gql`
       }
       description
       github
+      preview
     }
     allArticles {
       id
