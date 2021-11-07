@@ -48,5 +48,15 @@ export const HOME_QUERY = gql`
         alt
       }
     }
+    allExperiences {
+      id
+      title
+      description
+      from
+      to
+      company {
+        name
+      }
+    }
   }
 `;

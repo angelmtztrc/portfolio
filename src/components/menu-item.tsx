@@ -5,7 +5,7 @@ export const MenuItem = ({ title }: MenuItemProps) => {
   return (
     <Tab
       as={'li'}
-      className="relative flex flex-1 flex-col items-center px-8 py-2 hover:bg-raisin-black rounded cursor-pointer select-none transition-colors duration-300 ease-in"
+      className="relative flex flex-1 flex-col items-center px-8 py-2 hover:bg-raisin-black rounded  cursor-pointer select-none transition-colors duration-300 ease-in"
     >
       {({ selected }) => (
         <Fragment>

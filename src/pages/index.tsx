@@ -23,11 +23,13 @@ import { BlogSection } from 'components/blog/blog-section';
 import { EducationSection } from 'components/education/education-section';
 import { ContactSection } from 'components/contact/contact-section';
 import { Footer } from 'components/footer';
+import { Experience } from 'interfaces/experience.interface';
 
 const HomePage: NextPage<HomePageProps> = ({
   profile,
   repositories,
-  articles
+  articles,
+  experiences
 }) => {
   return (
     <Fragment>
@@ -38,7 +40,7 @@ const HomePage: NextPage<HomePageProps> = ({
           <Tab.Panels className="container mt-10">
             <RepositoriesSection repositories={repositories} />
             <BlogSection articles={articles} />
-            <ExperienceSection />
+            <ExperienceSection experiences={experiences} />
             <EducationSection />
             <ContactSection />
           </Tab.Panels>
@@ -53,10 +55,11 @@ type HomePageProps = {
   profile: Profile;
   repositories: Repository[];
   articles: Article[];
+  experiences: Experience[];
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { profile, allRepositories, allArticles } =
+  const { profile, allRepositories, allArticles, allExperiences } =
     await request<HomePageQueryResponse>({
       query: HOME_QUERY
     });
@@ -65,7 +68,8 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       profile,
       repositories: allRepositories,
-      articles: allArticles
+      articles: allArticles,
+      experiences: allExperiences
     }
   };
 };
