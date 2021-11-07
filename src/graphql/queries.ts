@@ -58,5 +58,18 @@ export const HOME_QUERY = gql`
         name
       }
     }
+    allCertificates {
+      id
+      url
+      title
+      credentialId
+      picture {
+        url
+        alt
+      }
+      company {
+        name
+      }
+    }
   }
 `;

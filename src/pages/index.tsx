@@ -12,6 +12,8 @@ import { request } from 'libs/request';
 import { Profile } from 'interfaces/profile.interface';
 import { Repository } from 'interfaces/repository.interface';
 import { Article } from 'interfaces/article.interface';
+import { Experience } from 'interfaces/experience.interface';
+import { Certificate } from 'interfaces/certificate.interface';
 import { HomePageQueryResponse } from 'interfaces/home-page-query.interface';
 
 // components
@@ -23,13 +25,13 @@ import { BlogSection } from 'components/blog/blog-section';
 import { EducationSection } from 'components/education/education-section';
 import { ContactSection } from 'components/contact/contact-section';
 import { Footer } from 'components/footer';
-import { Experience } from 'interfaces/experience.interface';
 
 const HomePage: NextPage<HomePageProps> = ({
   profile,
   repositories,
   articles,
-  experiences
+  experiences,
+  certificates
 }) => {
   return (
     <Fragment>
@@ -41,7 +43,7 @@ const HomePage: NextPage<HomePageProps> = ({
             <RepositoriesSection repositories={repositories} />
             <BlogSection articles={articles} />
             <ExperienceSection experiences={experiences} />
-            <EducationSection />
+            <EducationSection certificates={certificates} />
             <ContactSection />
           </Tab.Panels>
         </div>
@@ -56,20 +58,27 @@ type HomePageProps = {
   repositories: Repository[];
   articles: Article[];
   experiences: Experience[];
+  certificates: Certificate[];
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { profile, allRepositories, allArticles, allExperiences } =
-    await request<HomePageQueryResponse>({
-      query: HOME_QUERY
-    });
+  const {
+    profile,
+    allRepositories,
+    allArticles,
+    allExperiences,
+    allCertificates
+  } = await request<HomePageQueryResponse>({
+    query: HOME_QUERY
+  });
 
   return {
     props: {
       profile,
       repositories: allRepositories,
       articles: allArticles,
-      experiences: allExperiences
+      experiences: allExperiences,
+      certificates: allCertificates
     }
   };
 };

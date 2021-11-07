@@ -5,7 +5,10 @@ import { Button } from '../button';
 
 export const ContactSection = ({}: ContactSectionProps) => {
   return (
-    <Tab.Panel as="section" className="w-full h-full">
+    <Tab.Panel
+      as="section"
+      className="w-full h-full focus-visible:outline-none"
+    >
       <div className="flex flex-col items-center justify-center py-16">
         <h2 className="text-white font-display text-3xl font-bold capitalize">
           Get In Touch

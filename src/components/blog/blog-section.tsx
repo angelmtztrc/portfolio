@@ -8,7 +8,7 @@ import { ArticleCard } from './article-card';
 
 export const BlogSection = ({ articles }: BlogSectionProps) => {
   return (
-    <Tab.Panel as="section">
+    <Tab.Panel as="section" className="focus-visible:outline-none">
       <div className="flex flex-col items-center justify-center mb-6">
         <h2 className="mb-4 text-white font-display text-3xl font-bold capitalize">
           Blog
