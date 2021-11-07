@@ -1,8 +1,13 @@
 import { Tab } from '@headlessui/react';
 
+// interfaces
+import { Certificate } from 'interfaces/certificate.interface';
+
+// libs
+import { sortByDate } from 'libs/sort-by-date';
+
 // components
 import { TimelineItem } from 'components/timeline-item';
-import { Certificate } from 'interfaces/certificate.interface';
 import { CertificateCard } from './certificate-card';
 
 export const EducationSection = ({ certificates }: EducationSectionProps) => {
@@ -39,9 +44,14 @@ export const EducationSection = ({ certificates }: EducationSectionProps) => {
             Online Education
           </h3>
           <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {certificates.map(certificate => (
-              <CertificateCard key={certificate.id} certificate={certificate} />
-            ))}
+            {certificates
+              .sort((left, right) => sortByDate(left.issued, right.issued))
+              .map(certificate => (
+                <CertificateCard
+                  key={certificate.id}
+                  certificate={certificate}
+                />
+              ))}
           </div>
         </section>
       </div>

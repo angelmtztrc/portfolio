@@ -3,11 +3,12 @@ export interface Certificate {
   url: string;
   title: string;
   credentialId: string;
+  issued: Date;
   picture: {
     url: string;
     alt: string;
   };
   company: {
     name: string;
-  }
+  };
 }

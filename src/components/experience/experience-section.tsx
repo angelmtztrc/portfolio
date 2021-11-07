@@ -6,6 +6,9 @@ import { Experience } from 'interfaces/experience.interface';
 // components
 import { TimelineItem } from 'components/timeline-item';
 
+// libs
+import { sortByDate } from 'libs/sort-by-date';
+
 export const ExperienceSection = ({ experiences }: ExperienceSectionProps) => {
   return (
     <Tab.Panel as="section" className="focus-visible:outline-none">
@@ -21,10 +24,7 @@ export const ExperienceSection = ({ experiences }: ExperienceSectionProps) => {
 
       <ul>
         {experiences
-          .sort(
-            (left, right) =>
-              new Date(right.from).getTime() - new Date(left.from).getTime()
-          )
+          .sort((left, right) => sortByDate(left.from, right.from))
           .map(({ id, title, from, to, company, description }) => (
             <TimelineItem
               key={id}

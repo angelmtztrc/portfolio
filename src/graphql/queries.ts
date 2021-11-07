@@ -63,6 +63,7 @@ export const HOME_QUERY = gql`
       url
       title
       credentialId
+      issued
       picture {
         url
         alt
