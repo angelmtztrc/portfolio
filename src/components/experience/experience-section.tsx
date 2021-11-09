@@ -24,7 +24,7 @@ export const ExperienceSection = ({ experiences }: ExperienceSectionProps) => {
 
       <ul>
         {experiences
-          .sort((left, right) => sortByDate(left.from, right.from))
+          .sort((left, right) => sortByDate(right.from, left.from))
           .map(({ id, title, from, to, company, description }) => (
             <TimelineItem
               key={id}
