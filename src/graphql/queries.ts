@@ -58,6 +58,13 @@ export const HOME_QUERY = gql`
         name
       }
     }
+    allEducations {
+      id
+      title
+      school
+      from
+      to
+    }
     allCertificates {
       id
       url

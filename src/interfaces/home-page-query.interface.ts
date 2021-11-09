@@ -1,7 +1,8 @@
 import { Profile } from './profile.interface';
+import { Repository } from './repository.interface';
 import { Article } from './article.interface';
 import { Experience } from './experience.interface';
-import { Repository } from './repository.interface';
+import { Education } from './education.interface';
 import { Certificate } from './certificate.interface';
 
 export interface HomePageQueryResponse {
@@ -9,5 +10,6 @@ export interface HomePageQueryResponse {
   allRepositories: Repository[];
   allArticles: Article[];
   allExperiences: Experience[];
+  allEducations: Education[];
   allCertificates: Certificate[];
 }

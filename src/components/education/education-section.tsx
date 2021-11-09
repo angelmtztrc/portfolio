@@ -1,6 +1,7 @@
 import { Tab } from '@headlessui/react';
 
 // interfaces
+import { Education } from 'interfaces/education.interface';
 import { Certificate } from 'interfaces/certificate.interface';
 
 // libs
@@ -10,7 +11,10 @@ import { sortByDate } from 'libs/sort-by-date';
 import { TimelineItem } from 'components/timeline-item';
 import { CertificateCard } from './certificate-card';
 
-export const EducationSection = ({ certificates }: EducationSectionProps) => {
+export const EducationSection = ({
+  educations,
+  certificates
+}: EducationSectionProps) => {
   return (
     <Tab.Panel as="section" className="focus-visible:outline-none">
       <div className="flex flex-col items-center justify-center mb-6">
@@ -25,18 +29,17 @@ export const EducationSection = ({ certificates }: EducationSectionProps) => {
       <div className="space-y-6">
         <section>
           <ul>
-            <TimelineItem
-              from={new Date('5/10/20')}
-              to={new Date('5/10/20')}
-              position={'Software Engineer'}
-              company={'CBTis No. 239'}
-            />
-            <TimelineItem
-              from={new Date('5/10/20')}
-              to={new Date('5/10/20')}
-              position={'Software Engineer'}
-              company={'CBTis No. 239'}
-            />
+            {educations
+              .sort((left, right) => sortByDate(right.from, left.from))
+              .map(({ id, from, to, title, school }) => (
+                <TimelineItem
+                  key={id}
+                  from={from}
+                  to={to}
+                  position={title}
+                  company={school}
+                />
+              ))}
           </ul>
         </section>
         <section>
@@ -60,5 +63,6 @@ export const EducationSection = ({ certificates }: EducationSectionProps) => {
 };
 
 type EducationSectionProps = {
+  educations: Education[];
   certificates: Certificate[];
 };

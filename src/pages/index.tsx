@@ -13,6 +13,7 @@ import { Profile } from 'interfaces/profile.interface';
 import { Repository } from 'interfaces/repository.interface';
 import { Article } from 'interfaces/article.interface';
 import { Experience } from 'interfaces/experience.interface';
+import { Education } from 'interfaces/education.interface';
 import { Certificate } from 'interfaces/certificate.interface';
 import { HomePageQueryResponse } from 'interfaces/home-page-query.interface';
 
@@ -31,6 +32,7 @@ const HomePage: NextPage<HomePageProps> = ({
   repositories,
   articles,
   experiences,
+  educations,
   certificates
 }) => {
   return (
@@ -43,7 +45,10 @@ const HomePage: NextPage<HomePageProps> = ({
             <RepositoriesSection repositories={repositories} />
             <BlogSection articles={articles} />
             <ExperienceSection experiences={experiences} />
-            <EducationSection certificates={certificates} />
+            <EducationSection
+              educations={educations}
+              certificates={certificates}
+            />
             <ContactSection />
           </Tab.Panels>
         </div>
@@ -58,6 +63,7 @@ type HomePageProps = {
   repositories: Repository[];
   articles: Article[];
   experiences: Experience[];
+  educations: Education[];
   certificates: Certificate[];
 };
 
@@ -67,6 +73,7 @@ export const getStaticProps: GetStaticProps = async () => {
     allRepositories,
     allArticles,
     allExperiences,
+    allEducations,
     allCertificates
   } = await request<HomePageQueryResponse>({
     query: HOME_QUERY
@@ -78,6 +85,7 @@ export const getStaticProps: GetStaticProps = async () => {
       repositories: allRepositories,
       articles: allArticles,
       experiences: allExperiences,
+      educations: allEducations,
       certificates: allCertificates
     }
   };
