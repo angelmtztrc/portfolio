@@ -27,16 +27,18 @@ export const RepositoryCard = ({
               <a>
                 <Button className="flex items-center space-x-2">
                   <GitHubIcon className="w-4 h-4" />
-                  <span>GitHub</span>
+                  <span className="font-semibold">GitHub</span>
                 </Button>
               </a>
             </Link>
-            {preview && (
-              <Button className="flex items-center space-x-2">
-                <EyeIcon className="w-4 h-4" />
-                <span>Live</span>
-              </Button>
-            )}
+            <Link href={preview}>
+              <a>
+                <Button className="flex items-center space-x-2">
+                  <EyeIcon className="w-4 h-4" />
+                  <span className="font-semibold">Live</span>
+                </Button>
+              </a>
+            </Link>
           </div>
           <Image
             src={url}
