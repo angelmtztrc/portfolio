@@ -14,8 +14,9 @@ export const ContactSection = ({}: ContactSectionProps) => {
           Get In Touch
         </h2>
         <p className="mt-10 w-full text-center text-cadet-grey font-body font-light md:w-1/2">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id vitae
-          quasi fuga possimus ab voluptas illo odit totam eaque sint!
+          Do you have an idea? An opportunity that match my profile? Feel free
+          to reach me for any collaboration or work opportunities, I&apos;m
+          always open to new challenges.
         </p>
         <Button className="mt-4">Say Hello</Button>
       </div>

@@ -14,8 +14,9 @@ export const BlogSection = ({ articles }: BlogSectionProps) => {
           Blog
         </h2>
         <p className="w-full text-center text-cadet-grey font-body font-light md:w-1/2">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id vitae
-          quasi fuga possimus ab voluptas illo odit totam eaque sint!
+          Sometimes I like to write articles about technologies, most of them
+          are tutorials with the focus of explaining away easier the usage of a
+          particular tool.
         </p>
       </div>
 

@@ -16,8 +16,9 @@ export const RepositoriesSection = ({
           Repositories
         </h2>
         <p className="w-full text-center text-cadet-grey font-body font-light md:w-1/2">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id vitae
-          quasi fuga possimus ab voluptas illo odit totam eaque sint!
+          This website is a clear demonstration of my skills, but maybe is not
+          enough, so here are some of the best projects that I&apos;ve made
+          through my learning.
         </p>
       </div>
 

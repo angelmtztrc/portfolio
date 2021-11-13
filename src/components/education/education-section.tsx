@@ -22,8 +22,9 @@ export const EducationSection = ({
           Education
         </h2>
         <p className="w-full text-center text-cadet-grey font-body font-light md:w-1/2">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id vitae
-          quasi fuga possimus ab voluptas illo odit totam eaque sint!
+          Most of my learning path as a Software Developer has been self-taught,
+          so here you will find most of my certifications alongside my academic
+          studies.
         </p>
       </div>
       <div className="space-y-6">
