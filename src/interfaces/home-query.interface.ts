@@ -5,7 +5,7 @@ import { Experience } from './experience.interface';
 import { Education } from './education.interface';
 import { Certificate } from './certificate.interface';
 
-export interface HomePageQueryResponse {
+export interface HomeQueryResponse {
   profile: Profile;
   allRepositories: Repository[];
   allArticles: Article[];

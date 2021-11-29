@@ -3,7 +3,7 @@ import { DefaultSeo } from 'next-seo';
 export const SEO = ({}: SEOProps) => {
   return (
     <DefaultSeo
-      title="Angel M. - Portfolio"
+      title="Angel Martinez - Portfolio"
       description="Full-Stack Web Developer. #TypeScript"
       openGraph={{
         title: 'Angel M. - Portfolio',

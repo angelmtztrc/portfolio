@@ -15,7 +15,7 @@ import { Article } from 'interfaces/article.interface';
 import { Experience } from 'interfaces/experience.interface';
 import { Education } from 'interfaces/education.interface';
 import { Certificate } from 'interfaces/certificate.interface';
-import { HomePageQueryResponse } from 'interfaces/home-page-query.interface';
+import { HomeQueryResponse } from 'interfaces/home-query.interface';
 
 // components
 import { Header } from 'components/header';
@@ -75,7 +75,7 @@ export const getStaticProps: GetStaticProps = async () => {
     allExperiences,
     allEducations,
     allCertificates
-  } = await request<HomePageQueryResponse>({
+  } = await request<HomeQueryResponse>({
     query: HOME_QUERY
   });
 
