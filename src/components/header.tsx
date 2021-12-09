@@ -53,7 +53,9 @@ export const Header = ({
           </div>
           <div className="flex justify-end w-1/2">
             <div className="mt-4">
-              <Button>Resume</Button>
+              <Button className="hover:bg-medium-state-blue-dark hover:border-medium-state-blue-dark text-white bg-medium-state-blue">
+                Resume
+              </Button>
             </div>
           </div>
         </div>
