@@ -4,12 +4,11 @@ const lighten = (color, value) => Color(color).lighten(value).hex().toString();
 const darken = (color, value) => Color(color).darken(value).hex().toString();
 
 module.exports = {
-  purge: [
+  content: [
     './src/pages/**/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}',
     './src/containers/**/*.{js,ts,jsx,tsx}'
   ],
-  darkMode: false, // or 'media' or 'class'
   mode: process.env.NODE_ENV ? 'jit' : undefined,
   theme: {
     extend: {
