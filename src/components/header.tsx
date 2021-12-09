@@ -34,6 +34,7 @@ export const Header = ({
           layout="fill"
           objectFit="cover"
           alt="Cover picture"
+          priority
         />
       </div>
       <div className="container">
@@ -48,6 +49,7 @@ export const Header = ({
                 layout="fill"
                 objectFit="cover"
                 alt={name}
+                priority
               />
             </div>
           </div>
