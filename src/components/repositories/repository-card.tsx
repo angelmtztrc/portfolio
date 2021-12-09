@@ -24,7 +24,7 @@ export const RepositoryCard = ({
         <div className="overlay relative w-full h-64">
           <div className="absolute flex items-center justify-center w-full h-full space-x-2 transition-opacity duration-500 ease-in">
             <Link href={github}>
-              <a>
+              <a target="_blank" rel="noreferrer">
                 <Button className="flex items-center space-x-2">
                   <GitHubIcon className="w-4 h-4" />
                   <span className="font-semibold">GitHub</span>
@@ -32,7 +32,7 @@ export const RepositoryCard = ({
               </a>
             </Link>
             <Link href={preview}>
-              <a>
+              <a target="_blank" rel="noreferrer">
                 <Button className="flex items-center space-x-2">
                   <EyeIcon className="w-4 h-4" />
                   <span className="font-semibold">Preview</span>
