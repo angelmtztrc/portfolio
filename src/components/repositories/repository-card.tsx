@@ -21,7 +21,7 @@ export const RepositoryCard = ({
   return (
     <article className="col-span-2 select-none lg:col-span-1">
       <div className="border-2 border-raisin-black rounded overflow-hidden">
-        <div className="overlay relative w-full h-56">
+        <div className="overlay relative w-full h-64">
           <div className="absolute flex items-center justify-center w-full h-full space-x-2 transition-opacity duration-500 ease-in">
             <Link href={github}>
               <a>
@@ -35,7 +35,7 @@ export const RepositoryCard = ({
               <a>
                 <Button className="flex items-center space-x-2">
                   <EyeIcon className="w-4 h-4" />
-                  <span className="font-semibold">Live</span>
+                  <span className="font-semibold">Preview</span>
                 </Button>
               </a>
             </Link>
@@ -47,7 +47,7 @@ export const RepositoryCard = ({
             layout="fill"
             objectFit="cover"
             alt={alt}
-            className="object-cover object-center transition-opacity duration-300 ease-in-out"
+            className="object-center transition-opacity duration-300 ease-in-out"
           />
         </div>
         <div className="p-6">

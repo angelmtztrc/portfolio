@@ -18,7 +18,7 @@ export const TimelineItem = ({
           </p>
         </div>
 
-        <div className="relative col-span-12 pb-4 pl-7 border-l-4 border-raisin-black lg:col-span-10">
+        <div className="relative col-span-12 pb-6 pl-7 border-l-4 border-raisin-black lg:col-span-10">
           <span className="left-[-0.35rem] top-[0.6rem] absolute hidden w-2 h-2 bg-medium-state-blue rounded-full lg:inline-block"></span>
           <h3 className="text-lg">
             <span className="text-medium-state-blue font-display">
