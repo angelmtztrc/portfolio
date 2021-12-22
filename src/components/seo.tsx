@@ -6,6 +6,7 @@ export const SEO = ({}: SEOProps) => {
       title="Angel Martinez | Web Developer"
       description="Web Developer. #TypeScript"
       openGraph={{
+        url: 'https://www.angelmtz.dev',
         title: 'Angel Martinez | Web Developer',
         description: 'Web Developer. #TypeScript',
         images: [
@@ -13,7 +14,7 @@ export const SEO = ({}: SEOProps) => {
             url: '/images/og-cover.png'
           }
         ],
-        type: 'website'
+        type: 'website',
       }}
       twitter={{
         handle: '@angelmtztrc',
