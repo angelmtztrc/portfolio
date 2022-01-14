@@ -10,7 +10,7 @@ export const Footer = ({}: FooterProps) => {
           >
             Angel Martinez
           </a>{' '}
-          &copy; 2021
+          &copy; 2022
         </p>
       </div>
     </footer>
