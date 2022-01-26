@@ -20,13 +20,13 @@ export const RepositoryCard = ({
 }: RepositoryCardProps) => {
   return (
     <article className="col-span-2 select-none lg:col-span-1">
-      <div className="border-2 border-raisin-black rounded overflow-hidden">
-        <div className="overlay relative w-full h-64">
-          <div className="absolute flex items-center justify-center w-full h-full space-x-2 transition-opacity duration-500 ease-in">
+      <div className="overflow-hidden rounded border-2 border-raisin-black">
+        <div className="overlay relative h-64 w-full">
+          <div className="absolute flex h-full w-full items-center justify-center space-x-2 transition-opacity duration-500 ease-in">
             <Link href={github}>
               <a target="_blank" rel="noreferrer">
                 <Button className="flex items-center space-x-2">
-                  <GitHubIcon className="w-4 h-4" />
+                  <GitHubIcon className="h-4 w-4" />
                   <span className="font-semibold">GitHub</span>
                 </Button>
               </a>
@@ -34,7 +34,7 @@ export const RepositoryCard = ({
             <Link href={preview}>
               <a target="_blank" rel="noreferrer">
                 <Button className="flex items-center space-x-2">
-                  <EyeIcon className="w-4 h-4" />
+                  <EyeIcon className="h-4 w-4" />
                   <span className="font-semibold">Preview</span>
                 </Button>
               </a>
@@ -51,13 +51,13 @@ export const RepositoryCard = ({
           />
         </div>
         <div className="p-6">
-          <h3 className="text-medium-state-blue font-body text-xs font-semibold tracking-widest uppercase">
+          <h3 className="font-body text-xs font-semibold uppercase tracking-widest text-medium-state-blue">
             {name}
           </h3>
-          <h2 className="mb-4 text-white font-display text-lg font-medium">
+          <h2 className="mb-4 font-display text-lg font-medium text-white">
             {title}
           </h2>
-          <p className="text-cadet-grey font-body text-base font-light leading-relaxed">
+          <p className="font-body text-base font-light leading-relaxed text-cadet-grey">
             {description}
           </p>
         </div>

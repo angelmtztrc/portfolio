@@ -6,7 +6,7 @@ export const Menu = () => {
     <div className="container mt-8">
       <Tab.List
         as="ul"
-        className="flex flex-nowrap pb-4 w-full overflow-x-auto lg:pb-0"
+        className="flex w-full flex-nowrap overflow-x-auto pb-4 lg:pb-0"
       >
         <MenuItem title="Repositories" />
         <MenuItem title="Blog" />

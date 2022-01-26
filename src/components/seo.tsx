@@ -14,7 +14,7 @@ export const SEO = ({}: SEOProps) => {
             url: '/images/og-cover.png'
           }
         ],
-        type: 'website',
+        type: 'website'
       }}
       twitter={{
         handle: '@angelmtztrc',

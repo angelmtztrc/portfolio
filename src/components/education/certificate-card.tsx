@@ -9,8 +9,8 @@ export const CertificateCard = ({
 }: CertificateCardProps) => {
   return (
     <div className="col-span-1">
-      <div className="flex items-center p-4 h-full border-2 border-raisin-black rounded-lg space-x-4">
-        <div className="relative flex-shrink-0 w-16 h-16">
+      <div className="flex h-full items-center space-x-4 rounded-lg border-2 border-raisin-black p-4">
+        <div className="relative h-16 w-16 flex-shrink-0">
           <Image
             src={picture.url}
             placeholder="blur"
@@ -25,12 +25,12 @@ export const CertificateCard = ({
         <div className="flex-grow">
           <Link href={url}>
             <a>
-              <h2 className="text-medium-state-blue hover:underline font-display font-medium">
+              <h2 className="font-display font-medium text-medium-state-blue hover:underline">
                 {title}
               </h2>
             </a>
           </Link>
-          <p className="text-cadet-grey font-body text-base font-light">
+          <p className="font-body text-base font-light text-cadet-grey">
             {company.name} - ID {credentialId}
           </p>
         </div>

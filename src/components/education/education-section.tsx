@@ -17,11 +17,11 @@ export const EducationSection = ({
 }: EducationSectionProps) => {
   return (
     <Tab.Panel as="section" className="focus-visible:outline-none">
-      <div className="flex flex-col items-center justify-center mb-6">
-        <h2 className="mb-4 text-white font-display text-3xl font-bold capitalize">
+      <div className="mb-6 flex flex-col items-center justify-center">
+        <h2 className="mb-4 font-display text-3xl font-bold capitalize text-white">
           Education
         </h2>
-        <p className="w-full text-center text-cadet-grey font-body font-light md:w-1/2">
+        <p className="w-full text-center font-body font-light text-cadet-grey md:w-1/2">
           Most of my learning path as a Software Developer has been self-taught,
           so here you will find most of my certifications alongside my academic
           studies.
@@ -44,10 +44,10 @@ export const EducationSection = ({
           </ul>
         </section>
         <section>
-          <h3 className="mb-4 text-white font-display text-2xl font-bold capitalize">
+          <h3 className="mb-4 font-display text-2xl font-bold capitalize text-white">
             Online Education
           </h3>
-          <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             {certificates
               .sort((left, right) => sortByDate(left.issued, right.issued))
               .map(certificate => (

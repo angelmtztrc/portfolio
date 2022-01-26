@@ -16,7 +16,7 @@ export const ArticleCard = ({
 }: ArticleCardProps) => {
   return (
     <article className="col-span-4 md:col-span-2 xl:col-span-1">
-      <div className="border-2 border-raisin-black rounded overflow-hidden">
+      <div className="overflow-hidden rounded border-2 border-raisin-black">
         <div className="relative md:h-36 lg:h-48">
           <Image
             src={url}
@@ -29,20 +29,20 @@ export const ArticleCard = ({
           />
         </div>
         <div className="p-6">
-          <h3 className="text-sonic-silver font-body text-xs font-semibold tracking-widest uppercase">
+          <h3 className="font-body text-xs font-semibold uppercase tracking-widest text-sonic-silver">
             {name}
           </h3>
-          <h2 className="mb-3 text-white font-display text-lg font-medium truncate">
+          <h2 className="mb-3 truncate font-display text-lg font-medium text-white">
             {title}
           </h2>
-          <p className="text-cadet-grey font-body text-base font-light leading-relaxed">
+          <p className="font-body text-base font-light leading-relaxed text-cadet-grey">
             {description}
           </p>
-          <div className="flex flex-wrap items-center mt-2">
+          <div className="mt-2 flex flex-wrap items-center">
             <Link href={link}>
-              <a className="inline-flex items-center text-medium-state-blue hover:underline cursor-pointer md:mb-2 lg:mb-0">
+              <a className="inline-flex cursor-pointer items-center text-medium-state-blue hover:underline md:mb-2 lg:mb-0">
                 Read More
-                <ArrowRight className="ml-2 w-4 h-4" />
+                <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Link>
           </div>
