@@ -15,7 +15,7 @@
     "dayjs": "^1.10.7",
     "graphql": "^15.6.0",
     "graphql-request": "^3.5.0",
-    "next": "^12.0.7",
+    "next": "^12.1.0",
     "next-seo": "^4.28.1",
     "postcss-focus-visible": "^6.0.1",
     "react": "^18.0.0-rc.0",
