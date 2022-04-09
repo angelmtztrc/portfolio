@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
-  swcMinify: true,
+const nextConfig = {
   reactStrictMode: true,
-  images: {
-    domains: ['www.datocms-assets.com']
-  }
-};
+}
+
+module.exports = nextConfig
