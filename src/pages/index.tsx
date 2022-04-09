@@ -1,7 +1,16 @@
+import { Fragment } from 'react';
 import type { NextPage } from 'next';
 
-const Home: NextPage = () => {
-  return <div>Hello, World!</div>;
+import { Header } from '@components/Layout';
+
+const Home: NextPage<HomeProps> = () => {
+  return (
+    <Fragment>
+      <Header />
+    </Fragment>
+  );
 };
+
+type HomeProps = {};
 
 export default Home;

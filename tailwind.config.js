@@ -18,6 +18,9 @@ module.exports = {
           '2xl': '10rem'
         }
       },
+      backgroundImage: {
+        "graph-pattern": "url('/assets/graph-pattern.svg')"
+      },
       colors: {
         black: '#010101',
         white: '#fffffe',
