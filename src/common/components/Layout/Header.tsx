@@ -1,3 +1,11 @@
+import {
+  GitHub as GitHubIcon,
+  Twitter as TwitterIcon,
+  Linkedin as LinkedInIcon
+} from 'react-feather';
+
+import Button from './Button';
+
 const Header = ({}: HeaderProps) => {
   return (
     <header>
@@ -9,9 +17,7 @@ const Header = ({}: HeaderProps) => {
           </div>
           <div className="flex w-1/2 justify-end">
             <a className="mt-4">
-              <button className="inline-block bg-slate-500 px-4 py-2">
-                Resume
-              </button>
+              <Button className="uppercase tracking-wide">Resume</Button>
             </a>
           </div>
         </div>
@@ -30,8 +36,21 @@ const Header = ({}: HeaderProps) => {
               molestias voluptate, nulla, expedita quaerat!
             </p>
             <ul className="mt-4 flex space-x-4">
-              <li className="text-white">icon</li>
-              <li className="text-white">icon</li>
+              <li>
+                <a className="inline-flex cursor-pointer rounded-full p-2 shadow hover:bg-raisin-black">
+                  <GitHubIcon className="h-6 w-6 text-white" />
+                </a>
+              </li>
+              <li>
+                <a className="inline-flex cursor-pointer rounded-full p-2 shadow hover:bg-raisin-black">
+                  <TwitterIcon className="h-6 w-6 text-white" />
+                </a>
+              </li>
+              <li>
+                <a className="inline-flex cursor-pointer rounded-full p-2 shadow hover:bg-raisin-black">
+                  <LinkedInIcon className="h-6 w-6 text-white" />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
