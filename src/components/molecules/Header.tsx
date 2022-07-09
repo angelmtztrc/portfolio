@@ -49,7 +49,7 @@ const Header = ({}: HeaderProps) => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex cursor-pointer rounded-full p-2 shadow hover:bg-raisin-black"
+                    className="inline-flex cursor-pointer rounded-full p-2 shadow transition-colors duration-300 ease-in hover:bg-raisin-black"
                   >
                     <GitHubIcon className="h-6 w-6 text-slate-50" />
                   </a>
@@ -60,7 +60,7 @@ const Header = ({}: HeaderProps) => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex cursor-pointer rounded-full p-2 shadow hover:bg-raisin-black"
+                    className="inline-flex cursor-pointer rounded-full p-2 shadow transition-colors duration-300 ease-in hover:bg-raisin-black"
                   >
                     <TwitterIcon className="h-6 w-6 text-slate-50" />
                   </a>
@@ -71,7 +71,7 @@ const Header = ({}: HeaderProps) => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex cursor-pointer rounded-full p-2 shadow hover:bg-raisin-black"
+                    className="inline-flex cursor-pointer rounded-full p-2 shadow transition-colors duration-300 ease-in hover:bg-raisin-black"
                   >
                     <LinkedInIcon className="h-6 w-6 text-slate-50" />
                   </a>
