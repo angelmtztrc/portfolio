@@ -28,7 +28,7 @@ const MenuItem = ({ title }: MenuItemProps) => {
           <span
             className={cls(
               selected ? 'bg-indigo-500' : 'bg-transparent',
-              'absolute bottom-0 -mb-0.5 inline-block h-1 w-10 rounded-full transition-colors duration-300 ease-in group-hover:bg-indigo-500 '
+              'absolute bottom-0 -mb-0.5 inline-block h-1 w-10  transition-colors duration-300 ease-in group-hover:bg-indigo-500 '
             )}
           />
         </Fragment>
