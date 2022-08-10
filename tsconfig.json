@@ -17,6 +17,7 @@
     "baseUrl": ".",
     "paths": {
       "@atoms": ["src/components/atoms/index"],
+      "@layouts": ["src/components/layouts/index"],
       "@molecules": ["src/components/molecules/index"],
       "@organisms": ["src/components/organisms/index"],
       "@styles/*": ["src/styles/*"]
