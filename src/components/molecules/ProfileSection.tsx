@@ -28,8 +28,19 @@ const ProfileSection = ({}: ProfileSectionProps) => {
           <LinkedInIcon className="h-6 w-6 text-white" />
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center rounded-lg border border-raisin-black bg-eerie-black p-4">
-        {/* // TODO: technologies */}
+      <div className="flex flex-wrap items-center justify-center gap-2 rounded-lg border border-raisin-black bg-eerie-black p-4">
+        <div className="rounded-lg bg-raisin-black px-4 py-1 font-body text-xs font-light uppercase text-indigo-500">
+          JavaScript
+        </div>
+        <div className="rounded-lg bg-raisin-black px-4 py-1 font-body text-xs font-light uppercase text-indigo-500">
+          TypeScript
+        </div>
+        <div className="rounded-lg bg-raisin-black px-4 py-1 font-body text-xs font-light uppercase text-indigo-500">
+          GraphQL
+        </div>
+        <div className="rounded-lg bg-raisin-black px-4 py-1 font-body text-xs font-light uppercase text-indigo-500">
+          Nest.js
+        </div>
       </div>
     </section>
   );
