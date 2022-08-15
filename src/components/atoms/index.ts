@@ -1,4 +1,3 @@
-export { default as Layout } from './Layout';
-export { default as MenuItem } from './MenuItem';
-export { default as Picture } from './Picture';
-export { default as SectionDescription } from './SectionDescription';
+export { default as Button } from './Button';
+export { default as EducationListItem } from './EducationListItem';
+export { default as ExperienceListItem } from './ExperienceListItem';
