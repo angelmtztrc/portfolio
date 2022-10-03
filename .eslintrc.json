@@ -1,3 +1,38 @@
 {
-  "extends": "next/core-web-vitals"
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "prettier",
+    "jsx-a11y",
+    "react",
+    "react-hooks",
+    "sonarjs"
+  ],
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:sonarjs/recommended",
+    "next/core-web-vitals"
+  ],
+  "rules": {
+    "no-var": "error",
+    "max-lines-per-function": ["warn", 100],
+    "no-param-reassign": "off",
+    "no-useless-constructor": "off",
+    "import/prefer-default-export": "off",
+    "import/extensions": "off",
+    "prettier/prettier": "error",
+    "@typescript-eslint/no-shadow": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-empty-function": "warn",
+    "@typescript-eslint/ban-types": "warn",
+    "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
+    "react/function-component-definition": "off",
+    "react/jsx-props-no-spreading": "off"
+  }
 }
