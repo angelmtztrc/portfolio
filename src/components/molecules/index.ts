@@ -1,0 +1,2 @@
+export { default as Biography } from './Biography';
+export { default as MenuList } from './MenuList';
