@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 
 import { SkillsList, SocialMediaList } from '@atoms';
-import { Biography } from '@molecules';
+import { Biography, Navbar } from '@molecules';
 
 const HomePage: NextPage = () => {
   return (
@@ -14,20 +14,7 @@ const HomePage: NextPage = () => {
           <SkillsList />
         </div>
         <div className="flex flex-col gap-4 lg:col-span-9 lg:-mt-12">
-          <nav className="flex gap-4 rounded-lg border border-dark-900 bg-darken-900 p-5">
-            <button
-              type="button"
-              className="rounded-lg bg-primary-500 px-6 py-3 font-body text-sm font-bold uppercase text-white"
-            >
-              Projects
-            </button>
-            <button
-              type="button"
-              className="rounded-lg bg-darken-900 px-6 py-3 font-body text-sm font-bold uppercase text-greyish-900"
-            >
-              Blog
-            </button>
-          </nav>
+          <Navbar />
           <section className="rounded-lg border border-dark-900 bg-darken-900 p-5">
             <div className="flex items-center gap-2">
               <div className="h-8 w-8 rounded-full bg-secondary-500" />
