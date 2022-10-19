@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
+
+.scroll-bar {
+  @apply scroll-smooth;
+  @apply flex touch-none select-none bg-dark-900 px-1 py-0.5 hover:bg-dark-800;
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.scroll-bar[data-orientation='horizontal'] {
+  @apply h-2.5 flex-col;
+}
+
 @tailwind utilities;
