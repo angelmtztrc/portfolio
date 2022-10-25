@@ -1,10 +1,15 @@
 import { Fira_Code as FiraCode, Merriweather_Sans as MerriweatherSans } from '@next/font/google';
 
-const display = FiraCode();
-const body = MerriweatherSans();
+const display = FiraCode({
+  variable: '--display-font'
+});
+
+const body = MerriweatherSans({
+  variable: '--body-font'
+});
 
 const fonts = () => {
-  return [display.className, body.className].join(' ');
+  return [display.variable, body.variable].join(' ');
 };
 
 export default fonts();
