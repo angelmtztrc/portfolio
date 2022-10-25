@@ -1,4 +1,4 @@
-const SkillsList = () => {
+const AbilitiesList = () => {
   return (
     <section className="rounded-lg border border-dark-900 bg-darken-900 p-5 ">
       <ul className="flex flex-wrap items-center justify-center gap-2">
@@ -15,4 +15,4 @@ const SkillsList = () => {
   );
 };
 
-export default SkillsList;
+export default AbilitiesList;

@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -16,14 +20,38 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@atoms": ["./src/components/atoms/index"],
-      "@layouts": ["./src/components/layouts/index"],
-      "@molecules": ["./src/components/molecules/index"],
-      "@organisms": ["./src/components/organisms/index"],
-      "@styles/*": ["./src/styles/*"],
-      "@utils/*": ["./src/utils/*"]
-    }
+      "@atoms": [
+        "./src/components/atoms/index"
+      ],
+      "@layouts": [
+        "./src/components/layouts/index"
+      ],
+      "@molecules": [
+        "./src/components/molecules/index"
+      ],
+      "@organisms": [
+        "./src/components/organisms/index"
+      ],
+      "@styles/*": [
+        "./src/styles/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
