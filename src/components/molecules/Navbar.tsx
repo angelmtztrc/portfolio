@@ -1,4 +1,6 @@
-import { useRouter } from 'next/router';
+'use client';
+
+import { usePathname } from 'next/navigation';
 import * as ScrollArea from '@radix-ui/react-scroll-area';
 
 import { Button } from '@atoms';
@@ -6,7 +8,7 @@ import { Button } from '@atoms';
 import { menu } from '@utils/menu.util';
 
 const Navbar = () => {
-  const { pathname } = useRouter();
+  const pathname = usePathname();
 
   return (
     <ScrollArea.Root className="w-full overflow-hidden rounded-lg border border-dark-900 bg-darken-900 ">
