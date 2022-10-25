@@ -20,7 +20,8 @@
       "@layouts": ["./src/components/layouts/index"],
       "@molecules": ["./src/components/molecules/index"],
       "@organisms": ["./src/components/organisms/index"],
-      "@styles/*": ["./src/styles/*"]
+      "@styles/*": ["./src/styles/*"],
+      "@utils/*": ["./src/utils/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

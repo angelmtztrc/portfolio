@@ -1,13 +1,6 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "@typescript-eslint",
-    "prettier",
-    "jsx-a11y",
-    "react",
-    "react-hooks",
-    "sonarjs"
-  ],
+  "plugins": ["@typescript-eslint", "prettier", "jsx-a11y", "react", "react-hooks", "sonarjs"],
   "extends": [
     "airbnb",
     "airbnb/hooks",
@@ -33,6 +26,7 @@
     "@typescript-eslint/ban-types": "warn",
     "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
     "react/function-component-definition": "off",
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/anchor-is-valid": "off"
   }
 }
