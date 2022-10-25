@@ -1,20 +1,30 @@
+import { useRouter } from 'next/router';
 import * as ScrollArea from '@radix-ui/react-scroll-area';
 
 import { Button } from '@atoms';
 
+import { menu } from '@utils/menu.util';
+
 const Navbar = () => {
+  const { pathname } = useRouter();
+
   return (
     <ScrollArea.Root className="w-full overflow-hidden rounded-lg border border-dark-900 bg-darken-900 ">
       <ScrollArea.Viewport className="h-full w-full p-5">
         <nav className="flex w-full gap-4">
-          <Button variant="contained" className="px-6 py-3">
-            Projects
-          </Button>
-          {Array.from({ length: 10 }).map((i, idx) => (
-            <Button key={idx} variant="default" className="px-6 py-3">
-              Contact
-            </Button>
-          ))}
+          {menu.map(item => {
+            const isActive = pathname === item.path;
+
+            return (
+              <Button
+                key={item.title}
+                variant={isActive ? 'contained' : 'default'}
+                className="px-6 py-3"
+              >
+                {item.title}
+              </Button>
+            );
+          })}
         </nav>
       </ScrollArea.Viewport>
       <ScrollArea.Scrollbar orientation="horizontal" className="scroll-bar">
