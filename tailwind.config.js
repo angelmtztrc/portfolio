@@ -72,8 +72,8 @@ module.exports = {
         }
       },
       fontFamily: {
-        display: ['Fira Code', 'monospace'],
-        body: ['Merriweather Sans', 'sans-serif']
+        display: ['var(--display-font)', 'monospace'],
+        body: ['var(--body-font)', 'sans-serif']
       }
     }
   },
