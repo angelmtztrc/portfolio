@@ -1,17 +1,26 @@
-const Biography = () => {
+import Image from 'next/image';
+
+import { IUser } from '@interfaces/user.interface';
+
+type BiographyProps = {
+  data: IUser;
+};
+
+const Biography = ({ data }: BiographyProps) => {
   return (
     <section className=" flex flex-col items-center justify-center rounded-lg border border-dark-900 bg-darken-900 p-5 ">
-      <figure className="h-24 w-24 rounded-full bg-secondary-500" />
+      <figure className="relative h-24 w-24 overflow-hidden rounded-full border-2 border-primary-500">
+        <Image src={data.picture.url} alt={data.name} className="object-cover" fill />
+      </figure>
       <h1 className="mt-5 text-center font-display text-2xl font-bold text-white">
-        Angel Martinez
+        {data.name}
         <div className="mt-4 font-body text-sm font-light text-gray-900">
-          <span>Front-end Developer • </span>
-          <span>Coahuila, México</span>
+          <span>{data.role} • </span>
+          <span>{data.location}</span>
         </div>
       </h1>
       <p className="mt-4 text-center font-body text-sm font-light text-gray-900">
-        I&apos;m a self-taught developer, who likes to create interesting projects that can help
-        people do their chores more easy and fast.
+        {data.biography}
       </p>
     </section>
   );
