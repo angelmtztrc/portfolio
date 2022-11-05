@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import * as ScrollArea from '@radix-ui/react-scroll-area';
 
@@ -18,13 +19,11 @@ const Navbar = () => {
             const isActive = pathname === item.path;
 
             return (
-              <Button
-                key={item.title}
-                variant={isActive ? 'contained' : 'default'}
-                className="px-6 py-3"
-              >
-                {item.title}
-              </Button>
+              <Link key={item.title} href={item.path}>
+                <Button variant={isActive ? 'contained' : 'default'} className="px-6 py-3">
+                  {item.title}
+                </Button>
+              </Link>
             );
           })}
         </nav>
