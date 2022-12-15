@@ -1,4 +1,4 @@
-import { IImage } from './image.interface';
+import { IImage } from './image';
 
 export interface IUser {
   name: string;
