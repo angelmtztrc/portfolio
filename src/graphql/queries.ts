@@ -15,3 +15,17 @@ export const GET_USER = gql`
     }
   }
 `;
+
+export const GET_PROJECTS = gql`
+  query GetProject {
+    allProjects {
+      id
+      name
+      description
+      url
+      picture {
+        url
+      }
+    }
+  }
+`;

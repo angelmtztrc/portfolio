@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { IUser } from '@interfaces/user.interface';
+import { IUser } from '@interfaces/user';
 
 type BiographyProps = {
   data: IUser;
@@ -9,7 +9,7 @@ type BiographyProps = {
 const Biography = ({ data }: BiographyProps) => {
   return (
     <section className=" flex flex-col items-center justify-center rounded-lg border border-dark-900 bg-darken-900 p-5 ">
-      <figure className="relative h-24 w-24 overflow-hidden rounded-full border-2 border-primary-500">
+      <figure className="relative h-28 w-28 overflow-hidden rounded-full border-2 border-primary-500">
         <Image src={data.picture.url} alt={data.name} className="object-cover" fill />
       </figure>
       <h1 className="mt-5 text-center font-display text-2xl font-bold text-white">

@@ -6,7 +6,7 @@ import { AbilitiesList, SocialMediaList } from '@atoms';
 import { Biography, Navbar } from '@molecules';
 
 import { GET_USER } from '@graphql/queries';
-import { IUser } from '@interfaces/user.interface';
+import { IUser } from '@interfaces/user';
 import fonts from '@utils/fonts.util';
 import { request } from '@utils/request.util';
 
@@ -36,7 +36,7 @@ const EntryLayout = ({ children }: EntryLayoutProps) => {
               <SocialMediaList />
               <AbilitiesList abilities={data.abilities} />
             </div>
-            <main className="flex flex-col gap-4 lg:col-span-9 lg:-mt-12">
+            <main className="flex flex-col gap-4 pb-12 lg:col-span-9 lg:-mt-12">
               <Navbar />
               {children}
             </main>
