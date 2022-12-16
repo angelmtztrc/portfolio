@@ -8,3 +8,7 @@ export interface IUser {
   abilities: string; // transform?
   picture: IImage;
 }
+
+export interface IGetUserResponse {
+  user: IUser;
+}

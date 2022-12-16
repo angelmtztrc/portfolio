@@ -3,13 +3,11 @@ import { FolderOpenIcon } from '@heroicons/react/24/solid';
 
 import { ProjectItem } from '@atoms';
 
-import { request } from '@utils/request.util';
-import { GET_PROJECTS } from '@graphql/queries';
-import { IProject } from '@interfaces/project';
+import ProjectsService from '@services/projects.service';
 
 const fetcher = async () => {
-  const response = await request<{ allProjects: IProject[] }>({ query: GET_PROJECTS });
-  return response.allProjects;
+  const data = await ProjectsService.findProjects();
+  return data.allProjects;
 };
 
 const HomePage = () => {
