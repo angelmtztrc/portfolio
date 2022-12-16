@@ -1,14 +1,10 @@
+import { PageHeading } from '@atoms';
 import { BriefcaseIcon } from '@heroicons/react/24/solid';
 
 const ExperiencePage = () => {
   return (
     <section className="rounded-lg border border-dark-900 bg-darken-900 p-5">
-      <div className="flex items-center gap-4">
-        <div className="rounded-full bg-purple-500 bg-opacity-10 p-2">
-          <BriefcaseIcon className="h-8 w-8 rounded-full text-primary-400" />
-        </div>
-        <h2 className="font-display text-2xl font-bold text-white">Experience</h2>
-      </div>
+      <PageHeading title="Experience" icon={<BriefcaseIcon />} />
       <ul className="mt-6">
         <li className="relative rounded-t border-l-4 border-primary-500 pl-6 pb-8">
           <span className="absolute top-0 -left-[10px] h-4 w-4 rounded-full bg-primary-500" />
