@@ -1,5 +1,7 @@
+import { Loader } from '@atoms';
+
 const HomeLoading = () => {
-  return <div>Hello, Loading!</div>;
+  return <Loader />;
 };
 
 export default HomeLoading;

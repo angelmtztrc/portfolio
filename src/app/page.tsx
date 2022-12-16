@@ -3,7 +3,7 @@ import { FolderOpenIcon } from '@heroicons/react/24/solid';
 
 import { PageHeading, ProjectItem } from '@atoms';
 
-import ProjectsService from '@services/projects.service';
+import { ProjectsService } from '@services';
 
 const fetcher = async () => {
   const data = await ProjectsService.findProjects();

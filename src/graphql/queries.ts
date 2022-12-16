@@ -29,3 +29,16 @@ export const GET_PROJECTS = gql`
     }
   }
 `;
+
+export const GET_EXPERIENCES = gql`
+  query GetExperiences {
+    allExperiences(orderBy: from_DESC) {
+      id
+      title
+      description
+      company
+      from
+      to
+    }
+  }
+`;
