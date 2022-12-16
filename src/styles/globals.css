@@ -11,4 +11,31 @@
   @apply h-2.5 flex-col;
 }
 
+.loader {
+  @apply relative flex items-center justify-center;
+  @apply h-2 w-full overflow-hidden;
+  @apply rounded;
+}
+
+.loader::before {
+  content: '';
+  @apply absolute top-0 left-0 h-full w-full bg-primary-500 opacity-10;
+}
+
+.loader::after {
+  content: '';
+  @apply h-full w-full rounded bg-primary-500;
+  animation: raceBy 1.6s ease-in-out infinite;
+  transform: translateX(-100%);
+}
+
+@keyframes raceBy {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 @tailwind utilities;

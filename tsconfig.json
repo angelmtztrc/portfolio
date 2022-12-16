@@ -22,7 +22,7 @@
       "@organisms": ["./src/components/organisms/index"],
       "@graphql/*": ["./src/graphql/*"],
       "@interfaces/*": ["./src/interfaces/*"],
-      "@services/*": ["./src/services/*"],
+      "@services": ["./src/services/index"],
       "@styles/*": ["./src/styles/*"],
       "@utils/*": ["./src/utils/*"]
     },

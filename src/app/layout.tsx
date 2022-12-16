@@ -6,7 +6,7 @@ import { AbilitiesList, SocialMediaList } from '@atoms';
 import { Biography, Navbar } from '@molecules';
 
 import fonts from '@utils/fonts.util';
-import UsersService from '@services/users.service';
+import { UsersService } from '@services';
 
 type EntryLayoutProps = {
   children: React.ReactNode;
