@@ -7,3 +7,7 @@ export interface IProject {
   picture: IImage;
   url: string;
 }
+
+export interface IGetProjectsResponse {
+  allProjects: IProject[];
+}

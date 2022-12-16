@@ -5,18 +5,16 @@ import '@styles/globals.css';
 import { AbilitiesList, SocialMediaList } from '@atoms';
 import { Biography, Navbar } from '@molecules';
 
-import { GET_USER } from '@graphql/queries';
-import { IUser } from '@interfaces/user';
 import fonts from '@utils/fonts.util';
-import { request } from '@utils/request.util';
+import UsersService from '@services/users.service';
 
 type EntryLayoutProps = {
   children: React.ReactNode;
 };
 
 const fetcher = async () => {
-  const response = await request<{ user: IUser }>({ query: GET_USER });
-  return response.user;
+  const data = await UsersService.findUser();
+  return data.user;
 };
 
 const EntryLayout = ({ children }: EntryLayoutProps) => {
