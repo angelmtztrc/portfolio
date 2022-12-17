@@ -6,6 +6,7 @@ import { ArrowSmallLeftIcon } from '@heroicons/react/24/solid';
 import { Button } from '@atoms';
 import { ArticlesService } from '@services';
 import Link from 'next/link';
+import { formattedDate } from '@utils/day.util';
 
 const fetcher = async (slug: string) => {
   const data = await ArticlesService.findOneBySlug(slug);
@@ -32,10 +33,13 @@ const ArticlePage = ({ params }: { params: { slug: string } }) => {
         </figure>
         <div className="mt-6 px-12">
           <h1 className="font-display text-4xl font-bold text-white">{data.title}</h1>
-          <div>
-            <ul className="mt-2 flex items-center space-x-2">
+          <div className="mt-4 flex items-center ">
+            <p className="mr-2 font-body text-sm font-light uppercase text-gray-800">
+              {formattedDate(data.createdAt)} -
+            </p>
+            <ul className="flex items-center space-x-2">
               {data.tags.split(',').map(tag => (
-                <li key={tag} className="font-body font-light text-gray-800">
+                <li key={tag} className="font-body font-light text-greyish-800">
                   <span className="text-red-500">#</span>
                   {tag}
                 </li>
