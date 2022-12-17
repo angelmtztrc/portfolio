@@ -31,7 +31,7 @@ const ArticlePage = ({ params }: { params: { slug: string } }) => {
             </Link>
           </div>
           <figure className="relative mt-4 aspect-[16/8] w-full overflow-hidden rounded-lg">
-            <Image src={data.picture.url} alt={data.title} className="object-cover" fill />
+            <Image src={data.picture.url} alt={data.title} className="object-cover" fill priority />
           </figure>
           <div className="mt-6 lg:px-12">
             <h1 className="font-display text-2xl font-bold text-white lg:text-4xl">{data.title}</h1>
