@@ -4,7 +4,7 @@ import { IGetProjectsResponse } from '@interfaces/project';
 import { GraphQLService } from './graphql.service';
 
 class ProjectsService extends GraphQLService {
-  async findProjects() {
+  async find() {
     return this.execute<IGetProjectsResponse>({ query: GET_PROJECTS });
   }
 }

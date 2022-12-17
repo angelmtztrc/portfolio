@@ -4,7 +4,7 @@ import { IGetExperiencesResponse } from '@interfaces/experience';
 import { GraphQLService } from './graphql.service';
 
 class ExperiencesService extends GraphQLService {
-  async findExperiences() {
+  async find() {
     return this.execute<IGetExperiencesResponse>({ query: GET_EXPERIENCES });
   }
 }

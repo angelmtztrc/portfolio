@@ -4,7 +4,7 @@ import { IGetUserResponse } from '@interfaces/user';
 import { GraphQLService } from './graphql.service';
 
 class UsersService extends GraphQLService {
-  async findUser() {
+  async findOne() {
     return this.execute<IGetUserResponse>({ query: GET_USER });
   }
 }
