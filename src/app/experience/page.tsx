@@ -5,6 +5,7 @@ import { PageHeading } from '@atoms';
 
 import { ExperiencesService } from '@services';
 import { formattedDate } from '@utils/day.util';
+import { SectionLayout } from '@layouts';
 
 const fetcher = async () => {
   const data = await ExperiencesService.find();
@@ -16,7 +17,7 @@ const ExperiencePage = () => {
   const data = use(fetcher());
 
   return (
-    <section className="rounded-lg border border-dark-900 bg-darken-900 p-5">
+    <SectionLayout className="p-5">
       <PageHeading title="Experience" icon={<BriefcaseIcon />} />
       <ul className="mt-6">
         {data.map(experience => (
@@ -42,7 +43,7 @@ const ExperiencePage = () => {
           </li>
         ))}
       </ul>
-    </section>
+    </SectionLayout>
   );
 };
 

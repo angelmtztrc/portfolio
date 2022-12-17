@@ -4,6 +4,7 @@ import { FolderOpenIcon } from '@heroicons/react/24/solid';
 import { PageHeading, PostItem } from '@atoms';
 
 import { ProjectsService } from '@services';
+import { SectionLayout } from '@layouts';
 
 const fetcher = async () => {
   const data = await ProjectsService.find();
@@ -14,7 +15,7 @@ const HomePage = () => {
   const data = use(fetcher());
 
   return (
-    <section className="rounded-lg border border-dark-900 bg-darken-900 p-5">
+    <SectionLayout className="p-5">
       <PageHeading title="Projects" icon={<FolderOpenIcon />} />
       <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-3">
         {data.map(project => (
@@ -27,7 +28,7 @@ const HomePage = () => {
           />
         ))}
       </div>
-    </section>
+    </SectionLayout>
   );
 };
 

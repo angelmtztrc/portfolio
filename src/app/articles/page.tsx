@@ -4,6 +4,7 @@ import { PageHeading, PostItem } from '@atoms';
 
 import { ArticlesService } from '@services';
 import { use } from 'react';
+import { SectionLayout } from '@layouts';
 
 const fetcher = async () => {
   const data = await ArticlesService.find();
@@ -14,7 +15,7 @@ const ArticlesPage = () => {
   const data = use(fetcher());
 
   return (
-    <section className="rounded-lg border border-dark-900 bg-darken-900 p-5">
+    <SectionLayout className="p-5">
       <PageHeading title="Articles" icon={<NewspaperIcon />} />
       <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-3">
         {data.map(article => (
@@ -27,7 +28,7 @@ const ArticlesPage = () => {
           />
         ))}
       </div>
-    </section>
+    </SectionLayout>
   );
 };
 
