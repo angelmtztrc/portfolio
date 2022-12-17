@@ -1,10 +1,11 @@
 import { AcademicCapIcon } from '@heroicons/react/24/solid';
 
 import { PageHeading } from '@atoms';
+import { SectionLayout } from '@layouts';
 
 const EducationPage = () => {
   return (
-    <section className="rounded-lg border border-dark-900 bg-darken-900 p-5">
+    <SectionLayout className="p-5">
       <PageHeading title="Education" icon={<AcademicCapIcon />} />
       <ul className="mt-6 grid grid-cols-3 gap-4">
         <li className="rounded-lg border border-dark-900 p-4">
@@ -23,7 +24,7 @@ const EducationPage = () => {
           </figure>
         </li>
       </ul>
-    </section>
+    </SectionLayout>
   );
 };
 
