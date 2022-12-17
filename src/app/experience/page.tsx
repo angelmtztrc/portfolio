@@ -36,7 +36,7 @@ const ExperiencePage = () => {
               <h2 className="font-display font-bold text-white">
                 {experience.title} @ {experience.company}
               </h2>
-              <p className="mt-1 w-3/4 font-body font-light text-greyish-800">
+              <p className="mt-1 font-body font-light text-greyish-800 lg:w-3/4">
                 {experience.description}
               </p>
             </div>

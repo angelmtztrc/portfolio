@@ -19,7 +19,7 @@ const ArticlePage = ({ params }: { params: { slug: string } }) => {
   const data = use(fetcher(params.slug));
 
   return (
-    <SectionLayout className="px-12 py-8">
+    <SectionLayout className="p-5 lg:px-12 lg:py-8">
       <article>
         <header>
           <div>
@@ -33,13 +33,13 @@ const ArticlePage = ({ params }: { params: { slug: string } }) => {
           <figure className="relative mt-4 aspect-[16/8] w-full overflow-hidden rounded-lg">
             <Image src={data.picture.url} alt={data.title} className="object-cover" fill />
           </figure>
-          <div className="mt-6 px-12">
-            <h1 className="font-display text-4xl font-bold text-white">{data.title}</h1>
-            <div className="mt-4 flex items-center ">
-              <p className="mr-2 font-body text-sm font-light uppercase text-gray-800">
-                {formattedDate(data.createdAt)} -
+          <div className="mt-6 lg:px-12">
+            <h1 className="font-display text-2xl font-bold text-white lg:text-4xl">{data.title}</h1>
+            <div className="mt-4 flex flex-col lg:flex-row lg:items-center">
+              <p className="font-body text-sm font-light uppercase text-gray-800 lg:mr-2">
+                {formattedDate(data.createdAt)}
               </p>
-              <ul className="flex items-center space-x-2">
+              <ul className="flex flex-wrap items-center space-x-2">
                 {data.tags.split(',').map(tag => (
                   <li key={tag} className="font-body font-light text-greyish-800">
                     <span className="text-red-500">#</span>
@@ -50,7 +50,7 @@ const ArticlePage = ({ params }: { params: { slug: string } }) => {
             </div>
           </div>
         </header>
-        <div className="prose prose-lg prose-invert mt-12 w-full max-w-full px-12">
+        <div className="prose prose-invert mt-12 w-full max-w-full lg:prose-lg lg:px-12">
           <MarkdownRender>{data.content}</MarkdownRender>
         </div>
       </article>

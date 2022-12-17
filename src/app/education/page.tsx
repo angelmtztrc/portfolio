@@ -7,7 +7,7 @@ const EducationPage = () => {
   return (
     <SectionLayout className="p-5">
       <PageHeading title="Education" icon={<AcademicCapIcon />} />
-      <ul className="mt-6 grid grid-cols-3 gap-4">
+      <ul className="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-3">
         <li className="rounded-lg border border-dark-900 p-4">
           <figure className="aspect-video overflow-hidden rounded-lg">
             <div className="h-full w-full bg-secondary-500" />
