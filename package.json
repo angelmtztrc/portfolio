@@ -13,6 +13,7 @@
     "@heroicons/react": "^2.0.12",
     "@next/font": "^13.0.0",
     "@radix-ui/react-scroll-area": "^1.0.1",
+    "@tailwindcss/line-clamp": "^0.4.2",
     "classnames": "^2.3.2",
     "graphql": "^16.6.0",
     "graphql-request": "^5.0.0",

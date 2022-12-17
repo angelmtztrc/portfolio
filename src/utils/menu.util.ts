@@ -12,8 +12,8 @@ export const menu = [
     path: '/education'
   },
   {
-    title: 'blog',
-    path: '/blog'
+    title: 'articles',
+    path: '/articles'
   },
   {
     title: 'contact',
