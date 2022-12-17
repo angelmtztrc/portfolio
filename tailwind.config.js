@@ -78,5 +78,5 @@ module.exports = {
     }
   },
   // eslint-disable-next-line global-require
-  plugins: [require('@tailwindcss/line-clamp')]
+  plugins: [require('@tailwindcss/line-clamp'), require('@tailwindcss/typography')]
 };

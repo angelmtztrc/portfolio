@@ -84,6 +84,8 @@ export const GET_ARTICLE_BY_SLUG = gql`
   query GetArticle($slug: String!) {
     article(filter: { slug: { eq: $slug } }) {
       slug
+      title
+      tags
       description
       content
       picture {
