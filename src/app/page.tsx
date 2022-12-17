@@ -1,7 +1,7 @@
 import { use } from 'react';
 import { FolderOpenIcon } from '@heroicons/react/24/solid';
 
-import { PageHeading, ProjectItem } from '@atoms';
+import { PageHeading, PostItem } from '@atoms';
 
 import { ProjectsService } from '@services';
 
@@ -18,7 +18,7 @@ const HomePage = () => {
       <PageHeading title="Projects" icon={<FolderOpenIcon />} />
       <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-3">
         {data.map(project => (
-          <ProjectItem
+          <PostItem
             key={project.id}
             title={project.name}
             description={project.description}

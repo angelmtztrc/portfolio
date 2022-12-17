@@ -1,5 +1,9 @@
 import { gql } from 'graphql-request';
 
+/**
+ * USERS
+ */
+
 export const GET_USER = gql`
   query GetUser {
     user {
@@ -16,6 +20,10 @@ export const GET_USER = gql`
   }
 `;
 
+/**
+ * PROJECTS
+ */
+
 export const GET_PROJECTS = gql`
   query GetProject {
     allProjects {
@@ -30,6 +38,10 @@ export const GET_PROJECTS = gql`
   }
 `;
 
+/**
+ * EXPERIENCES
+ */
+
 export const GET_EXPERIENCES = gql`
   query GetExperiences {
     allExperiences(orderBy: from_DESC) {
@@ -39,6 +51,45 @@ export const GET_EXPERIENCES = gql`
       company
       from
       to
+    }
+  }
+`;
+
+/**
+ * ARTICLES
+ */
+
+export const GET_ARTICLES = gql`
+  query GetArticles {
+    allArticles(orderBy: createdAt_DESC) {
+      slug
+      title
+      description
+      picture {
+        url
+      }
+    }
+  }
+`;
+
+export const GET_ARTICLES_SLUGS = gql`
+  query GetArticlesSlugs {
+    allArticles(orderBy: createdAt_DESC) {
+      slug
+    }
+  }
+`;
+
+export const GET_ARTICLE_BY_SLUG = gql`
+  query GetArticle($slug: String!) {
+    article(filter: { slug: { eq: $slug } }) {
+      slug
+      description
+      content
+      picture {
+        url
+      }
+      createdAt
     }
   }
 `;
