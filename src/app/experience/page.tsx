@@ -6,7 +6,7 @@ import { PageHeading } from '@atoms';
 import { ExperiencesService } from '@services';
 
 const fetcher = async () => {
-  const data = await ExperiencesService.findExperiences();
+  const data = await ExperiencesService.find();
 
   return data.allExperiences;
 };

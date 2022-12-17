@@ -6,7 +6,7 @@ import { PageHeading, PostItem } from '@atoms';
 import { ProjectsService } from '@services';
 
 const fetcher = async () => {
-  const data = await ProjectsService.findProjects();
+  const data = await ProjectsService.find();
   return data.allProjects;
 };
 

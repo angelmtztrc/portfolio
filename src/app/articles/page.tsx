@@ -6,7 +6,7 @@ import { ArticlesService } from '@services';
 import { use } from 'react';
 
 const fetcher = async () => {
-  const data = await ArticlesService.findArticles();
+  const data = await ArticlesService.find();
   return data.allArticles;
 };
 

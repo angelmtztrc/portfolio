@@ -13,7 +13,7 @@ type EntryLayoutProps = {
 };
 
 const fetcher = async () => {
-  const data = await UsersService.findUser();
+  const data = await UsersService.findOne();
   return data.user;
 };
 
