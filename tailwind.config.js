@@ -4,6 +4,11 @@ const colors = require('tailwindcss/colors');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,jsx,tsx}'],
+  safelist: [
+    {
+      pattern: /text-(lime|emerald|cyan|sky|indigo|violet|red|pink)-500/
+    }
+  ],
   theme: {
     extend: {
       colors: {

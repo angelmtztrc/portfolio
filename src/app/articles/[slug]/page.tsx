@@ -8,6 +8,7 @@ import { ArticlesService } from '@services';
 import Link from 'next/link';
 import { formattedDate } from '@utils/day.util';
 import { SectionLayout } from '@layouts';
+import { randomColor } from '@utils/random-color.util';
 
 const fetcher = async (slug: string) => {
   const data = await ArticlesService.findOneBySlug(slug);
@@ -35,18 +36,18 @@ const ArticlePage = ({ params }: { params: { slug: string } }) => {
           </figure>
           <div className="mt-6 lg:px-12">
             <h1 className="font-display text-2xl font-bold text-white lg:text-4xl">{data.title}</h1>
-            <div className="mt-4 flex flex-col lg:flex-row lg:items-center">
-              <p className="font-body text-sm font-light uppercase text-gray-800 lg:mr-2">
-                {formattedDate(data.createdAt)}
-              </p>
+            <div className="mt-4 flex flex-col">
               <ul className="flex flex-wrap items-center space-x-2">
                 {data.tags.split(',').map(tag => (
                   <li key={tag} className="font-body font-light text-greyish-800">
-                    <span className="text-red-500">#</span>
+                    <span className={`text-${randomColor()}-500`}>#</span>
                     {tag}
                   </li>
                 ))}
               </ul>
+              <p className="mt-4 font-body text-sm font-light uppercase text-gray-800">
+                {formattedDate(data.createdAt)}
+              </p>
             </div>
           </div>
         </header>
