@@ -40,6 +40,10 @@ const EntryLayout = ({ children }: EntryLayoutProps) => {
               {children}
             </main>
           </div>
+          <footer className="py-2 text-center font-display text-sm font-light text-white">
+            Designed & built by{' '}
+            <span className="underline decoration-primary-500">Angel Martinez</span>.
+          </footer>
         </div>
       </body>
     </html>
