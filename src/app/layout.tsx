@@ -7,6 +7,7 @@ import { Biography, Navbar } from '@molecules';
 
 import fonts from '@utils/fonts.util';
 import { UsersService } from '@services';
+import { DefaultLayout } from '@layouts';
 
 type EntryLayoutProps = {
   children: React.ReactNode;
@@ -27,7 +28,7 @@ const EntryLayout = ({ children }: EntryLayoutProps) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body>
-        <div className="min-h-screen bg-darken-900">
+        <DefaultLayout>
           <div className="h-52 bg-primary-500" />
           <div className="container mx-auto grid grid-cols-1 gap-8 px-4 lg:grid-cols-12">
             <div className="-mt-12 flex flex-col gap-4 lg:col-span-3">
@@ -44,7 +45,7 @@ const EntryLayout = ({ children }: EntryLayoutProps) => {
             Designed & built by{' '}
             <span className="underline decoration-primary-500">Angel Martinez</span>.
           </footer>
-        </div>
+        </DefaultLayout>
       </body>
     </html>
   );
