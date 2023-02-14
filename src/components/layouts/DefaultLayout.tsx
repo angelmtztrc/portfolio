@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import { hotjar } from 'react-hotjar';
+// eslint-disable-next-line import/no-unresolved
 import { Analytics } from '@vercel/analytics/react';
 
 type DefaultLayoutProps = {
