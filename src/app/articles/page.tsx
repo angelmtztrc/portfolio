@@ -3,7 +3,7 @@ import { NewspaperIcon } from '@heroicons/react/24/solid';
 import { PageHeading, PostItem } from '@atoms';
 
 import { ArticlesService } from '@services';
-import { use } from 'react';
+
 import { SectionLayout } from '@layouts';
 
 const fetcher = async () => {
@@ -11,8 +11,8 @@ const fetcher = async () => {
   return data.allArticles;
 };
 
-const ArticlesPage = () => {
-  const data = use(fetcher());
+const ArticlesPage = async () => {
+  const data = await fetcher();
 
   return (
     <SectionLayout className="p-5">

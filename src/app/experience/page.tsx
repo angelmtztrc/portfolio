@@ -1,4 +1,3 @@
-import { use } from 'react';
 import { BriefcaseIcon } from '@heroicons/react/24/solid';
 
 import { PageHeading } from '@atoms';
@@ -13,8 +12,8 @@ const fetcher = async () => {
   return data.allExperiences;
 };
 
-const ExperiencePage = () => {
-  const data = use(fetcher());
+const ExperiencePage = async () => {
+  const data = await fetcher();
 
   return (
     <SectionLayout className="p-5">

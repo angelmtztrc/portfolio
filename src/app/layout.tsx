@@ -1,5 +1,3 @@
-import { use } from 'react';
-
 import '@styles/globals.css';
 
 import { AbilitiesList, SocialMediaList } from '@atoms';
@@ -18,8 +16,8 @@ const fetcher = async () => {
   return data.user;
 };
 
-const EntryLayout = ({ children }: EntryLayoutProps) => {
-  const data = use(fetcher());
+const EntryLayout = async ({ children }: EntryLayoutProps) => {
+  const data = await fetcher();
 
   return (
     <html lang="en" className={fonts}>

@@ -1,4 +1,3 @@
-import { use } from 'react';
 import { FolderOpenIcon } from '@heroicons/react/24/solid';
 
 import { PageHeading, PostItem } from '@atoms';
@@ -11,8 +10,8 @@ const fetcher = async () => {
   return data.allProjects;
 };
 
-const HomePage = () => {
-  const data = use(fetcher());
+const HomePage = async () => {
+  const data = await fetcher();
 
   return (
     <SectionLayout className="p-5">
