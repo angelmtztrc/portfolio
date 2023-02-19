@@ -27,7 +27,7 @@ const ExperiencePage = () => {
           >
             <span className="absolute top-0 -left-[10px] h-4 w-4 rounded-full bg-primary-500" />
             <div className="relative">
-              <p className="font-body text-xs font-light uppercase text-gray-900">
+              <p className="font-display text-xs font-bold uppercase text-darken-700">
                 {formattedDate(experience.from)} -{' '}
                 {experience.to ? formattedDate(experience.to) : 'Present'}
               </p>

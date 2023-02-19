@@ -33,7 +33,7 @@ const EntryLayout = ({ children }: EntryLayoutProps) => {
           <div className="container mx-auto grid grid-cols-1 gap-8 px-4 lg:grid-cols-12">
             <div className="-mt-12 flex flex-col gap-4 lg:col-span-3">
               <Biography data={data} />
-              <SocialMediaList />
+              <SocialMediaList data={data.social} />
               <AbilitiesList abilities={data.abilities} />
             </div>
             <main className="flex flex-col gap-4 pb-12 lg:col-span-9 lg:-mt-12">

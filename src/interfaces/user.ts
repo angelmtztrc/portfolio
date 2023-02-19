@@ -6,6 +6,7 @@ export interface IUser {
   location: string;
   biography: string;
   abilities: string; // transform?
+  social: Record<string, string>;
   picture: IImage;
 }
 

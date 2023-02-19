@@ -13,6 +13,7 @@ export const GET_USER = gql`
       location
       biography
       abilities
+      social
       picture {
         url
       }
