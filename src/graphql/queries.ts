@@ -62,8 +62,8 @@ export const GET_EXPERIENCES = gql`
 
 export const GET_ARTICLES = gql`
   query GetArticles {
-    allArticles(orderBy: createdAt_DESC) {
-      slug
+    allArticles {
+      url
       title
       description
       picture {

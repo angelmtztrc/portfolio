@@ -20,11 +20,11 @@ const ArticlesPage = async () => {
       <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-3">
         {data.map(article => (
           <PostItem
-            key={article.slug}
+            key={article.title}
             title={article.title}
             description={article.description}
             picture={article.picture.url}
-            url={`/articles/${article.slug}`}
+            url={article.url}
           />
         ))}
       </div>
