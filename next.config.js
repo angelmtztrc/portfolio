@@ -3,8 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
-    appDir: true,
-    fontLoaders: [{ loader: '@next/font/google', options: { subsets: ['latin'] } }]
+    appDir: true
   },
   images: {
     domains: ['www.datocms-assets.com', 'images.unsplash.com']
