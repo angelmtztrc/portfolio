@@ -19,7 +19,7 @@ const ExperiencePage = async () => {
     <SectionLayout className="p-5">
       <PageHeading title="Experience" icon={<BriefcaseIcon />} />
       <ul className="mt-6">
-        {data.map(({ id, attributes }) => (
+        {data.reverse().map(({ id, attributes }) => (
           <li key={id} className="relative rounded-t border-l-4 border-primary-500 pb-8 pl-6">
             <span className="absolute -left-[10px] top-0 h-4 w-4 rounded-full bg-primary-500" />
             <div className="relative">
