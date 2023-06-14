@@ -1,11 +1,13 @@
 import { Fira_Code as FiraCode, Merriweather_Sans as MerriweatherSans } from 'next/font/google';
 
 const display = FiraCode({
-  variable: '--display-font'
+  variable: '--display-font',
+  subsets: ['latin']
 });
 
 const body = MerriweatherSans({
-  variable: '--body-font'
+  variable: '--body-font',
+  subsets: ['latin']
 });
 
 const fonts = () => {

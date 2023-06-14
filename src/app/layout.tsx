@@ -4,7 +4,7 @@ import { AbilitiesList, SocialMediaList } from '@atoms';
 import { Biography, Navbar } from '@molecules';
 
 import fonts from '@utils/fonts.util';
-import { UsersService } from '@services';
+import { ProfileService } from '@services';
 import { DefaultLayout } from '@layouts';
 
 type EntryLayoutProps = {
@@ -12,8 +12,8 @@ type EntryLayoutProps = {
 };
 
 const fetcher = async () => {
-  const data = await UsersService.findOne();
-  return data.user;
+  const data = await ProfileService.findOne();
+  return data.data;
 };
 
 const EntryLayout = async ({ children }: EntryLayoutProps) => {
@@ -31,8 +31,8 @@ const EntryLayout = async ({ children }: EntryLayoutProps) => {
           <div className="container mx-auto grid grid-cols-1 gap-8 px-4 lg:grid-cols-12">
             <div className="-mt-12 flex flex-col gap-4 lg:col-span-3">
               <Biography data={data} />
-              <SocialMediaList data={data.social} />
-              <AbilitiesList abilities={data.abilities} />
+              <SocialMediaList data={data.attributes.social} />
+              <AbilitiesList abilities={data.attributes.abilities} />
             </div>
             <main className="flex flex-col gap-4 pb-12 lg:col-span-9 lg:-mt-12">
               <Navbar />

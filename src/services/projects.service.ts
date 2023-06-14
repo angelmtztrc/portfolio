@@ -1,11 +1,11 @@
-import { GET_PROJECTS } from '@graphql/queries';
 import { IGetProjectsResponse } from '@interfaces/project';
 
-import { GraphQLService } from './graphql.service';
+import { HttpService } from './http.service';
 
-class ProjectsService extends GraphQLService {
+class ProjectsService extends HttpService {
   async find() {
-    return this.execute<IGetProjectsResponse>({ query: GET_PROJECTS });
+    this.configRequest('/projects');
+    return this.execute<IGetProjectsResponse>();
   }
 }
 

@@ -1,11 +1,11 @@
-import { GET_EXPERIENCES } from '@graphql/queries';
 import { IGetExperiencesResponse } from '@interfaces/experience';
 
-import { GraphQLService } from './graphql.service';
+import { HttpService } from './http.service';
 
-class ExperiencesService extends GraphQLService {
+class ExperiencesService extends HttpService {
   async find() {
-    return this.execute<IGetExperiencesResponse>({ query: GET_EXPERIENCES });
+    this.configRequest('/experiences');
+    return this.execute<IGetExperiencesResponse>();
   }
 }
 

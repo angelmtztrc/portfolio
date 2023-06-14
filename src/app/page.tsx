@@ -4,10 +4,11 @@ import { PageHeading, PostItem } from '@atoms';
 
 import { ProjectsService } from '@services';
 import { SectionLayout } from '@layouts';
+import { getImagePath } from '@utils/image.util';
 
 const fetcher = async () => {
   const data = await ProjectsService.find();
-  return data.allProjects;
+  return data.data;
 };
 
 const HomePage = async () => {
@@ -17,13 +18,13 @@ const HomePage = async () => {
     <SectionLayout className="p-5">
       <PageHeading title="Projects" icon={<FolderOpenIcon />} />
       <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-3">
-        {data.map(project => (
+        {data.map(({ id, attributes }) => (
           <PostItem
-            key={project.id}
-            title={project.name}
-            description={project.description}
-            picture={project.picture.url}
-            url={project.url}
+            key={id}
+            title={attributes.name}
+            description={attributes.description}
+            picture={getImagePath(attributes.picture)}
+            url={attributes.url}
           />
         ))}
       </div>

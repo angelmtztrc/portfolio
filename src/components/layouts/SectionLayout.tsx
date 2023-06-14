@@ -8,7 +8,7 @@ type SectionLayoutProps = {
   className?: string;
 };
 
-const SectionLayout = ({ className, children }: SectionLayoutProps) => {
+const SectionLayout = ({ className = '', children }: SectionLayoutProps) => {
   return (
     <Transition
       show
@@ -25,10 +25,6 @@ const SectionLayout = ({ className, children }: SectionLayoutProps) => {
       </section>
     </Transition>
   );
-};
-
-SectionLayout.defaultProps = {
-  className: ''
 };
 
 export default SectionLayout;

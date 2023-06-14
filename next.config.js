@@ -6,7 +6,7 @@ const nextConfig = {
     appDir: true
   },
   images: {
-    domains: ['www.datocms-assets.com', 'images.unsplash.com']
+    domains: ['res.cloudinary.com', 'images.unsplash.com']
   }
 };
 

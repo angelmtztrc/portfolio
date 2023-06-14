@@ -15,6 +15,7 @@
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.8",
     "@vercel/analytics": "^0.1.8",
+    "axios": "^1.4.0",
     "classnames": "^2.3.2",
     "dayjs": "^1.11.7",
     "graphql": "^16.6.0",

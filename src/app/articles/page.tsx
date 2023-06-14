@@ -5,10 +5,11 @@ import { PageHeading, PostItem } from '@atoms';
 import { ArticlesService } from '@services';
 
 import { SectionLayout } from '@layouts';
+import { getImagePath } from '@utils/image.util';
 
 const fetcher = async () => {
   const data = await ArticlesService.find();
-  return data.allArticles;
+  return data.data;
 };
 
 const ArticlesPage = async () => {
@@ -18,13 +19,13 @@ const ArticlesPage = async () => {
     <SectionLayout className="p-5">
       <PageHeading title="Articles" icon={<NewspaperIcon />} />
       <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-3">
-        {data.map(article => (
+        {data.map(({ id, attributes }) => (
           <PostItem
-            key={article.title}
-            title={article.title}
-            description={article.description}
-            picture={article.picture.url}
-            url={article.url}
+            key={id}
+            title={attributes.title}
+            description={attributes.description}
+            picture={getImagePath(attributes.picture)}
+            url={attributes.url}
           />
         ))}
       </div>
