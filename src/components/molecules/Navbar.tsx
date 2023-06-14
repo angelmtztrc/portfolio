@@ -29,7 +29,7 @@ const Navbar = () => {
         </nav>
       </ScrollArea.Viewport>
       <ScrollArea.Scrollbar orientation="horizontal" className="scroll-bar">
-        <ScrollArea.Thumb className="relative h-full w-full flex-1 rounded-lg bg-primary-500 before:absolute before:top-1/2 before:left-1/2 before:min-h-[44px] before:min-w-[44px] before:translate-x-1/2 before:translate-y-1/2 before:transform before:content-['''']" />
+        <ScrollArea.Thumb className="relative h-full w-full flex-1 rounded-lg bg-primary-500 before:absolute before:left-1/2 before:top-1/2 before:min-h-[44px] before:min-w-[44px] before:translate-x-1/2 before:translate-y-1/2 before:transform before:content-['''']" />
       </ScrollArea.Scrollbar>
 
       <ScrollArea.Corner className="bg-red-300" />
