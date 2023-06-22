@@ -6,6 +6,7 @@ import { Biography, Navbar } from '@molecules';
 import fonts from '@utils/fonts.util';
 import { ProfileService } from '@services';
 import { DefaultLayout } from '@layouts';
+import { Metadata } from 'next';
 
 type EntryLayoutProps = {
   children: React.ReactNode;
@@ -47,6 +48,20 @@ const EntryLayout = async ({ children }: EntryLayoutProps) => {
       </body>
     </html>
   );
+};
+
+export const metadata: Metadata = {
+  title: 'Angel Martinez - Web Developer',
+  description:
+    "Hi, I'm Angel a Web Developer and TypeScript enthusiast. Here you'll find a diverse range of my best projects and more information about my career as a web developer. ",
+  openGraph: {
+    url: 'https://www.angelmtz.dev',
+    images: [{ url: '/images/og-cover.png' }],
+    type: 'website'
+  },
+  twitter: {
+    card: 'summary_large_image'
+  }
 };
 
 export default EntryLayout;
