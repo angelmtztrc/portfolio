@@ -5,3 +5,6 @@ export { default as PageHeading } from './PageHeading';
 export { default as PostItem } from './PostItem';
 export { default as AbilitiesList } from './AbilitiesList';
 export { default as SocialMediaList } from './SocialMediaList';
+export { default as CertificateItem } from './CertificateItem';
+export { default as EducationItem } from './EducationItem';
+export { default as ExperienceItem } from './ExperienceItem';

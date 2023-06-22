@@ -1,28 +1,19 @@
 import { AcademicCapIcon } from '@heroicons/react/24/solid';
 
-import { PageHeading } from '@atoms';
+import { CertificateItem, EducationItem, PageHeading } from '@atoms';
 import { SectionLayout } from '@layouts';
 
 const EducationPage = () => {
   return (
     <SectionLayout className="p-5">
       <PageHeading title="Education" icon={<AcademicCapIcon />} />
-      <ul className="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-3">
-        <li className="rounded-lg border border-dark-900 p-4">
-          <figure className="aspect-video overflow-hidden rounded-lg">
-            <div className="h-full w-full bg-secondary-500" />
-          </figure>
-        </li>
-        <li className="rounded-lg border border-dark-900 p-4">
-          <figure className="aspect-video overflow-hidden rounded-lg">
-            <div className="h-full w-full bg-secondary-500" />
-          </figure>
-        </li>
-        <li className="rounded-lg border border-dark-900 p-4">
-          <figure className="aspect-video overflow-hidden rounded-lg">
-            <div className="h-full w-full bg-secondary-500" />
-          </figure>
-        </li>
+
+      <ul className="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <EducationItem />
+      </ul>
+
+      <ul className="mt-3 grid grid-cols-1 gap-4 lg:grid-cols-3">
+        <CertificateItem />
       </ul>
     </SectionLayout>
   );
