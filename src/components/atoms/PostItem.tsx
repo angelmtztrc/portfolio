@@ -18,7 +18,7 @@ const PostItem = ({ title, description, picture, url }: PostItemProps) => {
         <h3 className="mt-4 font-display text-xl font-bold text-white hover:underline hover:decoration-primary-500">
           {title}
         </h3>
-        <p className="mt-2 font-body text-base font-light leading-relaxed text-greyish-800 line-clamp-3">
+        <p className="mt-2 font-body text-base font-light leading-relaxed text-greyish-800 line-clamp-4">
           {description}
         </p>
       </article>

@@ -17,7 +17,7 @@ const HomePage = async () => {
   return (
     <SectionLayout className="p-5">
       <PageHeading title="Projects" icon={<FolderOpenIcon />} />
-      <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-3">
+      <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-2">
         {data.map(({ id, attributes }) => (
           <PostItem
             key={id}
