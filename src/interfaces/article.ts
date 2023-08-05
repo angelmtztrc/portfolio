@@ -1,10 +1,12 @@
+import { IImage } from './image';
+
 export interface IArticle {
   id: number;
   attributes: {
-    degree: string;
-    school: string;
-    from: Date;
-    to: Date;
+    title: string;
+    url: string;
+    description: string;
+    picture: IImage;
   };
 }
 

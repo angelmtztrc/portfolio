@@ -1,9 +1,8 @@
 export interface IEducation {
   id: string;
   attributes: {
-    title: string;
-    description: string;
-    company: string;
+    degree: string;
+    school: string;
     from: Date;
     to: Date;
   };

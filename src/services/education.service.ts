@@ -1,11 +1,11 @@
-import { IGetArticlesResponse } from '@interfaces/article';
+import { IGetEducationsResponse } from '@interfaces/education';
 
 import { HttpService } from './http.service';
 
 class EducationService extends HttpService {
   async find() {
     this.configRequest('/educations');
-    return this.execute<IGetArticlesResponse>();
+    return this.execute<IGetEducationsResponse>();
   }
 }
 
