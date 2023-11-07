@@ -1,10 +1,12 @@
+import Image from 'next/image';
+
 import { SocialMediaList } from '@/atoms';
 
 type AboutProps = {};
 
 const About = () => {
   return (
-    <section className="mt-60 grid grid-cols-12 mb-96">
+    <section className="mt-60 grid grid-cols-12">
       <div className="col-span-9">
         <div className="w-9/12 flex flex-col space-y-8 w">
           <div>
@@ -26,9 +28,11 @@ const About = () => {
         </div>
       </div>
       <div className="col-span-3 p-6 relative">
-        <img
+        <Image
+          fill
+          alt="nebula"
           src="/assets/nebula-about.svg"
-          className="absolute -top-24 -left-24"
+          className="absolute !-top-24 !-left-24"
         />
         <div className="p-8 flex items-center border border-white/[0.15] bg-white/[0.08] backdrop-blur-md rounded-2xl aspect-square h-full">
           <img
