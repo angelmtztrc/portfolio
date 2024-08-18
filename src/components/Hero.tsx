@@ -16,13 +16,12 @@ const Hero = () => {
           Explore
         </button>
       </div>
-      <section className="mt-20 max-w-5xl   relative w-full ">
-        {/* TODO: FIX NEBULA */}
+      <section className="mt-20 max-w-5xl relative w-full">
         <Image
           fill
           alt="nebula"
-          src="/assets/nebula.svg"
-          className="absolute !inset-x-0 !-top-56 !-left-0 !w-[150%]  !h-[150%]"
+          src="/assets/raw-nebula.svg"
+          className="absolute !inset-x-0 !-top-14 !-left-0 blur-[80px]"
         />
         <div className="aspect-video p-16 rounded-3xl border-2 border-white/[0.08] bg-white/[0.08] backdrop-blur-md">
           <svg
