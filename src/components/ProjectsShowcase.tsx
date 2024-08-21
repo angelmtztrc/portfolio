@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const ProjectsShowcase = () => {
   return (
-    <section className="mt-64 mb-96">
+    <section className="mt-64">
       <h2 className="font-display text-3xl leading-7 tracking-[-1px] font-medium text-center text-primary-300">
         See What I&apos;ve Done
       </h2>

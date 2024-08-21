@@ -1,4 +1,4 @@
-import { About, Hero, ProjectsShowcase } from '@/components';
+import { About, Hero, ProfileOverview, ProjectsShowcase } from '@/components';
 
 const HomePage = () => {
   return (
@@ -6,6 +6,7 @@ const HomePage = () => {
       <Hero />
       <About />
       <ProjectsShowcase />
+      <ProfileOverview />
     </main>
   );
 };
