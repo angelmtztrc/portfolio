@@ -32,8 +32,8 @@ const config: Config = {
         }
       },
       fontFamily: {
-        display: ['var(--font-display)', 'monospace'],
-        body: ['var(--font-body)', 'sans-serif']
+        display: ['var(--font-heading)', 'monospace'],
+        body: ['var(--font-paragraph)', 'sans-serif']
       }
     }
   },
