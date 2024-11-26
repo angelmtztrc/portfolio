@@ -3,7 +3,9 @@ import {
   About,
   LatestArticles,
   ProfileOverview,
-  ProjectsShowcase
+  ProjectsShowcase,
+  GetInTouch,
+  Footer
 } from '@/components';
 
 const HomePage = () => {
@@ -14,6 +16,8 @@ const HomePage = () => {
       <ProjectsShowcase />
       <ProfileOverview />
       <LatestArticles />
+      <GetInTouch />
+      <Footer />
     </main>
   );
 };

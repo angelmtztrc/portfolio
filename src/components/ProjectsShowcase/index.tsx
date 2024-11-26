@@ -4,12 +4,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import Image from 'next/image';
+import Button from '../Button';
 
 const ProjectsShowcase = () => {
   return (
     <section className="mt-64">
       <h2 className="font-display text-3xl leading-7 tracking-[-1px] font-medium text-center text-primary-300">
-        See What I&apos;ve Done
+        See what I&apos;ve done
       </h2>
       <div className="relative">
         <Image
@@ -57,9 +58,7 @@ const ProjectsShowcase = () => {
         </Swiper>
       </div>
       <div className="w-full flex justify-center mt-12">
-        <button className="py-2 px-8 border border-primary-300 rounded-lg font-body text-lg leading-8 font-semibold text-primary-100">
-          See Everything
-        </button>
+        <Button>See Everything</Button>
       </div>
     </section>
   );

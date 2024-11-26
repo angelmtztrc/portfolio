@@ -1,11 +1,12 @@
 import Image from 'next/image';
+import MediaIcons from '../MediaIcons';
 
 const About = () => {
   return (
     <section className="container mx-auto mt-64 flex justify-between">
       <div className="w-3/5">
         <h2 className="font-display text-2xl leading-7 tracking-[-1px] font-medium text-primary-300 ">
-          About Me
+          About me
         </h2>
         <p className="font-body font-semibold leading-[3.375rem] text-4xl text-content-description mt-5">
           I&apos;m a self-taught developer, who is passionate about everything
@@ -16,18 +17,7 @@ const About = () => {
           <h3 className="font-display font-medium text-base leading-5 tracking-[0.5px] text-content-darkest">
             Let&apos;s Connect
           </h3>
-          <ul className="flex space-x-6 mt-4 items-center text-content-dark">
-            {/* TODO: icons and links */}
-            <li className="font-body font-semibold text-lg leading-8">
-              GitHub
-            </li>
-            <li className="font-body font-semibold text-lg leading-8">
-              Twitter
-            </li>
-            <li className="font-body font-semibold text-lg leading-8">
-              LinkedIn
-            </li>
-          </ul>
+          <MediaIcons />
         </div>
       </div>
       <div className="w-full max-w-80 relative">

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Button from '../Button';
 
 const Hero = () => {
   return (
@@ -12,9 +13,8 @@ const Hero = () => {
             Software Engineer
           </span>
         </h1>
-        <button className="py-2 px-8 border border-primary-300 rounded-lg font-body text-lg leading-8 font-semibold text-primary-100 mt-8">
-          Explore
-        </button>
+
+        <Button className="mt-8">Explore</Button>
       </div>
       <section className="mt-20 max-w-5xl relative w-full">
         <Image
