@@ -1,4 +1,4 @@
-const Education = () => {
+export const Education = () => {
   return (
     <section className="mt-20">
       <h2 className="font-display text-2xl leading-7 tracking-[-1px] font-medium text-primary-300 ">
@@ -35,5 +35,3 @@ const Education = () => {
     </section>
   );
 };
-
-export default Education;

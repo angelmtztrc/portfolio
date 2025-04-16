@@ -1,9 +1,9 @@
-import Abilities from './Abilities';
-import CareerHistory from './CareerHistory';
-import Certifications from './Certifications';
-import Education from './Education';
+import { Abilities } from './abilities';
+import { CareerHistory } from './career-history';
+import { Certifications } from './certifications';
+import { Education } from './education';
 
-const ProfileOverview = () => {
+export const ProfileOverview = () => {
   return (
     <div className="mt-64">
       <div className="container mx-auto grid grid-cols-12 gap-24">
@@ -17,5 +17,3 @@ const ProfileOverview = () => {
     </div>
   );
 };
-
-export default ProfileOverview;

@@ -1,4 +1,4 @@
-const Abilities = () => {
+export const Abilities = () => {
   return (
     <section className="mt-20">
       <h2 className="font-display text-2xl leading-7 tracking-[-1px] font-medium text-primary-300 ">
@@ -44,5 +44,3 @@ const Abilities = () => {
     </section>
   );
 };
-
-export default Abilities;

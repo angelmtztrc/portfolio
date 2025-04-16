@@ -1,6 +1,6 @@
-import { NAVIGATION_OPTIONS } from '@/utils/navigation.utils';
+import { NAVIGATION_OPTIONS } from '@/utils/navigation';
 
-const Navigation = () => {
+export const Navigation = () => {
   return (
     <nav className="flex items-center justify-between container mx-auto py-16">
       <div>
@@ -21,5 +21,3 @@ const Navigation = () => {
     </nav>
   );
 };
-
-export default Navigation;

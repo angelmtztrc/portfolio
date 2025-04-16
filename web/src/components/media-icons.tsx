@@ -1,4 +1,4 @@
-import { cls } from '@/utils/classname.utils';
+import { cls } from '@/utils/classname';
 import Link from 'next/link';
 import {
   GitHub as GitHubIcon,
@@ -10,7 +10,7 @@ type MediaIconsProps = {
   isShrink?: boolean;
 };
 
-const MediaIcons = ({ isShrink = false }: MediaIconsProps) => {
+export const MediaIcons = ({ isShrink = false }: MediaIconsProps) => {
   const itemClassnames = cls(
     'font-body flex items-center',
     isShrink
@@ -35,5 +35,3 @@ const MediaIcons = ({ isShrink = false }: MediaIconsProps) => {
     </ul>
   );
 };
-
-export default MediaIcons;

@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import Button from '../Button';
+import { Button } from './button';
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <header className="container mx-auto flex flex-col items-center">
       <div className="flex flex-col items-center justify-center">
@@ -56,5 +56,3 @@ const Hero = () => {
     </header>
   );
 };
-
-export default Hero;

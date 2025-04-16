@@ -1,4 +1,4 @@
-import { cls } from '@/utils/classname.utils';
+import { cls } from '@/utils/classname';
 import { cva, VariantProps } from 'cva';
 
 const button = cva(
@@ -20,8 +20,6 @@ export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof button> {}
 
-const Button = ({ className, intent, ...props }: ButtonProps) => (
+export const Button = ({ className, intent, ...props }: ButtonProps) => (
   <button className={cls(button({ intent }), className)} {...props} />
 );
-
-export default Button;

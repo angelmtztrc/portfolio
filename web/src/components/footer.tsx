@@ -1,7 +1,7 @@
-import { NAVIGATION_OPTIONS } from '@/utils/navigation.utils';
-import MediaIcons from '../MediaIcons';
+import { NAVIGATION_OPTIONS } from '@/utils/navigation';
+import { MediaIcons } from './media-icons';
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer className="container mx-auto mt-48 pt-16 pb-32 flex items-center justify-between">
       <p className="font-display text-lg leading-6 tracking-tight text-content-white font-semibold">
@@ -21,5 +21,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;

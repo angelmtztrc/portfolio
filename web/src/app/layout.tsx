@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 
 import { Navigation } from '@/components';
 
-import { cls } from '@/utils/classname.utils';
-import loadedFonts from '@/utils/font.utils';
+import { cls } from '@/utils/classname';
+import loadedFonts from '@/utils/fonts';
 
 import '@/styles/globals.css';
 

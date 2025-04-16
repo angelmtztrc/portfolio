@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import Button from '../Button';
+import { Button } from './button';
 
-const GetInTouch = () => {
+export const GetInTouch = () => {
   return (
     <section className="mt-64 container mx-auto relative">
       <Image
@@ -27,5 +27,3 @@ const GetInTouch = () => {
     </section>
   );
 };
-
-export default GetInTouch;

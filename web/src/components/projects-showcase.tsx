@@ -1,12 +1,13 @@
 'use client';
 
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import 'swiper/css';
-import Image from 'next/image';
-import Button from '../Button';
+import { Button } from './button';
 
-const ProjectsShowcase = () => {
+import 'swiper/css';
+
+export const ProjectsShowcase = () => {
   return (
     <section className="mt-64">
       <h2 className="font-display text-3xl leading-7 tracking-[-1px] font-medium text-center text-primary-300">
@@ -63,5 +64,3 @@ const ProjectsShowcase = () => {
     </section>
   );
 };
-
-export default ProjectsShowcase;

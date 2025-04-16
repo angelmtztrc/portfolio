@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import MediaIcons from '../MediaIcons';
+import { MediaIcons } from './media-icons';
 
-const About = () => {
+export const About = () => {
   return (
     <section className="container mx-auto mt-64 flex justify-between">
       <div className="w-3/5">
@@ -39,5 +39,3 @@ const About = () => {
     </section>
   );
 };
-
-export default About;
