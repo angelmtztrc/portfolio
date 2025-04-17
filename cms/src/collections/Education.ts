@@ -1,23 +1,22 @@
 import { CollectionConfig } from 'payload'
 
-export const Projects: CollectionConfig = {
-  slug: 'projects',
+export const Education: CollectionConfig = {
+  slug: 'education',
   access: { read: () => true },
   fields: [
     {
-      name: 'name',
+      name: 'institution',
       type: 'text',
       required: true,
     },
     {
-      name: 'description',
-      type: 'textarea',
+      name: 'degree',
+      type: 'text',
       required: true,
     },
     {
-      name: 'tags',
-      type: 'text',
-      required: true,
+      name: 'finished_at',
+      type: 'date',
     },
   ],
 }

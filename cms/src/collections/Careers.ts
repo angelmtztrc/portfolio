@@ -1,11 +1,16 @@
 import { CollectionConfig } from 'payload'
 
-export const Projects: CollectionConfig = {
-  slug: 'projects',
+export const Careers: CollectionConfig = {
+  slug: 'careers',
   access: { read: () => true },
   fields: [
     {
-      name: 'name',
+      name: 'company',
+      type: 'text',
+      required: true,
+    },
+    {
+      name: 'position',
       type: 'text',
       required: true,
     },
@@ -15,9 +20,13 @@ export const Projects: CollectionConfig = {
       required: true,
     },
     {
-      name: 'tags',
-      type: 'text',
+      name: 'start_at',
+      type: 'date',
       required: true,
+    },
+    {
+      name: 'finished_at',
+      type: 'date',
     },
   ],
 }
