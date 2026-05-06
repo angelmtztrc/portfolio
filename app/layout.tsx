@@ -1,30 +1,30 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 
-import { Share_Tech_Mono } from 'next/font/google';
+import { Share_Tech_Mono } from "next/font/google";
 
-import '@/styles/globals.css';
+import "@/styles/globals.css";
 
 const font_mono = Share_Tech_Mono({
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-share-tech-mono'
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-share-tech-mono",
 });
 
 export const metadata: Metadata = {
-  title: 'Angel Martinez - Software Engineer',
+  title: "Angel Martinez - Software Engineer",
   description:
-    'Software engineer and TypeScript enthusiast. Passionate about creating unique and efficient web solutions.'
+    "Software engineer and TypeScript enthusiast. Passionate about creating unique and efficient web solutions.",
 };
 
 const Layout = ({
-  children
+  children,
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
   return (
     <html
       lang="en"
-      className={`${font_mono.variable} h-full antialiased bg-background`}
+      className={`${font_mono.variable} bg-background h-full antialiased`}
     >
       <body className="font-mono">{children}</body>
     </html>

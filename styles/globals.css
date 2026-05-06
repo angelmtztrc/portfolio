@@ -1,5 +1,5 @@
-@import 'tailwindcss';
-@import 'tw-animate-css';
+@import "tailwindcss";
+@import "tw-animate-css";
 
 @theme {
   --animate-blink: blink 0.7s step-end infinite;
@@ -49,8 +49,8 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-share-tech-mono), 'Courier New', monospace;
-  --font-mono: var(--font-share-tech-mono), 'Courier New', monospace;
+  --font-sans: var(--font-share-tech-mono), "Courier New", monospace;
+  --font-mono: var(--font-share-tech-mono), "Courier New", monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);

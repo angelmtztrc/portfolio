@@ -1,16 +1,18 @@
-import Experience from '@/components/experience';
-import Hero from '@/components/hero';
-import Navbar from '@/components/navbar';
-import Projects from '@/components/projects';
+import Navbar from "@/components/navbar";
+import Hero from "@/components/hero";
+import Experience from "@/components/experience";
+import Projects from "@/components/projects";
+import Communications from "@/components/communications";
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen text-foreground">
+    <div className="text-foreground min-h-screen">
       <Navbar />
-      <main className="max-w-5xl mx-auto px-6">
+      <main className="mx-auto max-w-5xl px-6">
         <Hero />
         <Experience />
         <Projects />
+        <Communications />
       </main>
     </div>
   );

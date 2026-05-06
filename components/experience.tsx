@@ -1,16 +1,16 @@
 const Experience = () => {
   return (
-    <section className="border-b border-line py-12">
+    <section className="border-line border-b py-12">
       <div className="mb-8">
         <h2 className="text-muted-foreground text-xs tracking-widest uppercase">
-          {'// Experience'}
+          {"// Experience"}
         </h2>
       </div>
       <div className="space-y-6">
-        <div className="pb-6 border-b border-line last:border-b-0">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-2">
-            <h3 className="text-foreground text-sm ">
-              Software Engineer{' '}
+        <div className="border-line border-b pb-6 last:border-b-0">
+          <div className="mb-2 flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+            <h3 className="text-foreground text-sm">
+              Software Engineer{" "}
               <span className="text-muted-foreground text-xs">
                 @ MedTrainer
               </span>
@@ -19,7 +19,7 @@ const Experience = () => {
               Aug 2023 - Present
             </span>
           </div>
-          <p className="text-muted-foreground text-xs max-w-10/12">
+          <p className="text-muted-foreground max-w-10/12 text-xs">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque hic
             vero aliquid provident. Vero natus, beatae molestias error iure
             aspernatur.
