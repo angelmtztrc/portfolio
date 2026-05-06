@@ -1,0 +1,107 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --animate-blink: blink 0.7s step-end infinite;
+
+  @keyframes blink {
+    0%,
+    49% {
+      opacity: 1;
+    }
+    50%,
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+:root {
+  /* Dark-only military theme — all values set as dark theme */
+  --background: oklch(0.08 0 0);
+  --foreground: oklch(0.93 0 0);
+  --card: oklch(0.11 0 0);
+  --card-foreground: oklch(0.93 0 0);
+  --popover: oklch(0.11 0 0);
+  --popover-foreground: oklch(0.93 0 0);
+  --primary: oklch(0.93 0 0);
+  --primary-foreground: oklch(0.08 0 0);
+  --secondary: oklch(0.16 0 0);
+  --secondary-foreground: oklch(0.93 0 0);
+  --muted: oklch(0.16 0 0);
+  --muted-foreground: oklch(0.52 0 0);
+  --accent: oklch(0.93 0 0);
+  --accent-foreground: oklch(0.08 0 0);
+  --destructive: oklch(0.45 0.18 25);
+  --destructive-foreground: oklch(0.93 0 0);
+  --border: oklch(0.22 0 0);
+  --input: oklch(0.16 0 0);
+  --ring: oklch(0.52 0 0);
+  --radius: 0rem;
+
+  /* Custom tokens */
+  --surface: oklch(0.13 0 0);
+  --surface-hover: oklch(0.17 0 0);
+  --dim: oklch(0.35 0 0);
+  --tag-bg: oklch(0.16 0 0);
+  --tag-fg: oklch(0.65 0 0);
+  --line: oklch(0.2 0 0);
+}
+
+@theme inline {
+  --font-sans: var(--font-share-tech-mono), "Courier New", monospace;
+  --font-mono: var(--font-share-tech-mono), "Courier New", monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: 0rem;
+  --radius-md: 0rem;
+  --radius-lg: 0rem;
+  --radius-xl: 0rem;
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-dim: var(--dim);
+  --color-tag-bg: var(--tag-bg);
+  --color-tag-fg: var(--tag-fg);
+  --color-line: var(--line);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    border-radius: 0 !important;
+  }
+  body {
+    @apply bg-background text-foreground font-mono;
+  }
+  ::selection {
+    background: oklch(0.93 0 0);
+    color: oklch(0.08 0 0);
+  }
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--background);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--dim);
+  }
+}
