@@ -27,7 +27,7 @@ export const PROJECTS = [
     name: "Impotrade Congresses",
     description:
       "Command-line tool built with Deno and TypeScript that generates random and cryptographically secure passwords.",
-    status: "In Development",
+    status: "LIVE",
     technologies: ["Deno", "TypeScript"],
     picture: "/project4.png",
   },

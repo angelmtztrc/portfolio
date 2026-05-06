@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 
 import { Share_Tech_Mono } from "next/font/google";
 
@@ -27,6 +28,7 @@ const Layout = ({
       className={`${font_mono.variable} bg-background h-full antialiased`}
     >
       <body className="font-mono">{children}</body>
+      {process.env.NODE_ENV === "production" && <Analytics />}
     </html>
   );
 };
