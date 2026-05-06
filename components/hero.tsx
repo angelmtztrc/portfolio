@@ -1,3 +1,6 @@
+import { SOCIAL_MEDIA } from "@/data/communications";
+import Link from "next/link";
+
 const Hero = () => {
   return (
     <section className="border-line border-b py-16 md:py-24">
@@ -33,18 +36,19 @@ const Hero = () => {
         done faster.
       </p>
       <div className="mt-10 flex gap-4">
-        <a
-          href=""
+        <Link
+          href={SOCIAL_MEDIA.GitHub.url}
+          rel="noopener noreferrer"
           className="bg-foreground text-background hover:bg-foreground/80 px-5 py-2.5 text-xs tracking-widest uppercase transition-colors"
         >
           GitHub
-        </a>
-        <a
-          href=""
+        </Link>
+        <Link
+          href="#communications"
           className="border-line text-foreground hover:bg-surface border bg-transparent px-5 py-2.5 text-xs tracking-widest uppercase transition-colors"
         >
           Get In Touch
-        </a>
+        </Link>
       </div>
     </section>
   );

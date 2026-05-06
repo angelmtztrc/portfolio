@@ -1,18 +1,21 @@
+import { SOCIAL_MEDIA } from "@/data/communications";
+import Link from "next/link";
+
 const Communications = () => {
   return (
-    <section className="border-line border-b py-12">
+    <section id="communications" className="border-line border-b py-12">
       <div className="mb-8">
         <h2 className="text-muted-foreground text-xs tracking-widest uppercase">
           {"// Communications"}
         </h2>
       </div>
-      <div className="border-line grid grid-cols-2 gap-0 border md:grid-cols-3">
-        <a
-          href=""
+      <div className="border-line grid grid-cols-1 gap-0 border md:grid-cols-3">
+        <Link
+          href={SOCIAL_MEDIA.GitHub.url}
           className="group hover:bg-surface border-line flex flex-col gap-2 border-b p-6 transition-colors md:border-r md:border-b-0"
         >
           <span className="text-muted-foreground text-xs tracking-widest uppercase">
-            GitHub
+            {SOCIAL_MEDIA.GitHub.name}
           </span>
           <span className="text-foreground group-hover:text-muted-foreground text-sm transition-colors">
             github.com/angelmtztrc
@@ -20,13 +23,13 @@ const Communications = () => {
           <span className="text-dim group-hover:text-foreground mt-auto text-xs transition-colors">
             →
           </span>
-        </a>
-        <a
-          href=""
+        </Link>
+        <Link
+          href={SOCIAL_MEDIA.LinkedIn.url}
           className="group hover:bg-surface border-line flex flex-col gap-2 border-b p-6 transition-colors md:border-r md:border-b-0"
         >
           <span className="text-muted-foreground text-xs tracking-widest uppercase">
-            LinkedIn
+            {SOCIAL_MEDIA.LinkedIn.name}
           </span>
           <span className="text-foreground group-hover:text-muted-foreground text-sm transition-colors">
             linkedin.com/in/angelmtztrc
@@ -34,8 +37,8 @@ const Communications = () => {
           <span className="text-dim group-hover:text-foreground mt-auto text-xs transition-colors">
             →
           </span>
-        </a>
-        <a
+        </Link>
+        <Link
           href=""
           className="group hover:bg-surface border-line flex flex-col gap-2 border-b p-6 transition-colors md:border-r md:border-b-0"
         >
@@ -48,7 +51,7 @@ const Communications = () => {
           <span className="text-dim group-hover:text-foreground mt-auto text-xs transition-colors">
             →
           </span>
-        </a>
+        </Link>
       </div>
     </section>
   );
