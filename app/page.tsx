@@ -3,6 +3,7 @@ import Hero from "@/components/hero";
 import Experience from "@/components/experience";
 import Projects from "@/components/projects";
 import Communications from "@/components/communications";
+import Footer from "@/components/footer";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
         <Projects />
         <Communications />
       </main>
+      <Footer />
     </div>
   );
 };
