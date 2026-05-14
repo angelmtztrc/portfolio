@@ -39,7 +39,7 @@ const Communications = () => {
           </span>
         </Link>
         <Link
-          href=""
+          href="/Angel_Martinez_Romo-Resume.pdf"
           className="group hover:bg-surface border-line flex flex-col gap-2 border-b p-6 transition-colors md:border-r md:border-b-0"
         >
           <span className="text-muted-foreground text-xs tracking-widest uppercase">
