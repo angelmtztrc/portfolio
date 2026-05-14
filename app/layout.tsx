@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { Share_Tech_Mono } from "next/font/google";
 
 import "@/styles/globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const font_mono = Share_Tech_Mono({
   weight: "400",
@@ -41,7 +42,9 @@ const Layout = ({
       className={`${font_mono.variable} bg-background h-full antialiased`}
     >
       <body className="font-mono">{children}</body>
-      {process.env.NODE_ENV === "production" && <Analytics />}
+
+      <Analytics mode="production" />
+      <SpeedInsights />
     </html>
   );
 };
