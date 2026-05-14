@@ -15,6 +15,19 @@ export const metadata: Metadata = {
   title: "Angel Martinez - Software Engineer",
   description:
     "Software engineer and TypeScript enthusiast. Passionate about creating unique and efficient web solutions.",
+  openGraph: {
+    title: "Angel Martinez - Software Engineer",
+    description:
+      "Software engineer and TypeScript enthusiast. Passionate about creating unique and efficient web solutions.",
+    url: "https://angelmtztrc.com",
+    siteName: "Angel Martinez - Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Angel Martinez - Software Engineer",
+    description:
+      "Software engineer and TypeScript enthusiast. Passionate about creating unique and efficient web solutions.",
+  },
 };
 
 const Layout = ({
