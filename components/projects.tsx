@@ -1,4 +1,5 @@
 import { PROJECTS } from "@/data/projects";
+import Image from "next/image";
 
 const Projects = () => {
   return (
@@ -14,7 +15,14 @@ const Projects = () => {
             key={project.name + index}
             className="group border-line md:border-line hover:bg-surface border-b bg-transparent p-6 transition-colors md:border-r"
           >
-            <figure className="bg-surface relative mb-4 h-36 w-full overflow-hidden"></figure>
+            <figure className="bg-surface relative mb-4 h-56 w-full overflow-hidden">
+              <Image
+                fill
+                src={project.picture}
+                alt={project.name}
+                className="object-cover object-center transition-transform group-hover:scale-105"
+              />
+            </figure>
             <div className="mb-4 flex items-start justify-between">
               <span className="text-dim text-xs">
                 {String(index + 1).padStart(2, "0")}
