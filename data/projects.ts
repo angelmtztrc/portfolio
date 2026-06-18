@@ -2,31 +2,24 @@ export const PROJECTS = [
   {
     name: "Fitnesscorp Tickets",
     description:
-      "A custom Trello-like ticket management platform for Fitnesscorp employees, designed to organize internal tasks, manage users, upload files, and send email notifications. I contributed as the backend developer, building the core API and workflow logic with NestJS, Prisma, and Clerk.",
-    status: "Deployed",
-    technologies: [
-      "Next.js",
-      "TypeScript",
-      "Node.js",
-      "Nest.js",
-      "Prisma",
-      "Clerk",
-    ],
+      "An internal ticket management platform built for Fitnesscorp to centralize team tasks, user management, file uploads, and email notifications. I contributed as the backend developer, designing the core API, database models, authentication flow, and workflow logic with NestJS, Prisma, and Clerk.",
+    status: "Client project",
+    technologies: ["Next.js", "TypeScript", "Node.js", "Nest.js", "Prisma", "Clerk"],
     picture: "/projects/fitnesscorp-tickets.png",
   },
   {
     name: "Unibetas",
     description:
       "A web platform for universities to create, manage, and deliver exams, with admin tools for managing questions and results, and a student flow for taking exams and reviewing scores.",
-    status: "Deployed",
+    status: "Client project",
     technologies: ["Next.js", "TypeScript", "Node.js", "Nest.js"],
     picture: "/projects/unibetas.png",
   },
   {
     name: "Impotrade Congresses",
     description:
-      "A web platform for Impotrade congresses that connects internal inventory management with guest ordering. Admins can configure event-specific products, prices, and discounts, while invited veterinarians can browse inventory and submit orders using an invitation code.",
-    status: "Deployed",
+      "A web platform for managing sales during veterinary congresses. I built admin workflows for event-specific inventory, pricing, discounts, and order tracking, plus a guest ordering flow where invited veterinarians can browse available products and submit orders through an invitation code.",
+    status: "Client project",
     technologies: ["Next.js", "TypeScript", "Node.js", "Nest.js"],
     picture: "/projects/impotrade-congresses.png",
   },

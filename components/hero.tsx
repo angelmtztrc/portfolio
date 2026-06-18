@@ -13,27 +13,20 @@ const Hero = () => {
         Angel
         <br />
         <span className="text-muted-foreground">Martinez</span>
-        <span className="text-foreground animate-blink ml-1 inline-block">
-          _
-        </span>
+        <span className="text-foreground animate-blink ml-1 inline-block">_</span>
       </h1>
-      <div className="mt-6 flex flex-col gap-2 md:flex-row md:items-center md:gap-6">
-        <p className="text-muted-foreground text-sm tracking-widest uppercase">
-          Software Engineer
+      <div className="mt-6 flex flex-col gap-2 md:flex-row md:items-center md:gap-6 uppercase">
+        <p className="text-muted-foreground text-sm tracking-widest">Software Engineer</p>
+        <span className="text-line hidden md:block">/</span>
+        <p className="text-muted-foreground text-sm tracking-widest">
+          React & TypeScript Developer
         </p>
         <span className="text-line hidden md:block">/</span>
-        <p className="text-muted-foreground text-sm tracking-widest uppercase">
-          TypeScript Enthusiast
-        </p>
-        <span className="text-line hidden md:block">/</span>
-        <p className="text-muted-foreground text-sm tracking-widest uppercase">
-          Coahuila, México
-        </p>
+        <p className="text-muted-foreground text-sm tracking-widest">Coahuila, México</p>
       </div>
-      <p className="text-foreground/70 mt-8 max-w-xl text-sm leading-relaxed">
-        I create practical digital solutions with TypeScript, focusing on clean
-        interfaces, solid architecture, and tools that help people get things
-        done faster.
+      <p className="text-foreground/70 mt-8 max-w-xl text-sm lg:text-base leading-relaxed">
+        I create practical digital solutions with TypeScript, focusing on clean interfaces, solid
+        architecture, and tools that help people get things done faster.
       </p>
       <div className="mt-10 flex gap-4">
         <Link
